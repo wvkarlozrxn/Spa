@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoSpa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a343693589b5a6d5ed6a77834e2bfb43a3ef0742")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6674d4ac9e7b5f2355a80c65db77e32c3a6a9929")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoSpa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoSpa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
