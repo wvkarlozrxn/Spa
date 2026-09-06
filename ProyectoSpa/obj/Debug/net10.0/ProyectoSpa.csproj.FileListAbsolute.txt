@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\bin\Debug\net10.0\ProyectoSpa.exe
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\bin\Debug\net10.0\ProyectoSpa.deps.json
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\bin\Debug\net10.0\ProyectoSpa.runtimeconfig.json
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\bin\Debug\net10.0\ProyectoSpa.dll
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\bin\Debug\net10.0\ProyectoSpa.pdb
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\obj\Debug\net10.0\ProyectoSpa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\obj\Debug\net10.0\ProyectoSpa.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\obj\Debug\net10.0\ProyectoSpa.AssemblyInfo.cs
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\obj\Debug\net10.0\ProyectoSpa.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\obj\Debug\net10.0\ProyectoSpa.sourcelink.json
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\obj\Debug\net10.0\ProyectoSpa.dll
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\obj\Debug\net10.0\refint\ProyectoSpa.dll
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\obj\Debug\net10.0\ProyectoSpa.pdb
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\obj\Debug\net10.0\ProyectoSpa.genruntimeconfig.cache
+C:\Users\user\Desktop\PROYECTO_SPA\spa\ProyectoSpa\obj\Debug\net10.0\ref\ProyectoSpa.dll
