@@ -137,6 +137,69 @@ CREATE TABLE [Cargos]
 	[Descripcion] nvarchar (500) null,	
 );
 
+_______________________________________________________________________________
+
+    create table [Servicios](
+    [Id] int primary key identity (1,1),
+    [Nombre] nvarchar (150)not null,
+    [Descripcion] nvarchar(250)not null,
+    [Duracion] smalldatetime not null,
+    [Precio] double precision not null,
+    )
+
+    create table [Detalle_reservas](
+    [Id] int primary key identity (1,1),
+    [Cantidad] int not null,
+    [Precio] double precision not null,
+    [Servicio] int not null references [Servicios](Id),
+    [Reserva] int not null references [Reservas](Id),
+    )
+
+
+    create table [Reservas] (
+    [Id] int primary key identity (1,1),
+    [Fecha] smalldatetime not null,
+    [Hora] smalldatetime not null,
+    [Estado] char not null,
+    [Cliente] int not null references [Clientes](Id),
+    [Empleado] int not null references [Empleados](Id),
+
+    )
+    
+    create table [Facturas] (
+    [Id] int primary key identity (1,1),
+    [Descuento] double precision not null,
+    [Total] double precision not null,
+    [Subtotal]  double precision not null,
+    [Fecha] smalldatetime not null,
+    [Reserva] int not null references [Reservas](Id),
+    ) 
+
+
+    create table [Detalle_facturas](
+    [Id] int primary key identity (1,1),
+    [Cantidad] int not null,
+    [Precio_unitario] double precision not null,
+    [Subtotal]  double precision not null,
+    [Servicio] int not null  references [Servicios](Id),
+    [Factura] int not null  references [Facturas](Id),
+    )
+
+
+    create table [Metodos_pagos](
+    [Id] int primary key identity (1,1),
+    [Descripcion_metodo_pago] nvarchar(50),
+    [Descripcion] nvarchar (50),
+    [Pago] int not null references [Pagos](Id),
+    )
+
+
+    create table [Pagos](
+    [Id] int primary key identity (1,1),
+    [Fecha_pago] smalldatetime not null,
+    [Factura] int not null references [Facturas](Id),
+    )
+
 
 
 
