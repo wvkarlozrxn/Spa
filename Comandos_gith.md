@@ -27,7 +27,7 @@ git add *
 git commit -am "Descripción de los cambios"
 
 # Subir los commits locales al repositorio remoto
-git push
+git push origin dev
 ```
 
 ---
@@ -36,17 +36,17 @@ git push
 Creación, navegación y publicación de ramas de trabajo secundarias.
 
 ```bash
-# Crear una nueva rama local llamada dev1
-git branch dev1
+# Crear una nueva rama local llamada dev
+git branch dev
 
-# Cambiar de rama actual a dev1
-git checkout dev1
+# Cambiar de rama actual a dev
+git checkout dev
 
 # Subir la rama dev1 al servidor y vincularla para futuros push/pull
-git push -u origin dev1
+git push -u origin dev
 
 # Enviar los commits de la rama local actual directamente a main en GitHub
-git push origin HEAD:main
+git push origin dev
 ```
 
 ---
