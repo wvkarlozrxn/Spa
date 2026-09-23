@@ -31,3 +31,4 @@ El sistema centraliza la operación integrando cuatro pilares fundamentales:
 * **Agenda y Reservas:** Control detallado de servicios (cortes, manicura, tratamientos estéticos, etc.) vinculados al personal disponible.
 * **Ciclo Comercial y Pagos:** Generación automática de facturas a partir del estado de la reserva.
 * **Control de Stock y Proveedores:** Registro de productos, compras e inventario disponible en un solo módulo.
+* **Control de Stock y Proveedores:** Registro de productos, compras e inventario disponible en un solo módulo.
