@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lib_spa\Lib_spa.csproj" />
+  </ItemGroup>
+
 </Project>

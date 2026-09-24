@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoSpa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d27cc603f52c4c84a90e8205c56c2de4a91f95a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5603039cf0143c12ee0dcd396d70ef6c7b151674")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoSpa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoSpa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
