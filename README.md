@@ -1,3 +1,5 @@
+## Spa milu
+
 ## Descripción del Proyecto
 
 Un sistema integral de gestión diseñando para optimizar las operaciones diarias de spas y salones de belleza. La plataforma abarca desde la primera interacción con el cliente al agendar una cita hasta la facturación y el control de inventario, unificando el ciclo completo del negocio en un solo lugar.
@@ -28,4 +30,5 @@ El sistema centraliza la operación integrando cuatro pilares fundamentales:
 * **Gestión de Personas:** Administración modular de clientes y colaboradores (turnos, roles y asignación de trabajos).
 * **Agenda y Reservas:** Control detallado de servicios (cortes, manicura, tratamientos estéticos, etc.) vinculados al personal disponible.
 * **Ciclo Comercial y Pagos:** Generación automática de facturas a partir del estado de la reserva.
+* **Control de Stock y Proveedores:** Registro de productos, compras e inventario disponible en un solo módulo.
 * **Control de Stock y Proveedores:** Registro de productos, compras e inventario disponible en un solo módulo.

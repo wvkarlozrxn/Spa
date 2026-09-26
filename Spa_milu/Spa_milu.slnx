@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../Consola_Spa/Consola_Spa.csproj" />
+  <Project Path="../Lib_Spa/Lib_Spa.csproj" />
+  <Project Path="../Pruebas_spa/Pruebas_spa.csproj" />
+</Solution>

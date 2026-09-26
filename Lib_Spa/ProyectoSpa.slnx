@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../Lib_spa/Lib_spa.csproj" />
+  <Project Path="../TestProject1/TestProject1.csproj" />
+  <Project Path="../vista/vista.vbproj" />
+  <Project Path="ProyectoSpa.csproj" />
+</Solution>
