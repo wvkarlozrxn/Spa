@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 
 .vs/
 bin/
 obj/
+=======
+.vs/
+bin/
+obj/
+*.user
+>>>>>>> 5e15e74 (se agregan correcion de las entidades y se crean las diferentes carpetas además de la solucion en blanco para si trabajo)
