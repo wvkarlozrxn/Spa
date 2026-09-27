@@ -1,8 +1,8 @@
-﻿using aplicaciones_libreria.entidades;
-using Lib_spa.entidades;
+﻿using Lib_spa.entidades;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace aplicaciones_libreria.interfaces
+namespace Lib_spa.interfaces
 {
     public interface IConexion
     {
