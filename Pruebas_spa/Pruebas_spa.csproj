@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Lib_Spa\Lib_Spa.csproj" />
+    <ProjectReference Include="..\Lib_Spa\Lib_spa.csproj" />
   </ItemGroup>
 
   <ItemGroup>
