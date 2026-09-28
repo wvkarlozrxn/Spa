@@ -7,12 +7,12 @@ using Microsoft.EntityFrameworkCore;
 namespace presentacion_mst
 {
     [TestClass]
-    public class CargosPrueba
+    public class ComprasPrueba
     {
         private IConexion conexion;
-        private Cargos? entidad = null;
+        private Compras? entidad = null;
 
-        public CargosPrueba()
+        public ComprasPrueba()
         {
             this.conexion = new Conexion();
             this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
@@ -29,18 +29,21 @@ namespace presentacion_mst
 
         public void Insertar()
         {
-            this.entidad = new Cargos()
+            this.entidad = new Compras()
             {
-                Cargo = "Masajista",
-                
+                Fecha = DateTime.Now,
+                Compra = 152364,
+                Total = 123654,
+                Estado = 12365
+
             };
-            this.conexion.Cargos!.Add(this.entidad!);
+            this.conexion.Compras!.Add(this.entidad!);
             this.conexion.SaveChanges();
         }
 
         public void Consultar()
         {
-            var lista = this.conexion.Cargos!.ToList();
+            var lista = this.conexion.Compras!.ToList();
             if (lista.Count <= 0)
                 throw new Exception("Lista vacia");
         }
@@ -49,14 +52,14 @@ namespace presentacion_mst
         {
             this.entidad!.Activo = false;
 
-            var entry = this.conexion!.Entry<Cargos>(this.entidad);
+            var entry = this.conexion!.Entry<Compras>(this.entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
         }
       */
         private void Borrar()
         {
-            this.conexion.Cargos!.Remove(this.entidad!);
+            this.conexion.Compras!.Remove(this.entidad!);
             this.conexion.SaveChanges();
         }
     }
