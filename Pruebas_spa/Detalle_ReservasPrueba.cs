@@ -7,12 +7,12 @@ using Microsoft.EntityFrameworkCore;
 namespace presentacion_mst
 {
     [TestClass]
-    public class CargosPrueba
+    public class Detalle_ReservasPrueba
     {
         private IConexion conexion;
-        private Cargos? entidad = null;
+        private Detalle_Reservas? entidad = null;
 
-        public CargosPrueba()
+        public Detalle_ReservasPrueba()
         {
             this.conexion = new Conexion();
             this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
@@ -29,18 +29,18 @@ namespace presentacion_mst
 
         public void Insertar()
         {
-            this.entidad = new Cargos()
+            this.entidad = new Detalle_Reservas()
             {
-                Cargo = "Masajista",
-                
+                Cantidad = 2,
+                Precio = 250000, 
             };
-            this.conexion.Cargos!.Add(this.entidad!);
+            this.conexion.Detalle_Reservas!.Add(this.entidad!);
             this.conexion.SaveChanges();
         }
 
         public void Consultar()
         {
-            var lista = this.conexion.Cargos!.ToList();
+            var lista = this.conexion.Detalle_Reservas!.ToList();
             if (lista.Count <= 0)
                 throw new Exception("Lista vacia");
         }
@@ -49,14 +49,14 @@ namespace presentacion_mst
         {
             this.entidad!.Activo = false;
 
-            var entry = this.conexion!.Entry<Cargos>(this.entidad);
+            var entry = this.conexion!.Entry<Detalle_Reservas>(this.entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
         }
       */
         private void Borrar()
         {
-            this.conexion.Cargos!.Remove(this.entidad!);
+            this.conexion.Detalle_Reservas!.Remove(this.entidad!);
             this.conexion.SaveChanges();
         }
     }

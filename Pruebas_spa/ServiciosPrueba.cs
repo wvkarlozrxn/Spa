@@ -3,16 +3,17 @@ using Lib_spa.implementaciones;
 using Lib_spa.interfaces;
 using Lib_spa.nucleo;
 using Microsoft.EntityFrameworkCore;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace presentacion_mst
 {
     [TestClass]
-    public class CargosPrueba
+    public class ServiciosPrueba
     {
         private IConexion conexion;
-        private Cargos? entidad = null;
+        private Servicios? entidad = null;
 
-        public CargosPrueba()
+        public ServiciosPrueba()
         {
             this.conexion = new Conexion();
             this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
@@ -29,18 +30,20 @@ namespace presentacion_mst
 
         public void Insertar()
         {
-            this.entidad = new Cargos()
+            this.entidad = new Servicios()
             {
-                Cargo = "Masajista",
-                
+                Nombre ="masaje turco",
+                Descripcion = "manaje con tecnicas de turca y aroma terapia",
+                //Duracion = DateTime.Now,
+                Precio = 120000,
             };
-            this.conexion.Cargos!.Add(this.entidad!);
+            this.conexion.Servicios!.Add(this.entidad!);
             this.conexion.SaveChanges();
         }
 
         public void Consultar()
         {
-            var lista = this.conexion.Cargos!.ToList();
+            var lista = this.conexion.Servicios!.ToList();
             if (lista.Count <= 0)
                 throw new Exception("Lista vacia");
         }
@@ -49,14 +52,14 @@ namespace presentacion_mst
         {
             this.entidad!.Activo = false;
 
-            var entry = this.conexion!.Entry<Cargos>(this.entidad);
+            var entry = this.conexion!.Entry<Servicios>(this.entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
         }
       */
         private void Borrar()
         {
-            this.conexion.Cargos!.Remove(this.entidad!);
+            this.conexion.Servicios!.Remove(this.entidad!);
             this.conexion.SaveChanges();
         }
     }
