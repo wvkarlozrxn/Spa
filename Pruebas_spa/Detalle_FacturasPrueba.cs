@@ -7,20 +7,14 @@ using Microsoft.EntityFrameworkCore;
 namespace presentacion_mst
 {
     [TestClass]
-<<<<<<< HEAD
+
     public class Detalle_FacturasPrueba
-=======
-    public class     Detalle_FacturasPrueba
->>>>>>> aab3627280af00c8caae477c2e25052a932d9001
     {
         private IConexion conexion;
         private Detalle_Facturas? entidad = null;
 
-<<<<<<< HEAD
         public Detalle_FacturasPrueba()
-=======
-        public      Detalle_FacturasPrueba()
->>>>>>> aab3627280af00c8caae477c2e25052a932d9001
+
         {
             this.conexion = new Conexion();
             this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
@@ -39,16 +33,11 @@ namespace presentacion_mst
         {
             this.entidad = new Detalle_Facturas()
             {
-<<<<<<< HEAD
+
                 Cantidad = 20,
                 Precio_Unidad = 5000,
                 Subtotal = 54210,
 
-=======
-                Cantidad = 2103,
-                Precio_Unidad = 125.50m,
-                Subtotal = 25632.52m
->>>>>>> aab3627280af00c8caae477c2e25052a932d9001
             };
             this.conexion.Detalle_Facturas!.Add(this.entidad!);
             this.conexion.SaveChanges();

@@ -31,8 +31,8 @@ namespace presentacion_mst
         {
             this.entidad = new Proveedores()
             {
-                Cargo = "Masajista",
-                
+                //Cargo = "Masajista",
+             
             };
             this.conexion.Proveedores!.Add(this.entidad!);
             this.conexion.SaveChanges();
