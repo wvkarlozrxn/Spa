@@ -49,7 +49,7 @@ namespace presentacion_mst
 
         private void Actualizar()
         {
-            this.entidad!.Activo = false;
+            this.entidad!.Id_Reserva = 1;
 
             var entry = this.conexion!.Entry<Detalle_Reservas>(this.entidad);
             entry.State = EntityState.Modified;

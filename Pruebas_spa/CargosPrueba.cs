@@ -31,7 +31,7 @@ namespace presentacion_mst
         {
             this.entidad = new Cargos()
             {
-                Cargo = "Masajista",
+                Cargo = "masajista",
                 
             };
             this.conexion.Cargos!.Add(this.entidad!);
@@ -47,6 +47,7 @@ namespace presentacion_mst
 
        private void Actualizar()
         {
+            
             this.entidad!.Cargo = "masajista";
 
             var entry = this.conexion!.Entry<Cargos>(this.entidad);

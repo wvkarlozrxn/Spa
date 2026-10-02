@@ -13,8 +13,8 @@ namespace Lib_spa.entidades
         public int Id_Compra { get; set; }
         public int Id_Producto { get; set; }
 
-        [ForeignKey("Compras")] public Compras? _Compra { get; set; }
-        [ForeignKey("Productos")] public Productos? _Producto { get; set; }
+        [ForeignKey("Id_Compra")] public Compras? _Compra { get; set; }
+        [ForeignKey("Id_Producto")] public Productos? _Producto { get; set; }
     }
 
 }

@@ -32,7 +32,7 @@ namespace presentacion_mst
             this.entidad = new Clientes()
             {
                 
-                Id_Persona = 1
+                Persona = 1,
 
             };
             this.conexion.Clientes!.Add(this.entidad!);
@@ -48,7 +48,7 @@ namespace presentacion_mst
 
         private void Actualizar()
         {
-            this.entidad!.Id_Persona = 1;
+            this.entidad!.Persona = 1;
 
             var entry = this.conexion!.Entry<Clientes>(this.entidad);
             entry.State = EntityState.Modified;

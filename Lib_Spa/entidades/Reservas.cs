@@ -13,8 +13,8 @@ namespace Lib_spa.entidades
         public int Id_Cliente { get; set; }
 
       
-        [ForeignKey("Empleados")] public Empleados? _Empleado { get; set; }
-        [ForeignKey("Clientes")] public Clientes? _Cliente { get; set; }
+        [ForeignKey("Id_Empleado")] public Empleados? _Empleado { get; set; }
+        [ForeignKey("Id_Cliente")] public Clientes? _Cliente { get; set; }
 
         public List<Facturas>? Facturas { get; set; }
         public List<Detalle_Reservas>? Detalle_Reservas { get; set; }

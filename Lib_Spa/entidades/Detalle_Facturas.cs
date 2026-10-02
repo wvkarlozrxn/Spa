@@ -13,8 +13,8 @@ namespace Lib_spa.entidades
         public decimal Precio_Unidad { get; set; }
         public decimal Subtotal { get; set; }
 
-        [ForeignKey("Facturas")] public Facturas? _Factura { get; set; }
-        [ForeignKey("Servicios")] public Servicios? _Servicio { get; set; }
+        [ForeignKey("Id_Factura")] public Facturas? _Factura { get; set; }
+        [ForeignKey("Id_Servicio")] public Servicios? _Servicio { get; set; }
     }
 
 }

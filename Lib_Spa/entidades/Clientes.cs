@@ -7,9 +7,9 @@ namespace Lib_spa.entidades
     {
         [Key]
         public int Id_Cliente { get; set; }
-        public int Id_Persona { get; set; }
+        public int Persona { get; set; }
 
-        [ForeignKey("Personas")] public Personas? _Persona { get; set; }
+        [ForeignKey("Persona")] public Personas? _Persona { get; set; }
 
         public List<Reservas>? Reservas { get; set; }
     }

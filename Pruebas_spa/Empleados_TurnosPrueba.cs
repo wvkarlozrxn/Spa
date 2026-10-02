@@ -23,7 +23,7 @@ namespace presentacion_mst
         {
             Insertar();
             Consultar();
-            //Actualizar();
+            Actualizar();
             Borrar();
         }
 
@@ -32,7 +32,7 @@ namespace presentacion_mst
             this.entidad = new Empleados_Turnos()
             {
                 Id_Turno = 1,
-                Id_Empleado = 1
+                Id_Empleado = 1,
 
             };
             this.conexion.Empleados_Turnos!.Add(this.entidad!);
@@ -46,15 +46,16 @@ namespace presentacion_mst
                 throw new Exception("Lista vacia");
         }
 
-      /*  private void Actualizar()
+       private void Actualizar()
         {
-            this.entidad!.Activo = false;
+            
+            this.entidad!.Id_Turno = 2;
 
             var entry = this.conexion!.Entry<Empleados_Turnos>(this.entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
         }
-      */
+      
         private void Borrar()
         {
             this.conexion.Empleados_Turnos!.Remove(this.entidad!);
