@@ -2,6 +2,7 @@
 using Lib_spa.implementaciones;
 using Lib_spa.interfaces;
 using Lib_spa.nucleo;
+using Microsoft.EntityFrameworkCore;
 
 namespace presentacion_mst
 {
@@ -22,7 +23,7 @@ namespace presentacion_mst
         {
             Insertar();
             Consultar();
-            //Actualizar();
+            Actualizar();
             Borrar();
         }
 
@@ -45,15 +46,15 @@ namespace presentacion_mst
                 throw new Exception("Lista vacia");
         }
 
-      /*  private void Actualizar()
+        private void Actualizar()
         {
-            this.entidad!.Activo = false;
+            this.entidad!.Id_Persona = 1;
 
             var entry = this.conexion!.Entry<Clientes>(this.entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
         }
-      */
+      
         private void Borrar()
         {
             this.conexion.Clientes!.Remove(this.entidad!);

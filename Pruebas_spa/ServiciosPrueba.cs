@@ -24,7 +24,7 @@ namespace presentacion_mst
         {
             Insertar();
             Consultar();
-            //Actualizar();
+            Actualizar();
             Borrar();
         }
 
@@ -34,7 +34,7 @@ namespace presentacion_mst
             {
                 Nombre ="masaje turco",
                 Descripcion = "manaje con tecnicas de turca y aroma terapia",
-                //Duracion = DateTime.Now,
+                Duracion = 2,
                 Precio = 120000,
             };
             this.conexion.Servicios!.Add(this.entidad!);
@@ -48,15 +48,15 @@ namespace presentacion_mst
                 throw new Exception("Lista vacia");
         }
 
-      /*  private void Actualizar()
+       private void Actualizar()
         {
-            this.entidad!.Activo = false;
+            this.entidad!.Duracion = 2;
 
             var entry = this.conexion!.Entry<Servicios>(this.entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
         }
-      */
+      
         private void Borrar()
         {
             this.conexion.Servicios!.Remove(this.entidad!);

@@ -23,7 +23,7 @@ namespace presentacion_mst
         {
             Insertar();
             Consultar();
-            //Actualizar();
+            Actualizar();
             Borrar();
         }
 
@@ -47,7 +47,7 @@ namespace presentacion_mst
                 throw new Exception("Lista vacia");
         }
 
-      /*  private void Actualizar()
+        private void Actualizar()
         {
             this.entidad!.Activo = false;
 
@@ -55,7 +55,7 @@ namespace presentacion_mst
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
         }
-      */
+      
         private void Borrar()
         {
             this.conexion.Detalle_Reservas!.Remove(this.entidad!);

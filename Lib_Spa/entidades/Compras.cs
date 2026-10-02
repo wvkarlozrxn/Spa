@@ -13,7 +13,7 @@ namespace Lib_spa.entidades
         public int Estado { get; set; }
         public int Id_Proveedor { get; set; }
 
-        [ForeignKey("Proveedores")] public Proveedores? _Proveedore { get; set; }
+        [ForeignKey("Id_Proveedor")] public Proveedores? _Proveedore { get; set; }
 
 
         public List<Detalle_Compras>? Detalle_Compras { get; set; }

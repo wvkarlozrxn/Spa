@@ -24,7 +24,7 @@ namespace presentacion_mst
         {
             Insertar();
             Consultar();
-            //Actualizar();
+            Actualizar();
             Borrar();
         }
 
@@ -32,10 +32,10 @@ namespace presentacion_mst
         {
             this.entidad = new Turnos()
             {
-               /* Dia = ,
-                Hora_Entrada = , 
-                Hora_Salida = ,
-               */
+                Dia = 1,          
+                Hora_Entrada = 8,  
+                Hora_Salida = 17,
+
             };
             this.conexion.Turnos!.Add(this.entidad!);
             this.conexion.SaveChanges();
@@ -48,15 +48,15 @@ namespace presentacion_mst
                 throw new Exception("Lista vacia");
         }
 
-      /*  private void Actualizar()
+      private void Actualizar()
         {
-            this.entidad!.Activo = false;
+            this.entidad!.Dia = 2;
 
             var entry = this.conexion!.Entry<Turnos>(this.entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
         }
-      */
+      
         private void Borrar()
         {
             this.conexion.Turnos!.Remove(this.entidad!);

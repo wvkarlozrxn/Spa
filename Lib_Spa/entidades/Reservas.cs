@@ -8,7 +8,6 @@ namespace Lib_spa.entidades
         [Key]
         public int Id_Reserva { get; set; }
         public DateTime Fecha { get; set; }
-        public DateTime Hora { get; set; }
         public int Estado { get; set; }
         public int Id_Empleado { get; set; }
         public int Id_Cliente { get; set; }

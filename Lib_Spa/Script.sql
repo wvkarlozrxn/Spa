@@ -3,6 +3,9 @@ GO
 USE DB_SPA
 GO
 
+
+
+
 -- 1. TABLA CARGOS
 CREATE TABLE [Cargos] (
     [Id_Cargo] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
@@ -80,9 +83,9 @@ CREATE TABLE [Empleados] (
 -- 10. TABLA TURNOS
 CREATE TABLE [Turnos] (
     [Id_Turno] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
-    [Dia] DATETIME NOT NULL,
-    [Hora_Entrada] DATETIME NOT NULL,
-    [Hora_Salida] DATETIME NOT NULL
+    [Dia] int NOT NULL,
+    [Hora_Entrada] int NOT NULL,
+    [Hora_Salida] int NOT NULL
 );
 
 -- 11. TABLA EMPLEADOS_TURNOS
@@ -97,7 +100,7 @@ CREATE TABLE [Servicios] (
     [Id_Servicio] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
     [Nombre] NVARCHAR(150) NOT NULL,
     [Descripcion] NVARCHAR(500) NULL,
-    [Duracion] DATETIME NOT NULL,
+    [Duracion] int NOT NULL,
     [Precio] DECIMAL(18, 2) NOT NULL
 );
 
@@ -105,7 +108,7 @@ CREATE TABLE [Servicios] (
 CREATE TABLE [Reservas] (
     [Id_Reserva] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
     [Fecha] DATETIME NOT NULL,
-    [Hora] DATETIME NOT NULL,
+
     [Estado] INT NOT NULL,
     [Id_Empleado] INT NOT NULL REFERENCES [Empleados]([Id_Empleado]),
     [Id_Cliente] INT NOT NULL REFERENCES [Clientes]([Id_Cliente])

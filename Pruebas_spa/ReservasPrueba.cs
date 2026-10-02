@@ -31,8 +31,7 @@ namespace presentacion_mst
         {
             this.entidad = new Reservas()
             {
-               //Fecha = DateTime.Now,
-               //Hora = DateTime.Now,
+               Fecha = DateTime.Now,
                Estado =1,
                Id_Empleado = 1,
                Id_Cliente = 1
@@ -48,7 +47,7 @@ namespace presentacion_mst
                 throw new Exception("Lista vacia");
         }
 
-      /*  private void Actualizar()
+      /* private void Actualizar()
         {
             this.entidad!.Activo = false;
 

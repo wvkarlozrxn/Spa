@@ -12,8 +12,8 @@ namespace Lib_spa.entidades
         public int Id_Reserva { get; set; }
         public int Id_Servicio { get; set; }
 
-        [ForeignKey("Reservas")] public Reservas? _Reserva { get; set; }
-        [ForeignKey("Servicios")] public Servicios? _Servicio { get; set; }
+        [ForeignKey("Id_Reserva")] public Reservas? _Reserva { get; set; }
+        [ForeignKey("Id_Servicio")] public Servicios? _Servicio { get; set; }
     }
 
 }
