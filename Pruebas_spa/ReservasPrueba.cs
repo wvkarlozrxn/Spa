@@ -31,9 +31,11 @@ namespace presentacion_mst
         {
             this.entidad = new Reservas()
             {
-               Fecha = DateTime.Now,
+               //Fecha = DateTime.Now,
                //Hora = DateTime.Now,
-               //Estado =
+               Estado =1,
+               Id_Empleado = 1,
+               Id_Cliente = 1
             };
             this.conexion.Reservas!.Add(this.entidad!);
             this.conexion.SaveChanges();

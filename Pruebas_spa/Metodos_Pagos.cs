@@ -32,8 +32,9 @@ namespace presentacion_mst
             this.entidad = new Metodos_Pagos()
             {
                 Descripcion = "paga el servicio",
-                Metodo_Pago = "tarjeta"
-                
+                Metodo_Pago = "tarjeta",
+                Id_Pago = 1
+
             };
             this.conexion.Metodos_Pagos!.Add(this.entidad!);
             this.conexion.SaveChanges();

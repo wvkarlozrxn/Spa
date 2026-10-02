@@ -31,8 +31,11 @@ namespace presentacion_mst
         {
             this.entidad = new Proveedores()
             {
-                //Cargo = "Masajista",
-             
+                Nombre = "Proveedor de prueba",
+                Telefono = "123456789",
+                Correo = "proveedor@prueba.com",
+                Direccion = "Calle de prueba 123",
+
             };
             this.conexion.Proveedores!.Add(this.entidad!);
             this.conexion.SaveChanges();

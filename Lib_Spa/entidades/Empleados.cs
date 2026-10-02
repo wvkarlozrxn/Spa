@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lib_spa.entidades
 {
     public  class Empleados 
     {
+        [Key]
         public int Id_Empleado { get; set; }
         public int Id_Persona { get; set; }
         public int Id_Cargo { get; set; }

@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lib_spa.entidades
 {
     public class Detalle_Facturas
     {
+        [Key]
         public int Id_Detalle_Factura { get; set; }
         public int Id_Factura { get; set; }
         public int Id_Servicio { get; set; }

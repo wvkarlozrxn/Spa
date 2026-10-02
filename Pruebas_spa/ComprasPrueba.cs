@@ -34,7 +34,8 @@ namespace presentacion_mst
                 Fecha = DateTime.Now,
                 Compra = 152364,
                 Total = 123654,
-                Estado = 12365
+                Estado = 12365,
+                Id_Proveedor = 1
 
             };
             this.conexion.Compras!.Add(this.entidad!);

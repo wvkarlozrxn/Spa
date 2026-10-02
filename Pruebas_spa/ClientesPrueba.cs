@@ -30,8 +30,9 @@ namespace presentacion_mst
         {
             this.entidad = new Clientes()
             {
-                Cargo = "Masajista",
-                
+                Id_Cliente = 1,
+                Id_Persona = 1
+
             };
             this.conexion.Clientes!.Add(this.entidad!);
             this.conexion.SaveChanges();

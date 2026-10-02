@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lib_spa.entidades
 {
     public class Productos
     {
+        [Key]
         public int Id_Producto { get; set; }
         public string? Nombre { get; set; }
         public string? Descripcion { get; set; }

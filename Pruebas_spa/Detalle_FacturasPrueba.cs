@@ -37,6 +37,8 @@ namespace presentacion_mst
                 Cantidad = 20,
                 Precio_Unidad = 5000,
                 Subtotal = 54210,
+                Id_Factura = 1,
+                Id_Servicio = 1
 
             };
             this.conexion.Detalle_Facturas!.Add(this.entidad!);

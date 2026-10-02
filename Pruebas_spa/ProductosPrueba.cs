@@ -35,6 +35,7 @@ namespace presentacion_mst
                 Descripcion = "crema exfoleante",
                 Precio_Compra =20000,
                 Precio_Venta =25000,
+                Id_Inventario = 1,
 
             };
             this.conexion.Productos!.Add(this.entidad!);

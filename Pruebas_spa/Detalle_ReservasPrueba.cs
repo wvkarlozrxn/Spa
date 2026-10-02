@@ -32,7 +32,9 @@ namespace presentacion_mst
             this.entidad = new Detalle_Reservas()
             {
                 Cantidad = 2,
-                Precio = 250000, 
+                Precio = 250000,
+                Id_Reserva = 1,
+                Id_Servicio = 1
             };
             this.conexion.Detalle_Reservas!.Add(this.entidad!);
             this.conexion.SaveChanges();

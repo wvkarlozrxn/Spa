@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lib_spa.entidades
 {
     public class Detalle_Reservas
     {
+        [Key]
         public int Id_Detalle_Reserva { get; set; }
         public int Cantidad { get; set; }
         public decimal Precio { get; set; }

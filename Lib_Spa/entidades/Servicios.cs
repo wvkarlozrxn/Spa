@@ -1,7 +1,10 @@
-﻿namespace Lib_spa.entidades
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Lib_spa.entidades
 {
     public class Servicios
     {
+        [Key]
         public int Id_Servicio { get; set; }
         public string? Nombre { get; set; }
         public string? Descripcion { get; set; }

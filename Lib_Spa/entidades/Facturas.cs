@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lib_spa.entidades
 {
     public class Facturas
     {
+        [Key]
         public int Id_Factura { get; set; }
         public DateTime Fecha { get; set; }
         public decimal Subtotal { get; set; }

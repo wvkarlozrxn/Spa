@@ -35,7 +35,8 @@ namespace presentacion_mst
                 Subtotal = 2000,
                 Descuento =500,
                 Total = 1500,
-                //Activo = true,
+                Id_Reserva = 1,
+                
             };
             this.conexion.Facturas!.Add(this.entidad!);
             this.conexion.SaveChanges();

@@ -1,7 +1,10 @@
-﻿namespace Lib_spa.entidades
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Lib_spa.entidades
 {
     public class Turnos
     {
+        [Key]
         public int Id_Turno { get; set; }
         public DateTime Dia { get; set; }
         public DateTime Hora_Entrada { get; set; }

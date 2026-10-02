@@ -31,8 +31,10 @@ namespace presentacion_mst
         {
             this.entidad = new Empleados()
             {
-               // Fecha_Contrato = "Masajista",
-                
+                Id_Persona = 1,
+                Id_Cargo = 1,
+                Fecha_Contrato = DateTime.Now
+
             };
             this.conexion.Empleados!.Add(this.entidad!);
             this.conexion.SaveChanges();

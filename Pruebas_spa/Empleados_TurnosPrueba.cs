@@ -31,8 +31,9 @@ namespace presentacion_mst
         {
             this.entidad = new Empleados_Turnos()
             {
-                //Cargo = "Masajista",
-                
+                Id_Turno = 1,
+                Id_Empleado = 1
+
             };
             this.conexion.Empleados_Turnos!.Add(this.entidad!);
             this.conexion.SaveChanges();

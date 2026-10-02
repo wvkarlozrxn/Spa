@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lib_spa.entidades
 {
     public class Empleados_Turnos
     {
+        [Key]
         public int Id_Empleado_Turno { get; set; }
         public int Id_Turno { get; set; }
         public int Id_Empleado { get; set; }
