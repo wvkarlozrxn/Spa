@@ -30,7 +30,7 @@ namespace presentacion_mst
         {
             this.entidad = new Clientes()
             {
-                Id_Cliente = 1,
+                
                 Id_Persona = 1
 
             };
