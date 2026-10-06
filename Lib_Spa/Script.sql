@@ -1,12 +1,10 @@
-﻿
-
+﻿    
 CREATE DATABASE DB_SPA
 GO
 USE DB_SPA
 GO
 
 
-select * from Detalle_Facturas
 
 -- 1. TABLA CARGOS
 CREATE TABLE [Cargos] (
@@ -158,126 +156,76 @@ CREATE TABLE [Metodos_Pagos] (
     [Metodo_Pago] NVARCHAR(100) NULL,
     [Id_Pago] INT NOT NULL REFERENCES [Pagos]([Id_Pago])
 );
+  
 
-/*
+  -- ==========================================
+-- 1. TABLAS PRINCIPALES (Sin llaves foráneas)
 -- ==========================================
--- NIVEL 1: Tablas independientes (No dependen de nadie)
--- ==========================================
+INSERT INTO [Cargos] (Cargo) 
+VALUES ('Administrador');
 
-INSERT INTO [Cargos] ([Cargo]) VALUES 
-('Masajista'), ('Recepcionista');
+INSERT INTO [Inventarios] (Cantidad, Stock_min) 
+VALUES (50, 10);
 
-INSERT INTO [Inventarios] ([Cantidad], [Stock_min]) VALUES 
-(50, 10), (100, 20);
+INSERT INTO [Proveedores] (Nombre, Telefono, Correo, Direccion) 
+VALUES ('Distribuciones XYZ', '3001234567', 'ventas@xyz.com', 'Calle 10 # 20-30');
 
-INSERT INTO [Proveedores] ([Nombre], [Telefono], [Correo], [Direccion]) VALUES 
-('Distribuidora Belleza', '3001234567', 'ventas@belleza.com', 'Calle 10 # 40-20'),
-('Insumos Spa', '3109876543', 'contacto@insumos.com', 'Carrera 50 # 20-10');
+INSERT INTO [Personas] (Nombre, Telefono, Cedula) 
+VALUES ('Juan Pérez', '3209876543', '1020304050');
 
--- Insertamos 4 personas (2 para clientes, 2 para empleados)
-INSERT INTO [Personas] ([Nombre], [Telefono], [Cedula]) VALUES 
-('Juan Perez', '3000000001', '1000000001'),
-('Maria Lopez', '3000000002', '1000000002'),
-('Carlos Ruiz', '3000000003', '1000000003'),
-('Ana Gomez', '3000000004', '1000000004');
+INSERT INTO [Turnos] (Dia, Hora_Entrada, Hora_Salida) 
+VALUES (1, 800, 1700);
 
-INSERT INTO [Turnos] ([Dia], [Hora_Entrada], [Hora_Salida]) VALUES 
-(1, 8, 16), (2, 10, 18);
-
-INSERT INTO [Servicios] ([Nombre], [Descripcion], [Duracion], [Precio]) VALUES 
-('Masaje Relajante', 'Masaje de cuerpo completo', 60, 120000.00),
-('Limpieza Facial', 'Limpieza profunda con exfoliación', 45, 80000.00);
+INSERT INTO [Servicios] (Nombre, Descripcion, Duracion, Precio) 
+VALUES ('Corte Básico', 'Corte de cabello tradicional', 30, 25000.00);
 
 -- ==========================================
--- NIVEL 2: Dependen solo de las tablas del Nivel 1
+-- 2. TABLAS SECUNDARIAS (Con llaves foráneas)
 -- ==========================================
+-- Usa el ID 1 generado en los inventarios
+INSERT INTO [Productos] (Nombre, Descripcion, Precio_Compra, Precio_Venta, Id_Inventario) 
+VALUES ('Shampoo Profesional', 'Botella 500ml', 15000.00, 25000.00, 1);
 
--- Toman el Inventario 1 y 2
-INSERT INTO [Productos] ([Nombre], [Descripcion], [Precio_Compra], [Precio_Venta], [Id_Inventario]) VALUES 
-('Aceite de Almendras', 'Aceite para masajes', 15000.00, 30000.00, 1),
-('Crema Exfoliante', 'Crema para la cara', 20000.00, 45000.00, 2);
+-- Usa el ID 1 generado en los proveedores
+INSERT INTO [Compras] (Fecha, Compra, Total, Estado, Id_Proveedor) 
+VALUES (GETDATE(), 150000.00, 150000.00, 1, 1);
 
--- Toman los Proveedores 1 y 2
-INSERT INTO [Compras] ([Fecha], [Compra], [Total], [Estado], [Id_Proveedor]) VALUES 
-('2026-10-01', 100000.00, 100000.00, 1, 1),
-('2026-10-02', 150000.00, 150000.00, 1, 2);
+-- Usa el ID 1 generado en compras y productos
+INSERT INTO [Detalle_Compras] (Cantidad, Precio_Unidad, Subtotal, Id_Compra, Id_Producto) 
+VALUES (10, 15000.00, 150000.00, 1, 1);
 
--- Toman a las Personas 1 y 2
-INSERT INTO [Clientes] ([Id_Persona]) VALUES 
-(1), (2);
+-- Usa el ID 1 generado en personas
+INSERT INTO [Clientes] (Persona) 
+VALUES (1);
 
--- Toman a las Personas 3 y 4, y los Cargos 1 y 2
-INSERT INTO [Empleados] ([Id_Persona], [Id_Cargo], [Fecha_Contrato]) VALUES 
-(3, 1, '2025-01-15'), 
-(4, 2, '2025-06-20');
+-- Usa el ID 1 generado en personas y cargos
+INSERT INTO [Empleados] (Id_Persona, Id_Cargo, Fecha_Contrato) 
+VALUES (1, 1, GETDATE());
 
--- ==========================================
--- NIVEL 3: Dependen de las tablas del Nivel 2
--- ==========================================
+-- Usa el ID 1 generado en turnos y empleados
+INSERT INTO [Empleados_Turnos] (Id_Turno, Id_Empleado) 
+VALUES (1, 1);
 
--- Toman la Compra 1-2 y el Producto 1-2
-INSERT INTO [Detalle_Compras] ([Cantidad], [Precio_Unidad], [Subtotal], [Id_Compra], [Id_Producto]) VALUES 
-(10, 15000.00, 150000.00, 1, 1),
-(5, 20000.00, 100000.00, 2, 2);
+-- Usa el ID 1 generado en empleados y clientes
+INSERT INTO [Reservas] (Fecha, Estado, Id_Empleado, Id_Cliente) 
+VALUES (GETDATE(), 1, 1, 1);
 
--- Toman el Turno 1-2 y el Empleado 1-2
-INSERT INTO [Empleados_Turnos] ([Id_Turno], [Id_Empleado]) VALUES 
-(1, 1), (2, 2);
+-- Usa el ID 1 generado en reservas y servicios
+INSERT INTO [Detalle_Reservas] (Cantidad, Precio, Id_Reserva, Id_Servicio) 
+VALUES (1, 25000.00, 1, 1);
 
--- Toman Empleado 1-2 y Cliente 1-2
-INSERT INTO [Reservas] ([Fecha], [Estado], [Id_Empleado], [Id_Cliente]) VALUES 
-('2026-10-05 10:00:00', 1, 1, 1),
-('2026-10-06 14:00:00', 1, 2, 2);
+-- Usa el ID 1 generado en reservas
+INSERT INTO [Facturas] (Fecha, Subtotal, Descuento, Total, Id_Reserva) 
+VALUES (GETDATE(), 25000.00, 0.00, 25000.00, 1);
 
--- ==========================================
--- NIVEL 4: Dependen de las tablas del Nivel 3 (Reservas)
--- ==========================================
+-- Usa el ID 1 generado en facturas y servicios
+INSERT INTO [Detalle_Facturas] (Id_Factura, Id_Servicio, Cantidad, Precio_Unidad, Subtotal) 
+VALUES (1, 1, 1, 25000.00, 25000.00);
 
--- Toman la Reserva 1-2 y el Servicio 1-2
-INSERT INTO [Detalle_Reservas] ([Cantidad], [Precio], [Id_Reserva], [Id_Servicio]) VALUES 
-(1, 120000.00, 1, 1),
-(1, 80000.00, 2, 2);
+-- Usa el ID 1 generado en facturas
+INSERT INTO [Pagos] (Fecha_Pago, Id_Factura) 
+VALUES (GETDATE(), 1);
 
--- Toman la Reserva 1-2
-INSERT INTO [Facturas] ([Fecha], [Subtotal], [Descuento], [Total], [Id_Reserva]) VALUES 
-('2026-10-05', 120000.00, 0.00, 120000.00, 1),
-('2026-10-06', 80000.00, 10000.00, 70000.00, 2);
-
--- ==========================================
--- NIVEL 5: Dependen de las Facturas
--- ==========================================
-
--- Toman la Factura 1-2 y el Servicio 1-2
-INSERT INTO [Detalle_Facturas] ([Id_Factura], [Id_Servicio], [Cantidad], [Precio_Unidad], [Subtotal]) VALUES 
-(1, 1, 1, 120000.00, 120000.00),
-(2, 2, 1, 80000.00, 80000.00);
-
--- Toman la Factura 1-2
-INSERT INTO [Pagos] ([Fecha_Pago], [Id_Factura]) VALUES 
-('2026-10-05', 1),
-('2026-10-06', 2);
-
--- ==========================================
--- NIVEL 6: Dependen de los Pagos
--- ==========================================
-
--- Toman el Pago 1-2
-INSERT INTO [Metodos_Pagos] ([Descripcion], [Metodo_Pago], [Id_Pago]) VALUES 
-('Pago completo exacto', 'Efectivo', 1),
-('Pago con tarjeta débito', 'Tarjeta', 2);
-
-*/
-
-USE DB_SPA;
-GO
-
--- 1. Creamos un cargo y una persona
-INSERT INTO Cargos (Cargo) VALUES ('Masajista');
-INSERT INTO Personas (Nombre, Telefono, Cedula) VALUES ('Juan', '123', '111');
-
--- 2. Creamos al Empleado #1 (usando la persona 1 y cargo 1)
-INSERT INTO Empleados (Id_Persona, Id_Cargo, Fecha_Contrato) VALUES (1, 1, GETDATE());
-
--- 3. Creamos el Turno #1 y el Turno #2
-INSERT INTO Turnos (Dia, Hora_Entrada, Hora_Salida) VALUES (1, 8, 12);
-INSERT INTO Turnos (Dia, Hora_Entrada, Hora_Salida) VALUES (2, 14, 18);        
+-- Usa el ID 1 generado en pagos
+INSERT INTO [Metodos_Pagos] (Descripcion, Metodo_Pago, Id_Pago) 
+VALUES ('Pago exacto', 'Efectivo', 1);
