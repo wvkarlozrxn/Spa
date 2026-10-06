@@ -1,7 +1,10 @@
-﻿CREATE DATABASE DB_SPA
+﻿    
+CREATE DATABASE DB_SPA
 GO
 USE DB_SPA
 GO
+
+
 
 -- 1. TABLA CARGOS
 CREATE TABLE [Cargos] (
@@ -66,7 +69,7 @@ CREATE TABLE [Personas] (
 -- 8. TABLA CLIENTES
 CREATE TABLE [Clientes] (
     [Id_Cliente] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
-    [Id_Persona] INT NOT NULL REFERENCES [Personas]([Id_Persona])
+    [Persona] INT NOT NULL REFERENCES [Personas]([Id_Persona])
 );
 
 -- 9. TABLA EMPLEADOS
@@ -80,9 +83,9 @@ CREATE TABLE [Empleados] (
 -- 10. TABLA TURNOS
 CREATE TABLE [Turnos] (
     [Id_Turno] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
-    [Dia] DATETIME NOT NULL,
-    [Hora_Entrada] DATETIME NOT NULL,
-    [Hora_Salida] DATETIME NOT NULL
+    [Dia] int NOT NULL,
+    [Hora_Entrada] int NOT NULL,
+    [Hora_Salida] int NOT NULL
 );
 
 -- 11. TABLA EMPLEADOS_TURNOS
@@ -97,7 +100,7 @@ CREATE TABLE [Servicios] (
     [Id_Servicio] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
     [Nombre] NVARCHAR(150) NOT NULL,
     [Descripcion] NVARCHAR(500) NULL,
-    [Duracion] DATETIME NOT NULL,
+    [Duracion] int NOT NULL,
     [Precio] DECIMAL(18, 2) NOT NULL
 );
 
@@ -105,7 +108,6 @@ CREATE TABLE [Servicios] (
 CREATE TABLE [Reservas] (
     [Id_Reserva] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
     [Fecha] DATETIME NOT NULL,
-    [Hora] DATETIME NOT NULL,
     [Estado] INT NOT NULL,
     [Id_Empleado] INT NOT NULL REFERENCES [Empleados]([Id_Empleado]),
     [Id_Cliente] INT NOT NULL REFERENCES [Clientes]([Id_Cliente])
@@ -154,3 +156,76 @@ CREATE TABLE [Metodos_Pagos] (
     [Metodo_Pago] NVARCHAR(100) NULL,
     [Id_Pago] INT NOT NULL REFERENCES [Pagos]([Id_Pago])
 );
+  
+
+  -- ==========================================
+-- 1. TABLAS PRINCIPALES (Sin llaves foráneas)
+-- ==========================================
+INSERT INTO [Cargos] (Cargo) 
+VALUES ('Administrador');
+
+INSERT INTO [Inventarios] (Cantidad, Stock_min) 
+VALUES (50, 10);
+
+INSERT INTO [Proveedores] (Nombre, Telefono, Correo, Direccion) 
+VALUES ('Distribuciones XYZ', '3001234567', 'ventas@xyz.com', 'Calle 10 # 20-30');
+
+INSERT INTO [Personas] (Nombre, Telefono, Cedula) 
+VALUES ('Juan Pérez', '3209876543', '1020304050');
+
+INSERT INTO [Turnos] (Dia, Hora_Entrada, Hora_Salida) 
+VALUES (1, 800, 1700);
+
+INSERT INTO [Servicios] (Nombre, Descripcion, Duracion, Precio) 
+VALUES ('Corte Básico', 'Corte de cabello tradicional', 30, 25000.00);
+
+-- ==========================================
+-- 2. TABLAS SECUNDARIAS (Con llaves foráneas)
+-- ==========================================
+-- Usa el ID 1 generado en los inventarios
+INSERT INTO [Productos] (Nombre, Descripcion, Precio_Compra, Precio_Venta, Id_Inventario) 
+VALUES ('Shampoo Profesional', 'Botella 500ml', 15000.00, 25000.00, 1);
+
+-- Usa el ID 1 generado en los proveedores
+INSERT INTO [Compras] (Fecha, Compra, Total, Estado, Id_Proveedor) 
+VALUES (GETDATE(), 150000.00, 150000.00, 1, 1);
+
+-- Usa el ID 1 generado en compras y productos
+INSERT INTO [Detalle_Compras] (Cantidad, Precio_Unidad, Subtotal, Id_Compra, Id_Producto) 
+VALUES (10, 15000.00, 150000.00, 1, 1);
+
+-- Usa el ID 1 generado en personas
+INSERT INTO [Clientes] (Persona) 
+VALUES (1);
+
+-- Usa el ID 1 generado en personas y cargos
+INSERT INTO [Empleados] (Id_Persona, Id_Cargo, Fecha_Contrato) 
+VALUES (1, 1, GETDATE());
+
+-- Usa el ID 1 generado en turnos y empleados
+INSERT INTO [Empleados_Turnos] (Id_Turno, Id_Empleado) 
+VALUES (1, 1);
+
+-- Usa el ID 1 generado en empleados y clientes
+INSERT INTO [Reservas] (Fecha, Estado, Id_Empleado, Id_Cliente) 
+VALUES (GETDATE(), 1, 1, 1);
+
+-- Usa el ID 1 generado en reservas y servicios
+INSERT INTO [Detalle_Reservas] (Cantidad, Precio, Id_Reserva, Id_Servicio) 
+VALUES (1, 25000.00, 1, 1);
+
+-- Usa el ID 1 generado en reservas
+INSERT INTO [Facturas] (Fecha, Subtotal, Descuento, Total, Id_Reserva) 
+VALUES (GETDATE(), 25000.00, 0.00, 25000.00, 1);
+
+-- Usa el ID 1 generado en facturas y servicios
+INSERT INTO [Detalle_Facturas] (Id_Factura, Id_Servicio, Cantidad, Precio_Unidad, Subtotal) 
+VALUES (1, 1, 1, 25000.00, 25000.00);
+
+-- Usa el ID 1 generado en facturas
+INSERT INTO [Pagos] (Fecha_Pago, Id_Factura) 
+VALUES (GETDATE(), 1);
+
+-- Usa el ID 1 generado en pagos
+INSERT INTO [Metodos_Pagos] (Descripcion, Metodo_Pago, Id_Pago) 
+VALUES ('Pago exacto', 'Efectivo', 1);

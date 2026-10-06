@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lib_spa.entidades
 {
     public class Inventarios
     {
+        [Key]
         public int Id_Inventario { get; set; }
         public int Cantidad { get; set; }
         public int Stock_min { get; set; }

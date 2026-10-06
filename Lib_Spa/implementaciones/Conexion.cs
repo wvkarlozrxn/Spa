@@ -1,10 +1,11 @@
-﻿using aplicaciones_libreria.entidades;
-using aplicaciones_libreria.interfaces;
+﻿
 using Lib_spa.entidades;
+using Lib_spa.interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace aplicaciones_libreria.implementaciones
-{
+namespace Lib_spa.implementaciones 
+{ 
+
     public class Conexion : DbContext, IConexion
     {
         public string? StringConexion { get; set; }

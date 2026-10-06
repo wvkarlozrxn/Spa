@@ -1,0 +1,308 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Spa_milu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F584F21-87E0-1085-89A8-3D9563E6B335}|..\\Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\pruebas_spa\\empleados_turnosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F584F21-87E0-1085-89A8-3D9563E6B335}|..\\Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\pruebas_spa\\reservasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F584F21-87E0-1085-89A8-3D9563E6B335}|..\\Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\pruebas_spa\\detalle_facturasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\reservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F584F21-87E0-1085-89A8-3D9563E6B335}|..\\Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\pruebas_spa\\detalle_comprasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\detalle_compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F584F21-87E0-1085-89A8-3D9563E6B335}|..\\Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\pruebas_spa\\personasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\cargos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\detalle_facturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\turnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\servicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\inventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\empleados_turnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\detalle_reservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Empleados_TurnosPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\Empleados_TurnosPrueba.cs",
+              "RelativeDocumentMoniker": "..\\Pruebas_spa\\Empleados_TurnosPrueba.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\Empleados_TurnosPrueba.cs",
+              "RelativeToolTip": "..\\Pruebas_spa\\Empleados_TurnosPrueba.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wBIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:50:37.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Detalle_FacturasPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\Detalle_FacturasPrueba.cs",
+              "RelativeDocumentMoniker": "..\\Pruebas_spa\\Detalle_FacturasPrueba.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\Detalle_FacturasPrueba.cs",
+              "RelativeToolTip": "..\\Pruebas_spa\\Detalle_FacturasPrueba.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAA9wDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:50:04.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReservasPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\ReservasPrueba.cs",
+              "RelativeDocumentMoniker": "..\\Pruebas_spa\\ReservasPrueba.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\ReservasPrueba.cs",
+              "RelativeToolTip": "..\\Pruebas_spa\\ReservasPrueba.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwCQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:38:14.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Detalle_ComprasPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\Detalle_ComprasPrueba.cs",
+              "RelativeDocumentMoniker": "..\\Pruebas_spa\\Detalle_ComprasPrueba.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\Detalle_ComprasPrueba.cs",
+              "RelativeToolTip": "..\\Pruebas_spa\\Detalle_ComprasPrueba.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:34:18.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PersonasPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\PersonasPrueba.cs",
+              "RelativeDocumentMoniker": "..\\Pruebas_spa\\PersonasPrueba.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\PersonasPrueba.cs",
+              "RelativeToolTip": "..\\Pruebas_spa\\PersonasPrueba.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:33:57.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Turnos.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Turnos.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Turnos.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Turnos.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Turnos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:19:17.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Reservas.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Reservas.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Reservas.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Reservas.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Reservas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:19:12.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Detalle_Compras.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Detalle_Compras.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Detalle_Compras.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Detalle_Compras.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Detalle_Compras.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:18:21.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Clientes.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Clientes.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Clientes.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Clientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:18:12.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Cargos.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Cargos.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Cargos.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Cargos.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Cargos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:18:07.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Compras.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Compras.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Compras.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Compras.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Compras.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:18:14.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Detalle_Facturas.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Detalle_Facturas.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Detalle_Facturas.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Detalle_Facturas.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Detalle_Facturas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:18:26.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Servicios.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Servicios.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Servicios.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Servicios.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Servicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:19:15.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Proveedores.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Proveedores.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Proveedores.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Proveedores.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Proveedores.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:19:09.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Inventarios.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Inventarios.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Inventarios.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Inventarios.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Inventarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:18:44.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Empleados.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Empleados.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Empleados.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Empleados.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Empleados.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:18:24.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Empleados_Turnos.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Empleados_Turnos.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Empleados_Turnos.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Empleados_Turnos.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Empleados_Turnos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:18:28.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Detalle_Reservas.cs",
+              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Detalle_Reservas.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Detalle_Reservas.cs",
+              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Detalle_Reservas.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Detalle_Reservas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T17:18:25.262Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

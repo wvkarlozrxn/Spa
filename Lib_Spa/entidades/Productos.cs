@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lib_spa.entidades
 {
     public class Productos
     {
+        [Key]
         public int Id_Producto { get; set; }
         public string? Nombre { get; set; }
         public string? Descripcion { get; set; }
@@ -11,7 +13,7 @@ namespace Lib_spa.entidades
         public decimal Precio_Venta { get; set; }
         public int Id_Inventario { get; set; }
 
-        [ForeignKey("Inventarios")] public Inventarios? _Inventario { get; set; }
+        [ForeignKey("Id_Inventario")] public Inventarios? _Inventario { get; set; }
         public List<Detalle_Compras>? Detalle_Compras { get; set; }
     }
 
