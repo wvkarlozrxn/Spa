@@ -54,7 +54,7 @@ namespace presentacion_mst
 
         private void Actualizar()
         {
-            this.entidad!.Id_Factura = 4;
+            this.entidad!.Cantidad = 4;
 
             var entry = this.conexion!.Entry<Detalle_Facturas>(this.entidad);
             entry.State = EntityState.Modified;

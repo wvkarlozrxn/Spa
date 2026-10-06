@@ -51,7 +51,7 @@ namespace presentacion_mst
 
         private void Actualizar()
         {
-            this.entidad!.Id_Proveedor =1 ;
+            this.entidad!.Total = 2;
 
             var entry = this.conexion!.Entry<Compras>(this.entidad);
             entry.State = EntityState.Modified;

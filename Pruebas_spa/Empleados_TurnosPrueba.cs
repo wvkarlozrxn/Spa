@@ -49,7 +49,7 @@ namespace presentacion_mst
        private void Actualizar()
         {
             
-            this.entidad!.Id_Turno = 2;
+            this.entidad!.Id_Turno = 1;
 
             var entry = this.conexion!.Entry<Empleados_Turnos>(this.entidad);
             entry.State = EntityState.Modified;

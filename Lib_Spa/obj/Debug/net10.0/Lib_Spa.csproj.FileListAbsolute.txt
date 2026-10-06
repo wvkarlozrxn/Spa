@@ -1,0 +1,14 @@
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\bin\Debug\net10.0\Lib_spa.deps.json
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\bin\Debug\net10.0\Lib_spa.dll
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\bin\Debug\net10.0\Lib_spa.pdb
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\obj\Debug\net10.0\Lib_spa.csproj.AssemblyReference.cache
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\obj\Debug\net10.0\Lib_spa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\obj\Debug\net10.0\Lib_spa.AssemblyInfoInputs.cache
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\obj\Debug\net10.0\Lib_spa.AssemblyInfo.cs
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\obj\Debug\net10.0\Lib_spa.csproj.CoreCompileInputs.cache
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\obj\Debug\net10.0\Lib_spa.sourcelink.json
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\obj\Debug\net10.0\Lib_spa.dll
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\obj\Debug\net10.0\refint\Lib_spa.dll
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\obj\Debug\net10.0\Lib_spa.pdb
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\obj\Debug\net10.0\ref\Lib_spa.dll
+C:\Users\ederj\OneDrive\Desktop\spaproyecto\Spa\Lib_Spa\obj\Debug\net10.0\Lib_spa.csproj.Up2Date

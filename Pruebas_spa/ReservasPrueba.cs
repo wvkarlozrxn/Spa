@@ -49,7 +49,7 @@ namespace presentacion_mst
 
        private void Actualizar()
         {
-            this.entidad!.Id_Empleado = 1;
+            this.entidad!.Fecha = DateTime.Now;
 
             var entry = this.conexion!.Entry<Reservas>(this.entidad);
             entry.State = EntityState.Modified;

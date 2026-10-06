@@ -4,7 +4,7 @@
     {
         public static string ObtenerStringConexion()
         {
-            return "server=DESKTOP-8ODTBJ6\\SQLEXPRESS;database=DB_SPA;Integrated Security=True;TrustServerCertificate=true;";
+            return "server=PC-JAMES\\MSSQLSERVER01;database=DB_SPA;Integrated Security=True;TrustServerCertificate=true;";
         }
     }
 }
