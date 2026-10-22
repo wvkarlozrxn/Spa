@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lib_Spa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3e7bea13bcf19413b32e44accf59554fe716b74")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b82b9a122d1c54d6cc6ef3ebbefa65ec39be6620")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lib_Spa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lib_Spa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

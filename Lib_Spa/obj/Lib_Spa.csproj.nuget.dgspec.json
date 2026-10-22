@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\Lib_Spa.csproj": {}
+    "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\Lib_Spa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\Lib_Spa.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\Lib_Spa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\Lib_Spa.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\Lib_Spa.csproj",
         "projectName": "Lib_Spa",
-        "projectPath": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\Lib_Spa.csproj",
-        "packagesPath": "C:\\Users\\ederj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\Lib_Spa.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -73,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

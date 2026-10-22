@@ -1,66 +1,165 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Spa_milu\\",
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F584F21-87E0-1085-89A8-3D9563E6B335}|..\\Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\pruebas_spa\\empleados_turnosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F584F21-87E0-1085-89A8-3D9563E6B335}|..\\Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\pruebas_spa\\cargosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F584F21-87E0-1085-89A8-3D9563E6B335}|..\\Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\pruebas_spa\\reservasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\lib_spa\\interfaces\\iespaciosaplicacion - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F584F21-87E0-1085-89A8-3D9563E6B335}|..\\Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\pruebas_spa\\detalle_facturasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\lib_spa\\interfaces\\iespaciosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\reservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\lib_spa\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F584F21-87E0-1085-89A8-3D9563E6B335}|..\\Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\pruebas_spa\\detalle_comprasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\lib_spa\\implementaciones\\centrosaplicacion - copia (3).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\detalle_compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\lib_spa\\implementaciones\\centrosaplicacion - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F584F21-87E0-1085-89A8-3D9563E6B335}|..\\Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\pruebas_spa\\personasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\lib_spa\\implementaciones\\centrosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\lib_spa\\implementaciones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\cargos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\detalle_facturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\turnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (9).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (9).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\servicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (8).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (8).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (7).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (7).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\inventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (6).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (6).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\empleados_turnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (5).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (5).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (4).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (4).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\entidades\\detalle_reservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (3).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (3).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\ederj\\onedrive\\desktop\\spaproyecto\\spa\\lib_spa\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (2).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (2).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (18).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (18).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (17).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (17).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (16).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (16).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (15).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (15).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (14).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (14).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (13).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (13).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (12).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (12).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (11).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (11).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (10).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (10).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (10) - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (10) - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (10) - copia (5).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (10) - copia (5).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (10) - copia (4).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (10) - copia (4).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (10) - copia (3).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (10) - copia (3).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (10) - copia (2).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (10) - copia (2).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\controllers\\centroscontroller - copia - copia (10) - copia (2) - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\controllers\\centroscontroller - copia - copia (10) - copia (2) - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\lib_spa\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F584F21-87E0-1085-89A8-3D9563E6B335}|..\\Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\pruebas_spa\\pruebas_spa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\lib_spa\\entidades\\cargos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\lib_spa\\nucleo\\datosgenerales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\servicio_spa.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\servicio_spa.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\spa_milu\\servicio_spa\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5B63981C-2F19-43C5-B9B7-FFCC045DF86E}|servicio_spa\\servicio_spa.csproj|solutionrelative:servicio_spa\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451DB1BD-4183-2BC8-425B-912557B57968}|..\\Lib_Spa\\Lib_Spa.csproj|c:\\users\\usuario\\documents\\programacion\\proyecto\\lib_spa\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,236 +169,552 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Script.sql ",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\Script.sql",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\Script.sql",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\Script.sql",
-              "RelativeToolTip": "..\\Lib_Spa\\Script.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-10-06T18:23:37.72Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Empleados_TurnosPrueba.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\Empleados_TurnosPrueba.cs",
-              "RelativeDocumentMoniker": "..\\Pruebas_spa\\Empleados_TurnosPrueba.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\Empleados_TurnosPrueba.cs",
-              "RelativeToolTip": "..\\Pruebas_spa\\Empleados_TurnosPrueba.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBIAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "IEspaciosAplicacion - Copia.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\interfaces\\IEspaciosAplicacion - Copia.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\interfaces\\IEspaciosAplicacion - Copia.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\interfaces\\IEspaciosAplicacion - Copia.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\interfaces\\IEspaciosAplicacion - Copia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:50:37.967Z",
+              "WhenOpened": "2026-10-22T02:20:22.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Detalle_FacturasPrueba.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\Detalle_FacturasPrueba.cs",
-              "RelativeDocumentMoniker": "..\\Pruebas_spa\\Detalle_FacturasPrueba.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\Detalle_FacturasPrueba.cs",
-              "RelativeToolTip": "..\\Pruebas_spa\\Detalle_FacturasPrueba.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowDcAAAAJAAAAAAAAAA==",
+              "Title": "IEspaciosAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\interfaces\\IEspaciosAplicacion.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\interfaces\\IEspaciosAplicacion.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\interfaces\\IEspaciosAplicacion.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\interfaces\\IEspaciosAplicacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:50:04.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReservasPrueba.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\ReservasPrueba.cs",
-              "RelativeDocumentMoniker": "..\\Pruebas_spa\\ReservasPrueba.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\ReservasPrueba.cs",
-              "RelativeToolTip": "..\\Pruebas_spa\\ReservasPrueba.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAwwCQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:38:14.988Z"
+              "WhenOpened": "2026-10-22T02:19:10.375Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Detalle_ComprasPrueba.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\Detalle_ComprasPrueba.cs",
-              "RelativeDocumentMoniker": "..\\Pruebas_spa\\Detalle_ComprasPrueba.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\Detalle_ComprasPrueba.cs",
-              "RelativeToolTip": "..\\Pruebas_spa\\Detalle_ComprasPrueba.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:34:18.74Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PersonasPrueba.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\PersonasPrueba.cs",
-              "RelativeDocumentMoniker": "..\\Pruebas_spa\\PersonasPrueba.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Pruebas_spa\\PersonasPrueba.cs",
-              "RelativeToolTip": "..\\Pruebas_spa\\PersonasPrueba.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:33:57.818Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Turnos.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Turnos.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Turnos.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Turnos.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Turnos.cs",
+              "Title": "CentrosAplicacion - Copia (3).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\implementaciones\\CentrosAplicacion - Copia (3).cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\implementaciones\\CentrosAplicacion - Copia (3).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\implementaciones\\CentrosAplicacion - Copia (3).cs",
+              "RelativeToolTip": "..\\Lib_Spa\\implementaciones\\CentrosAplicacion - Copia (3).cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:19:17.497Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Reservas.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Reservas.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Reservas.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Reservas.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Reservas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:19:12.905Z"
+              "WhenOpened": "2026-10-22T02:18:46.662Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Detalle_Compras.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Detalle_Compras.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Detalle_Compras.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Detalle_Compras.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Detalle_Compras.cs",
+              "Title": "CentrosAplicacion - Copia.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\implementaciones\\CentrosAplicacion - Copia.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\implementaciones\\CentrosAplicacion - Copia.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\implementaciones\\CentrosAplicacion - Copia.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\implementaciones\\CentrosAplicacion - Copia.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:18:21.296Z"
+              "WhenOpened": "2026-10-22T02:17:42.642Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Clientes.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Clientes.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Clientes.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Clientes.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Clientes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IConexion.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\interfaces\\IConexion.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\interfaces\\IConexion.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\interfaces\\IConexion.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\interfaces\\IConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:18:12.862Z"
+              "WhenOpened": "2026-10-22T02:17:08.476Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Cargos.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Cargos.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Cargos.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Cargos.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Cargos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Title": "CentrosController - Copia.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia.cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia.cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:18:07.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Compras.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Compras.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Compras.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Compras.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Compras.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:18:14.187Z"
+              "WhenOpened": "2026-10-22T02:11:21.036Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Detalle_Facturas.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Detalle_Facturas.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Detalle_Facturas.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Detalle_Facturas.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Detalle_Facturas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CentrosController - Copia - Copia.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia.cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia.cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:18:26.871Z"
+              "WhenOpened": "2026-10-22T02:11:16.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CentrosController - Copia - Copia (9).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (9).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (9).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (9).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (9).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:11:10.557Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Servicios.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Servicios.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Servicios.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Servicios.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Servicios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CentrosController - Copia - Copia (8).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (8).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (8).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (8).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (8).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:19:15.5Z"
+              "WhenOpened": "2026-10-22T02:11:06.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CargosPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Pruebas_spa\\CargosPrueba.cs",
+              "RelativeDocumentMoniker": "..\\Pruebas_spa\\CargosPrueba.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Pruebas_spa\\CargosPrueba.cs",
+              "RelativeToolTip": "..\\Pruebas_spa\\CargosPrueba.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:03:25.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Program.cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Program.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Program.cs",
+              "RelativeToolTip": "servicio_spa\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:57:34.591Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Proveedores.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Proveedores.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Proveedores.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Proveedores.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Proveedores.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CentrosController - Copia - Copia (7).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (7).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (7).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (7).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (7).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:19:09.208Z"
+              "WhenOpened": "2026-10-22T02:11:02.231Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Inventarios.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Inventarios.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Inventarios.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Inventarios.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Inventarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CentrosController - Copia - Copia (6).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (6).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (6).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (6).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (6).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:18:44.352Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Empleados.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Empleados.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Empleados.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Empleados.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Empleados.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:18:24.327Z"
+              "WhenOpened": "2026-10-22T02:10:58.705Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "Empleados_Turnos.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Empleados_Turnos.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Empleados_Turnos.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Empleados_Turnos.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Empleados_Turnos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CentrosController - Copia - Copia (5).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (5).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (5).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (5).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (5).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:18:28.268Z"
+              "WhenOpened": "2026-10-22T02:10:54.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CentrosController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController.cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController.cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:05:02.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CentrosAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\implementaciones\\CentrosAplicacion.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\implementaciones\\CentrosAplicacion.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\implementaciones\\CentrosAplicacion.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\implementaciones\\CentrosAplicacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:06:27.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\implementaciones\\Conexion.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\implementaciones\\Conexion.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\implementaciones\\Conexion.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\implementaciones\\Conexion.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAqwAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:02:49.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CentrosController - Copia - Copia (4).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (4).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (4).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (4).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (4).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:10:50.152Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Detalle_Reservas.cs",
-              "DocumentMoniker": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Detalle_Reservas.cs",
-              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Detalle_Reservas.cs",
-              "ToolTip": "C:\\Users\\ederj\\OneDrive\\Desktop\\spaproyecto\\Spa\\Lib_Spa\\entidades\\Detalle_Reservas.cs",
-              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Detalle_Reservas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CentrosController - Copia - Copia (3).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (3).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (3).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (3).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (3).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T17:18:25.262Z"
+              "WhenOpened": "2026-10-22T02:10:42.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CentrosController - Copia - Copia (2).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (2).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (2).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (2).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (2).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:10:36.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CentrosController - Copia - Copia (18).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (18).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (18).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (18).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (18).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:10:32.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CentrosController - Copia - Copia (17).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (17).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (17).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (17).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (17).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:10:28.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CentrosController - Copia - Copia (16).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (16).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (16).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (16).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (16).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:10:25.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CentrosController - Copia - Copia (15).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (15).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (15).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (15).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (15).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:10:21.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CentrosController - Copia - Copia (14).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (14).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (14).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (14).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (14).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:10:18.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CentrosController - Copia - Copia (13).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (13).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (13).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (13).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (13).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:10:14.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CentrosController - Copia - Copia (12).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (12).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (12).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (12).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (12).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:10:10.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CentrosController - Copia - Copia (11).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (11).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (11).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (11).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (11).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:10:05.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CentrosController - Copia - Copia (10).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:10:01.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CentrosController - Copia - Copia (10) - Copia.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia.cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia.cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:09:56.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CentrosController - Copia - Copia (10) - Copia (5).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (5).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (5).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (5).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (5).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:09:53.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CentrosController - Copia - Copia (10) - Copia (3).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (3).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (3).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (3).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (3).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:09:43.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CentrosController - Copia - Copia (10) - Copia (2) - Copia.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (2) - Copia.cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (2) - Copia.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (2) - Copia.cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (2) - Copia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:09:31.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CentrosController - Copia - Copia (10) - Copia (4).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (4).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (4).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (4).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (4).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:09:08.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CentrosController - Copia - Copia (10) - Copia (2).cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (2).cs",
+              "RelativeDocumentMoniker": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (2).cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (2).cs",
+              "RelativeToolTip": "servicio_spa\\Controllers\\CentrosController - Copia - Copia (10) - Copia (2).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:09:03.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Script.sql ",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\Script.sql",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\Script.sql",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\Script.sql",
+              "RelativeToolTip": "..\\Lib_Spa\\Script.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-10-22T02:08:55.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Pruebas_spa",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Pruebas_spa\\Pruebas_spa.csproj",
+              "RelativeDocumentMoniker": "..\\Pruebas_spa\\Pruebas_spa.csproj",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Pruebas_spa\\Pruebas_spa.csproj",
+              "RelativeToolTip": "..\\Pruebas_spa\\Pruebas_spa.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-22T02:03:21.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Cargos.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\entidades\\Cargos.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\entidades\\Cargos.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\entidades\\Cargos.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\entidades\\Cargos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:03:10.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "servicio_spa\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\Properties\\launchSettings.json",
+              "RelativeToolTip": "servicio_spa\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-22T02:00:55.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "servicio_spa.http",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\servicio_spa.http",
+              "RelativeDocumentMoniker": "servicio_spa\\servicio_spa.http",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\servicio_spa.http",
+              "RelativeToolTip": "servicio_spa\\servicio_spa.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-10-22T01:56:44.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "servicio_spa\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Spa_milu\\servicio_spa\\appsettings.Development.json",
+              "RelativeToolTip": "servicio_spa\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-22T01:54:50.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Datosgenerales.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\nucleo\\Datosgenerales.cs",
+              "RelativeDocumentMoniker": "..\\Lib_Spa\\nucleo\\Datosgenerales.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\proyecto\\Lib_Spa\\nucleo\\Datosgenerales.cs",
+              "RelativeToolTip": "..\\Lib_Spa\\nucleo\\Datosgenerales.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:51:22.73Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -43,11 +43,8 @@ namespace Lib_spa.interfaces
         DbSet<Servicios>? Servicios { get; set; }
 
         DbSet<Turnos>? Turnos { get; set; }
-        
+
         EntityEntry<T> Entry<T>(T entity) where T : class;
         int SaveChanges();
     }
 }
-
-
-
