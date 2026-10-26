@@ -1,6 +1,14 @@
 <Solution>
+<<<<<<< HEAD
   <Project Path="../Consola_Spa/Consola_Spa.csproj" />
   <Project Path="../Lib_Spa/Lib_Spa.csproj" />
   <Project Path="../Pruebas_spa/Pruebas_spa.csproj" />
   <Project Path="servicio_spa/servicio_spa.csproj" Id="5b63981c-2f19-43c5-b9b7-ffcc045df86e" />
+=======
+  <Project Path="../../../../../../Desktop/Proyecto/Consola_Spa/Consola_Spa.csproj" />
+  <Project Path="../../../../../../Desktop/Proyecto/Front_spa/Front_spa.csproj" Id="c3fe874b-25dd-4f48-b88e-cc47d94845b8" />
+  <Project Path="../../../../../../Desktop/Proyecto/Lib_Spa/Lib_Spa.csproj" />
+  <Project Path="../../../../../../Desktop/Proyecto/Pruebas_spa/Pruebas_spa.csproj" />
+  <Project Path="../../../../../../Desktop/Proyecto/servicio_spa/servicio_spa.csproj" Id="5d9c40f7-389c-451b-889c-32c3d5bd7344" />
+>>>>>>> 4d33c06 (integracion con la parte de juan, agrega servicio_spa y front_spa)
 </Solution>

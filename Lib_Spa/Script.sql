@@ -156,6 +156,30 @@ CREATE TABLE [Metodos_Pagos] (
     [Metodo_Pago] NVARCHAR(100) NULL,
     [Id_Pago] INT NOT NULL REFERENCES [Pagos]([Id_Pago])
 );
+
+CREATE TABLE [Auditorias] (
+    [Id_Auditoria] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
+    [Fecha] DATETIME NOT NULL,
+);
+
+
+CREATE TABLE [Permisos] (
+    [Id_Permiso] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
+    [Permiso] NVARCHAR(250) NULL
+);
+
+
+CREATE TABLE [Roles] (
+    [Id_Rol] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
+    [Descripcion] NVARCHAR(250) NULL
+);
+
+CREATE TABLE [Usuarios] (
+    [Id_Usuario] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
+    [Nombre] NVARCHAR(250) NULL,
+    [Usuario] NVARCHAR(100) NULL,
+    [Contraseña] NVARCHAR(250) NULL
+);
   
 
   -- ==========================================

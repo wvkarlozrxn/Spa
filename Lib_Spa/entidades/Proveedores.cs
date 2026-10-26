@@ -2,7 +2,7 @@
 
 namespace Lib_spa.entidades
 {
-    public class Proveedores
+    public class Proveedores  
     {
         [Key]
         public int Id_Proveedor { get; set; }

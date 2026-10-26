@@ -42,7 +42,19 @@ namespace Lib_spa.interfaces
 
         DbSet<Servicios>? Servicios { get; set; }
 
+<<<<<<< HEAD
         DbSet<Turnos>? Turnos { get; set; }
+=======
+        DbSet<Turnos>? Turnos { get; set; } 
+
+        DbSet<Turnos>? Auditorias { get; set; }
+
+        DbSet<Turnos>? Usuarios { get; set; }
+
+        DbSet<Turnos>? Roles { get; set; }
+
+        DbSet<Turnos>? Permisos { get; set; }
+>>>>>>> 4d33c06 (integracion con la parte de juan, agrega servicio_spa y front_spa)
 
         EntityEntry<T> Entry<T>(T entity) where T : class;
         int SaveChanges();

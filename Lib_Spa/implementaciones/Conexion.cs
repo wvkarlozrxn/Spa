@@ -50,6 +50,13 @@ namespace Lib_spa.implementaciones
 
         public DbSet<Servicios>? Servicios { get; set; }
 
-        public DbSet<Turnos>? Turnos { get; set; }
+        public DbSet<Turnos>? Auditorias { get; set; }
+
+        public DbSet<Turnos>? Usuarios { get; set; }
+
+        public DbSet<Turnos>? Roles { get; set; }
+
+        public DbSet<Turnos>? Permisos { get; set; }
+        
     }
 }

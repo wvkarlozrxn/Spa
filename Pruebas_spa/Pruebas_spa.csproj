@@ -12,7 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Consola_Spa\Consola_Spa.csproj" />
     <ProjectReference Include="..\Lib_Spa\Lib_spa.csproj" />
+    <ProjectReference Include="..\servicio_spa\servicio_spa.csproj" />
   </ItemGroup>
 
   <ItemGroup>
