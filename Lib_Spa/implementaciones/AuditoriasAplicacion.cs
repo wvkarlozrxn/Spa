@@ -14,15 +14,8 @@ namespace Lib_spa.interfaces
 
         public Auditorias Actualizar(Auditorias entidad)
         {
-            if (entidad.Id == 0)
+            if (entidad.Id_Auditoria == 0)
                 throw new Exception("No se guardo");
-
-            if (string.IsNullOrEmpty(entidad.Nombre) ||
-                string.IsNullOrEmpty(entidad.Direccion))
-                throw new Exception("Faltan valores");
-
-            if (entidad.Fecha == null)
-                entidad.Fecha = DateTime.Now;
 
             var entry = this.IConexion!.Entry<Auditorias>(entidad);
             entry.State = EntityState.Modified;
@@ -32,7 +25,7 @@ namespace Lib_spa.interfaces
 
         public Auditorias Borrar(Auditorias entidad)
         {
-            if (entidad.Id == 0)
+            if (entidad.Id_Auditoria == 0)
                 throw new Exception("No se guardo");
 
             this.IConexion.Auditorias!.Remove(entidad!);
@@ -42,25 +35,19 @@ namespace Lib_spa.interfaces
 
         public List<Auditorias> Consultar()
         {
-            return this.IConexion.Auditorias!
-                .ToList();
+            return this.IConexion.Auditorias!.ToList();
         }
 
         public Auditorias Insertar(Auditorias entidad)
         {
-            if (entidad.Id != 0)
+            if (entidad.Id_Auditoria != 0)
                 throw new Exception("Ya se guardo");
 
-            if (string.IsNullOrEmpty(entidad.Nombre) ||
-                string.IsNullOrEmpty(entidad.Direccion))
-                throw new Exception("Faltan valores");
-
-            if (entidad.Fecha == null)
+            if (entidad.Fecha == default)
                 entidad.Fecha = DateTime.Now;
 
             this.IConexion.Auditorias!.Add(entidad!);
             this.IConexion.SaveChanges();
-
             return entidad;
         }
     }

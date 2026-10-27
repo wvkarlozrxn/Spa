@@ -14,15 +14,11 @@ namespace Lib_spa.interfaces
 
         public Permisos Actualizar(Permisos entidad)
         {
-            if (entidad.Id == 0)
+            if (entidad.Id_Permiso == 0)
                 throw new Exception("No se guardo");
 
-            if (string.IsNullOrEmpty(entidad.Nombre) ||
-                string.IsNullOrEmpty(entidad.Direccion))
+            if (string.IsNullOrEmpty(entidad.Permiso))
                 throw new Exception("Faltan valores");
-
-            if (entidad.Fecha == null)
-                entidad.Fecha = DateTime.Now;
 
             var entry = this.IConexion!.Entry<Permisos>(entidad);
             entry.State = EntityState.Modified;
@@ -32,7 +28,7 @@ namespace Lib_spa.interfaces
 
         public Permisos Borrar(Permisos entidad)
         {
-            if (entidad.Id == 0)
+            if (entidad.Id_Permiso == 0)
                 throw new Exception("No se guardo");
 
             this.IConexion.Permisos!.Remove(entidad!);
@@ -42,25 +38,19 @@ namespace Lib_spa.interfaces
 
         public List<Permisos> Consultar()
         {
-            return this.IConexion.Permisos!
-                .ToList();
+            return this.IConexion.Permisos!.ToList();
         }
 
         public Permisos Insertar(Permisos entidad)
         {
-            if (entidad.Id != 0)
+            if (entidad.Id_Permiso != 0)
                 throw new Exception("Ya se guardo");
 
-            if (string.IsNullOrEmpty(entidad.Nombre) ||
-                string.IsNullOrEmpty(entidad.Direccion))
+            if (string.IsNullOrEmpty(entidad.Permiso))
                 throw new Exception("Faltan valores");
-
-            if (entidad.Fecha == null)
-                entidad.Fecha = DateTime.Now;
 
             this.IConexion.Permisos!.Add(entidad!);
             this.IConexion.SaveChanges();
-
             return entidad;
         }
     }

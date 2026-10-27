@@ -14,15 +14,13 @@ namespace Lib_spa.interfaces
 
         public Usuarios Actualizar(Usuarios entidad)
         {
-            if (entidad.Id == 0)
+            if (entidad.Id_Usuario == 0)
                 throw new Exception("No se guardo");
 
             if (string.IsNullOrEmpty(entidad.Nombre) ||
-                string.IsNullOrEmpty(entidad.Direccion))
+                string.IsNullOrEmpty(entidad.Usuario) ||
+                string.IsNullOrEmpty(entidad.Contraseña))
                 throw new Exception("Faltan valores");
-
-            if (entidad.Fecha == null)
-                entidad.Fecha = DateTime.Now;
 
             var entry = this.IConexion!.Entry<Usuarios>(entidad);
             entry.State = EntityState.Modified;
@@ -32,7 +30,7 @@ namespace Lib_spa.interfaces
 
         public Usuarios Borrar(Usuarios entidad)
         {
-            if (entidad.Id == 0)
+            if (entidad.Id_Usuario == 0)
                 throw new Exception("No se guardo");
 
             this.IConexion.Usuarios!.Remove(entidad!);
@@ -42,25 +40,21 @@ namespace Lib_spa.interfaces
 
         public List<Usuarios> Consultar()
         {
-            return this.IConexion.Usuarios!
-                .ToList();
+            return this.IConexion.Usuarios!.ToList();
         }
 
         public Usuarios Insertar(Usuarios entidad)
         {
-            if (entidad.Id != 0)
+            if (entidad.Id_Usuario != 0)
                 throw new Exception("Ya se guardo");
 
             if (string.IsNullOrEmpty(entidad.Nombre) ||
-                string.IsNullOrEmpty(entidad.Direccion))
+                string.IsNullOrEmpty(entidad.Usuario) ||
+                string.IsNullOrEmpty(entidad.Contraseña))
                 throw new Exception("Faltan valores");
-
-            if (entidad.Fecha == null)
-                entidad.Fecha = DateTime.Now;
 
             this.IConexion.Usuarios!.Add(entidad!);
             this.IConexion.SaveChanges();
-
             return entidad;
         }
     }

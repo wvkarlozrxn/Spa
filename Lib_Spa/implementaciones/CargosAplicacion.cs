@@ -36,17 +36,9 @@ namespace Lib_spa.interfaces
             return entidad;
         }
 
-        public List<Cargos> Consultar(Cargos entidad)
+        public List<Cargos> Consultar()
         {
-            var cargoExistente = this.IConexion.Cargos!
-                .FirstOrDefault(x => x.Cargo == entidad.Cargo);
-
-            if (cargoExistente == null)
-                throw new Exception("No existe ese cargo");
-
-            return this.IConexion.Cargos!
-            .Where(x => x.Cargo == entidad.Cargo)
-            .ToList();
+            return this.IConexion.Cargos!.ToList();
         }
 
         public Cargos Insertar(Cargos entidad)

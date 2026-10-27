@@ -3,8 +3,8 @@ using Lib_spa.entidades;
 using Lib_spa.interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Lib_spa.implementaciones 
-{ 
+namespace Lib_spa.implementaciones
+{
 
     public class Conexion : DbContext, IConexion
     {
@@ -49,14 +49,11 @@ namespace Lib_spa.implementaciones
         public DbSet<Reservas>? Reservas { get; set; }
 
         public DbSet<Servicios>? Servicios { get; set; }
+        public DbSet<Auditorias>? Auditorias { get; set; }
+        public DbSet<Usuarios>? Usuarios { get; set; }
+        public DbSet<Roles>? Roles { get; set; }
+        public DbSet<Permisos>? Permisos { get; set; }
 
-        public DbSet<Turnos>? Auditorias { get; set; }
-
-        public DbSet<Turnos>? Usuarios { get; set; }
-
-        public DbSet<Turnos>? Roles { get; set; }
-
-        public DbSet<Turnos>? Permisos { get; set; }
-        
+        public DbSet<Turnos>? Turnos { get; set; }
     }
 }

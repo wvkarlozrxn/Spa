@@ -21,3 +21,16 @@ C:\Users\USUARIO\Documents\PROGRAMACION\Proyecto\Lib_Spa\obj\Debug\net10.0\Lib_S
 C:\Users\USUARIO\Documents\PROGRAMACION\Proyecto\Lib_Spa\obj\Debug\net10.0\Lib_Spa.dll
 C:\Users\USUARIO\Documents\PROGRAMACION\Proyecto\Lib_Spa\obj\Debug\net10.0\refint\Lib_Spa.dll
 C:\Users\USUARIO\Documents\PROGRAMACION\Proyecto\Lib_Spa\obj\Debug\net10.0\Lib_Spa.pdb
+C:\Users\user\Desktop\Proyecto\Lib_Spa\obj\Debug\net10.0\Lib_Spa.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Proyecto\Lib_Spa\obj\Debug\net10.0\Lib_Spa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Proyecto\Lib_Spa\obj\Debug\net10.0\Lib_Spa.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Proyecto\Lib_Spa\obj\Debug\net10.0\Lib_Spa.AssemblyInfo.cs
+C:\Users\user\Desktop\Proyecto\Lib_Spa\obj\Debug\net10.0\Lib_Spa.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto\Lib_Spa\obj\Debug\net10.0\Lib_Spa.sourcelink.json
+C:\Users\user\Desktop\Proyecto\Lib_Spa\obj\Debug\net10.0\Lib_Spa.dll
+C:\Users\user\Desktop\Proyecto\Lib_Spa\obj\Debug\net10.0\refint\Lib_Spa.dll
+C:\Users\user\Desktop\Proyecto\Lib_Spa\obj\Debug\net10.0\Lib_Spa.pdb
+C:\Users\user\Desktop\Proyecto\Lib_Spa\bin\Debug\net10.0\Lib_Spa.deps.json
+C:\Users\user\Desktop\Proyecto\Lib_Spa\bin\Debug\net10.0\Lib_Spa.dll
+C:\Users\user\Desktop\Proyecto\Lib_Spa\bin\Debug\net10.0\Lib_Spa.pdb
+C:\Users\user\Desktop\Proyecto\Lib_Spa\obj\Debug\net10.0\ref\Lib_Spa.dll

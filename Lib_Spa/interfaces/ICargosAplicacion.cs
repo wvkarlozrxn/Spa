@@ -6,7 +6,7 @@ namespace Lib_spa.interfaces
     {
         Cargos Insertar(Cargos entidad);
         Cargos Actualizar(Cargos entidad);
-        List<Cargos> Consultar(Cargos entidad);
+        List<Cargos> Consultar();
         Cargos Borrar(Cargos entidad);
     }
 }

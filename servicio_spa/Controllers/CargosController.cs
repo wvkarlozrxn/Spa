@@ -18,7 +18,7 @@ namespace servicios_Cargos.Controllers
         [HttpGet]
         public List<Cargos> Consultar()
         {
-            return this.ICargosAplicacion.Consultar();
+           return this.ICargosAplicacion.Consultar();
         }
 
         [HttpPost]

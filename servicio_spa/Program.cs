@@ -1,12 +1,12 @@
-using aplicaciones_centros.implementaciones;
-using aplicaciones_centros.interfaces;
+using Lib_spa.implementaciones;
+using Lib_spa.interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<IConexion, Conexion>();
-builder.Services.AddScoped<ICentrosAplicacion, CentrosAplicacion>();
-builder.Services.AddScoped<IEspaciosAplicacion, EspaciosAplicacion>();
+//builder.Services.AddScoped<ICentrosAplicacion, CentrosAplicacion>();
+//builder.Services.AddScoped<IEspaciosAplicacion, EspaciosAplicacion>();
 
 var app = builder.Build();
 
