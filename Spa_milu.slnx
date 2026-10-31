@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Front_spa/Front_spa.csproj" />
+  <Project Path="Lib_Spa/Lib_spa.csproj" />
+  <Project Path="presentaciones_Spa/presentaciones_horarios.csproj" />
+  <Project Path="Pruebas_spa/Pruebas_spa.csproj" />
+  <Project Path="servicio_spa/servicio_spa.csproj" />
+</Solution>

@@ -1735,9 +1735,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_Spa.csproj",
-      "projectName": "Lib_Spa",
-      "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_Spa.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_spa.csproj",
+      "projectName": "Lib_spa",
+      "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_spa.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\obj\\",
       "projectStyle": "PackageReference",

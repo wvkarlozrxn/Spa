@@ -1,7 +1,0 @@
-<Solution>
-  <Project Path="../Consola_Spa/Consola_Spa.csproj" />
-  <Project Path="../Lib_Spa/Lib_Spa.csproj" />
-  <Project Path="../Pruebas_spa/Pruebas_spa.csproj" />
-  <Project Path="../servicio_spa/servicio_spa.csproj" Id="5b63981c-2f19-43c5-b9b7-ffcc045df86e" />
-  <Project Path="../Front_spa/Front_spa.csproj" Id="c3fe874b-25dd-4f48-b88e-cc47d94845b8" />
-</Solution>

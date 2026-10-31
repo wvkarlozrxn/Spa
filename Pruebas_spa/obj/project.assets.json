@@ -1801,7 +1801,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "Lib_Spa": "1.0.0"
+          "Lib_spa": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Consola_Spa.dll": {}
@@ -1810,24 +1810,24 @@
           "bin/placeholder/Consola_Spa.dll": {}
         }
       },
-      "Lib_Spa/1.0.0": {
+      "Lib_spa/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.12"
         },
         "compile": {
-          "bin/placeholder/Lib_Spa.dll": {}
+          "bin/placeholder/Lib_spa.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Lib_Spa.dll": {}
+          "bin/placeholder/Lib_spa.dll": {}
         }
       },
       "servicio_spa/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "Lib_Spa": "1.0.0"
+          "Lib_spa": "1.0.0"
         },
         "compile": {
           "bin/placeholder/servicio_spa.dll": {}
@@ -4032,10 +4032,10 @@
       "path": "../Consola_Spa/Consola_Spa.csproj",
       "msbuildProject": "../Consola_Spa/Consola_Spa.csproj"
     },
-    "Lib_Spa/1.0.0": {
+    "Lib_spa/1.0.0": {
       "type": "project",
-      "path": "../Lib_Spa/Lib_Spa.csproj",
-      "msbuildProject": "../Lib_Spa/Lib_Spa.csproj"
+      "path": "../Lib_Spa/Lib_spa.csproj",
+      "msbuildProject": "../Lib_Spa/Lib_spa.csproj"
     },
     "servicio_spa/1.0.0": {
       "type": "project",
@@ -4046,7 +4046,7 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "Consola_Spa >= 1.0.0",
-      "Lib_Spa >= 1.0.0",
+      "Lib_spa >= 1.0.0",
       "MSTest >= 4.0.2",
       "servicio_spa >= 1.0.0"
     ]
@@ -4087,8 +4087,8 @@
             "C:\\Users\\user\\Desktop\\Proyecto\\Consola_Spa\\Consola_Spa.csproj": {
               "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\Consola_Spa\\Consola_Spa.csproj"
             },
-            "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_Spa.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_Spa.csproj"
+            "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_spa.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_spa.csproj"
             },
             "C:\\Users\\user\\Desktop\\Proyecto\\servicio_spa\\servicio_spa.csproj": {
               "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\servicio_spa\\servicio_spa.csproj"

@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "hXO6nmyGILg=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\user\\Desktop\\Proyecto\\presentaciones_Spa\\presentaciones_horarios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "No se encuentra el proyecto \"C:\\Users\\user\\Desktop\\Proyecto\\aplicaciones_horarios\\aplicaciones_horarios.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\presentaciones_Spa\\presentaciones_horarios.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\Proyecto\\presentaciones_Spa\\presentaciones_horarios.csproj",
+      "libraryId": "C:\\Users\\user\\Desktop\\Proyecto\\aplicaciones_horarios\\aplicaciones_horarios.csproj",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
