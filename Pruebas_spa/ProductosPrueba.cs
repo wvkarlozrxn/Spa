@@ -35,7 +35,7 @@ namespace presentacion_mst
                 Descripcion = "crema exfoleante",
                 Precio_Compra =20000,
                 Precio_Venta =25000,
-                Id_Inventario = 1,
+                Inventario = 1,
 
             };
             this.conexion.Productos!.Add(this.entidad!);
@@ -51,7 +51,7 @@ namespace presentacion_mst
 
         private void Actualizar()
         {
-            this.entidad!.Id_Inventario = 1;
+            this.entidad!.Inventario = 1;
 
             var entry = this.conexion!.Entry<Productos>(this.entidad);
             entry.State = EntityState.Modified;

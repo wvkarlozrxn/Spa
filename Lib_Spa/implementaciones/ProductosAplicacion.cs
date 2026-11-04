@@ -21,7 +21,7 @@ namespace Lib_spa.interfaces
                 string.IsNullOrEmpty(entidad.Descripcion) ||
                 entidad.Precio_Compra <= 0 ||
                 entidad.Precio_Venta <= 0 ||
-                entidad.Id_Inventario <= 0)
+                entidad.Inventario <= 0)
                 throw new Exception("Faltan valores O son inválidos");
 
             var entry = this.IConexion!.Entry<Productos>(entidad);
@@ -55,7 +55,7 @@ namespace Lib_spa.interfaces
                 string.IsNullOrEmpty(entidad.Descripcion) ||
                 entidad.Precio_Compra <= 0 ||
                 entidad.Precio_Venta <= 0 ||
-                entidad.Id_Inventario <= 0)
+                entidad.Inventario <= 0)
                 throw new Exception("Faltan valores O son inválidos");
 
             this.IConexion.Productos!.Add(entidad!);

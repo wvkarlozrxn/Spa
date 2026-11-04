@@ -19,7 +19,7 @@ namespace Lib_spa.interfaces
 
             if (entidad.Compra <= 0 ||
                 entidad.Total <= 0 ||
-                entidad.Id_Proveedor <= 0)
+                entidad.Proveedor <= 0)
                 throw new Exception("Faltan valores o datos erroneos");
 
                 entidad.Fecha = DateTime.Now;
@@ -53,7 +53,7 @@ namespace Lib_spa.interfaces
 
             if (entidad.Compra <= 0 ||
                 entidad.Total <= 0 ||
-                entidad.Id_Proveedor <= 0)
+                entidad.Proveedor <= 0)
                 throw new Exception("Faltan valores o datos erroneos");
 
                 entidad.Fecha = DateTime.Now;

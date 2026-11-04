@@ -1,4 +1,4 @@
-﻿namespace presentaciones_horarios.interfaces
+﻿namespace presentaciones_Spa.interfaces
 {
     public interface IComunicaciones
     {

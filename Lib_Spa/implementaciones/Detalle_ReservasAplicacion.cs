@@ -19,8 +19,8 @@ namespace Lib_spa.interfaces
 
             if (entidad.Cantidad <= 0 ||
                 entidad.Precio <= 0 ||
-                entidad.Id_Reserva <= 0 ||
-                entidad.Id_Servicio <= 0)
+                entidad.Reserva <= 0 ||
+                entidad.Servicio <= 0)
                 throw new Exception("Faltan valores o datos erroneos");
 
 
@@ -53,8 +53,8 @@ namespace Lib_spa.interfaces
 
             if (entidad.Cantidad <= 0 ||
                 entidad.Precio <= 0 ||
-                entidad.Id_Reserva <= 0 ||
-                entidad.Id_Servicio <= 0)
+                entidad.Reserva <= 0 ||
+                entidad.Servicio <= 0)
                 throw new Exception("Faltan valores o datos erroneos");
 
             this.IConexion.Detalle_Reservas!.Add(entidad!);

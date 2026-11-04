@@ -1,8 +1,8 @@
-﻿using presentaciones_horarios.interfaces;
+﻿using presentaciones_Spa.interfaces;
 using Newtonsoft.Json;
 using System.Text;
 
-namespace presentaciones_horarios.implementaciones
+namespace presentaciones_Spa.implementaciones
 {
     public class Comunicaciones : IComunicaciones
     {

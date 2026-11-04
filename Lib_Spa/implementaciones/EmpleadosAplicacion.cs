@@ -17,8 +17,8 @@ namespace Lib_spa.interfaces
             if (entidad.Id_Empleado == 0)
                 throw new Exception("No se guardo");
 
-            if (entidad.Id_Persona <= 0 ||
-                entidad.Id_Cargo <= 0 )
+            if (entidad.Persona <= 0 ||
+                entidad.Cargo <= 0 )
                 throw new Exception("Faltan valores");
 
             if (entidad.Fecha_Contrato == null)
@@ -51,8 +51,8 @@ namespace Lib_spa.interfaces
             if (entidad.Id_Empleado != 0)
                 throw new Exception("Ya se guardo");
 
-            if (entidad.Id_Persona <= 0 ||
-                entidad.Id_Cargo <= 0  )
+            if (entidad.Persona <= 0 ||
+                entidad.Cargo <= 0  )
                 throw new Exception("Faltan valores");
 
             if (entidad.Fecha_Contrato == null)

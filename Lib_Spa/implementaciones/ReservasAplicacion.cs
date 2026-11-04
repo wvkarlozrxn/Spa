@@ -18,8 +18,8 @@ namespace Lib_spa.interfaces
                 throw new Exception("No se guardo");
 
             if (entidad.Estado == 0 ||
-                entidad.Id_Empleado == 0 ||
-                entidad.Id_Cliente == 0 )
+                entidad.Empleado == 0 ||
+                entidad.Cliente == 0 )
                 throw new Exception("Faltan valores O son inválidos");
 
             if (entidad.Fecha == null)
@@ -53,8 +53,8 @@ namespace Lib_spa.interfaces
                 throw new Exception("Ya se guardo");
 
             if (entidad.Estado == 0 ||
-                entidad.Id_Empleado == 0 ||
-                entidad.Id_Cliente == 0)
+                entidad.Empleado == 0 ||
+                entidad.Cliente == 0)
                 throw new Exception("Faltan valores O son inválidos");
 
             if (entidad.Fecha == null)

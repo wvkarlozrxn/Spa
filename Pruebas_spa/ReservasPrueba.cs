@@ -33,8 +33,8 @@ namespace presentacion_mst
             {
                Fecha = DateTime.Now,
                Estado =1,
-               Id_Empleado = 1,
-               Id_Cliente = 1
+               Empleado = 1,
+               Cliente = 1
             };
             this.conexion.Reservas!.Add(this.entidad!);
             this.conexion.SaveChanges();

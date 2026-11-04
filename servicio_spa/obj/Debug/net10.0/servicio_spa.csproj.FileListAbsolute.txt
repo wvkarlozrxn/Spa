@@ -79,3 +79,4 @@ C:\Users\user\Desktop\Proyecto\servicio_spa\obj\Debug\net10.0\refint\servicio_sp
 C:\Users\user\Desktop\Proyecto\servicio_spa\obj\Debug\net10.0\servicio_spa.pdb
 C:\Users\user\Desktop\Proyecto\servicio_spa\obj\Debug\net10.0\servicio_spa.genruntimeconfig.cache
 C:\Users\user\Desktop\Proyecto\servicio_spa\obj\Debug\net10.0\ref\servicio_spa.dll
+C:\Users\user\Desktop\Proyecto\servicio_spa\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

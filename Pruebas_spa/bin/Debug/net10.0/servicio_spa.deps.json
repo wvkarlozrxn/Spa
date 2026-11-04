@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "servicio_spa/1.0.0": {
         "dependencies": {
-          "Lib_Spa": "1.0.0"
+          "Lib_spa": "1.0.0"
         },
         "runtime": {
           "servicio_spa.dll": {}
@@ -381,12 +381,12 @@
           }
         }
       },
-      "Lib_Spa/1.0.0": {
+      "Lib_spa/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.12"
         },
         "runtime": {
-          "Lib_Spa.dll": {
+          "Lib_spa.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -575,7 +575,7 @@
       "path": "system.security.cryptography.protecteddata/9.0.11",
       "hashPath": "system.security.cryptography.protecteddata.9.0.11.nupkg.sha512"
     },
-    "Lib_Spa/1.0.0": {
+    "Lib_spa/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

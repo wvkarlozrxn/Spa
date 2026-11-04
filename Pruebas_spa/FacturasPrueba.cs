@@ -35,7 +35,7 @@ namespace presentacion_mst
                 Subtotal = 2000,
                 Descuento =500,
                 Total = 1500,
-                Id_Reserva = 1,
+                Reserva = 1,
                 
             };
             this.conexion.Facturas!.Add(this.entidad!);
@@ -51,7 +51,7 @@ namespace presentacion_mst
 
        private void Actualizar()
         {
-            this.entidad!.Id_Reserva = 1;
+            this.entidad!.Reserva = 1;
 
             var entry = this.conexion!.Entry<Facturas>(this.entidad);
             entry.State = EntityState.Modified;

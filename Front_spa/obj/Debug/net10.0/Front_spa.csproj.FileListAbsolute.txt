@@ -96,3 +96,5 @@ C:\Users\user\Desktop\Proyecto\Front_spa\obj\Debug\net10.0\refint\Front_spa.dll
 C:\Users\user\Desktop\Proyecto\Front_spa\obj\Debug\net10.0\Front_spa.pdb
 C:\Users\user\Desktop\Proyecto\Front_spa\obj\Debug\net10.0\Front_spa.genruntimeconfig.cache
 C:\Users\user\Desktop\Proyecto\Front_spa\obj\Debug\net10.0\ref\Front_spa.dll
+C:\Users\user\Desktop\Proyecto\Front_spa\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\user\Desktop\Proyecto\Front_spa\obj\Debug\net10.0\Front_spa.csproj.Up2Date

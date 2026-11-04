@@ -344,9 +344,6 @@ C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\es\MSTestAdapter.Pl
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\MSTest.TestAdapter.dll
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\MSTestAdapter.PlatformServices.dll
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\Microsoft.TestPlatform.AdapterUtilities.dll
-C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\Consola_Spa.deps.json
-C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\Consola_Spa.runtimeconfig.json
-C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\Consola_Spa.exe
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\servicio_spa.deps.json
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\servicio_spa.runtimeconfig.json
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\appsettings.Development.json
@@ -648,11 +645,9 @@ C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\runtimes\win-x86\na
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\runtimes\win-x86\native\covrun64.dll
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\runtimes\win-x86\native\covrunarm64.dll
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\runtimes\win-x86\native\msdia140.dll
-C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\Consola_Spa.dll
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\Lib_Spa.dll
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\MSTest.TestFramework.Extensions.dll
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\servicio_spa.dll
-C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\Consola_Spa.pdb
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\Lib_Spa.pdb
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\servicio_spa.pdb
 C:\Users\user\Desktop\Proyecto\Pruebas_spa\bin\Debug\net10.0\MSTest.TestFramework.Extensions.xml

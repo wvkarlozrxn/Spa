@@ -34,8 +34,8 @@ namespace presentacion_mst
                 Cantidad = 25,
                 Precio_Unidad = 125.50m,
                 Subtotal=25632.52m,
-                Id_Compra = 1,
-                Id_Producto = 1
+                Compra = 1,
+                Producto = 1
 
             };
             this.conexion.Detalle_Compras!.Add(this.entidad!);
@@ -51,7 +51,7 @@ namespace presentacion_mst
 
        private void Actualizar()
         {
-            this.entidad!.Id_Compra = 1;
+            this.entidad!.Compra = 1;
 
             var entry = this.conexion!.Entry<Detalle_Compras>(this.entidad);
             entry.State = EntityState.Modified;

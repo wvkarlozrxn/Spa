@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Proyecto\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F257FEB-577E-5FAB-D8BB-624D275628EF}|presentaciones_Spa\\presentaciones_Spa.csproj|c:\\users\\user\\desktop\\proyecto\\presentaciones_spa\\implementaciones\\cargospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F257FEB-577E-5FAB-D8BB-624D275628EF}|presentaciones_Spa\\presentaciones_Spa.csproj|solutionrelative:presentaciones_spa\\implementaciones\\cargospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 238,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CargosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto\\presentaciones_Spa\\implementaciones\\CargosPresentacion.cs",
+              "RelativeDocumentMoniker": "presentaciones_Spa\\implementaciones\\CargosPresentacion.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto\\presentaciones_Spa\\implementaciones\\CargosPresentacion.cs",
+              "RelativeToolTip": "presentaciones_Spa\\implementaciones\\CargosPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T15:57:13.268Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

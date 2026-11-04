@@ -12,6 +12,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\aplicaciones_horarios\aplicaciones_horarios.csproj" />
+	  <ProjectReference Include="..\Lib_Spa\Lib_spa.csproj" />
 	</ItemGroup>
 
 </Project>
