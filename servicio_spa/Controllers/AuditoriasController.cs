@@ -2,7 +2,7 @@ using Lib_spa.entidades;
 using Lib_spa.interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace servicios_Auditorias.Controllers
+namespace servicio_spa.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]

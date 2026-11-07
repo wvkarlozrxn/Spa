@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Lib_spa\Lib_spa.csproj" />
-    <ProjectReference Include="..\servicio_spa\servicio_spa.csproj" />
   </ItemGroup>
 
   <ItemGroup>

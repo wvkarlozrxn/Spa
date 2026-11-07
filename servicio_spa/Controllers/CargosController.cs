@@ -2,7 +2,7 @@ using Lib_spa.entidades;
 using Lib_spa.interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace servicios_Cargos.Controllers
+namespace servicio_spa.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]
@@ -15,7 +15,7 @@ namespace servicios_Cargos.Controllers
             this.ICargosAplicacion = ICargosAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Cargos> Consultar()
         {
            return this.ICargosAplicacion.Consultar();
