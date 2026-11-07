@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Proyecto\\presentaciones_Spa\\presentaciones_Spa.csproj": {}
+    "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_spa.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_spa.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj",
         "projectName": "Lib_spa",
-        "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_spa.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -73,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -351,20 +351,20 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\Proyecto\\presentaciones_Spa\\presentaciones_Spa.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Proyecto\\presentaciones_Spa\\presentaciones_Spa.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj",
         "projectName": "presentaciones_Spa",
-        "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\presentaciones_Spa\\presentaciones_Spa.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Proyecto\\presentaciones_Spa\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\presentaciones_Spa\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -380,11 +380,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\Proyecto\\aplicaciones_horarios\\aplicaciones_horarios.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\aplicaciones_horarios\\aplicaciones_horarios.csproj"
+              "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj"
               },
-              "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_spa.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_spa.csproj"
+              "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj"
               }
             }
           }
@@ -427,7 +427,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

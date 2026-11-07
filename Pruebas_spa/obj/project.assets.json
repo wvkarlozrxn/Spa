@@ -1797,19 +1797,6 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Consola_Spa/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "Lib_spa": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Consola_Spa.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Consola_Spa.dll": {}
-        }
-      },
       "Lib_spa/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -4027,11 +4014,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Consola_Spa/1.0.0": {
-      "type": "project",
-      "path": "../Consola_Spa/Consola_Spa.csproj",
-      "msbuildProject": "../Consola_Spa/Consola_Spa.csproj"
-    },
     "Lib_spa/1.0.0": {
       "type": "project",
       "path": "../Lib_Spa/Lib_spa.csproj",
@@ -4045,30 +4027,30 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Consola_Spa >= 1.0.0",
+      "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Consola_Spa\\Consola_Spa.csproj",
       "Lib_spa >= 1.0.0",
       "MSTest >= 4.0.2",
       "servicio_spa >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Proyecto\\Pruebas_spa\\Pruebas_spa.csproj",
+      "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Pruebas_spa\\Pruebas_spa.csproj",
       "projectName": "Pruebas_spa",
-      "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\Pruebas_spa\\Pruebas_spa.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Proyecto\\Pruebas_spa\\obj\\",
+      "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Pruebas_spa\\Pruebas_spa.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Pruebas_spa\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4084,14 +4066,14 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\user\\Desktop\\Proyecto\\Consola_Spa\\Consola_Spa.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\Consola_Spa\\Consola_Spa.csproj"
+            "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Consola_Spa\\Consola_Spa.csproj": {
+              "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Consola_Spa\\Consola_Spa.csproj"
             },
-            "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_spa.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\Lib_Spa\\Lib_spa.csproj"
+            "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj": {
+              "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj"
             },
-            "C:\\Users\\user\\Desktop\\Proyecto\\servicio_spa\\servicio_spa.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\Proyecto\\servicio_spa\\servicio_spa.csproj"
+            "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\servicio_spa\\servicio_spa.csproj": {
+              "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\servicio_spa\\servicio_spa.csproj"
             }
           }
         }
@@ -4134,7 +4116,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -4413,6 +4395,15 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "No se encuentra el proyecto \"C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Consola_Spa\\Consola_Spa.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "libraryId": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Consola_Spa\\Consola_Spa.csproj",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
     {
       "code": "NU1902",
       "level": "Warning",
