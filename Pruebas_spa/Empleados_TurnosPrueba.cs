@@ -31,8 +31,8 @@ namespace presentacion_mst
         {
             this.entidad = new Empleados_Turnos()
             {
-                Turno = 1,
-                Empleado = 1,
+                Id_Turno = 1,
+                Id_Empleado = 1,
 
             };
             this.conexion.Empleados_Turnos!.Add(this.entidad!);
@@ -49,7 +49,7 @@ namespace presentacion_mst
        private void Actualizar()
         {
             
-            this.entidad!.Turno = 1;
+            this.entidad!.Id_Turno = 1;
 
             var entry = this.conexion!.Entry<Empleados_Turnos>(this.entidad);
             entry.State = EntityState.Modified;

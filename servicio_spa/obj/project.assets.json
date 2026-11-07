@@ -1183,11 +1183,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\servicio_spa\\servicio_spa.csproj",
       "projectName": "servicio_spa",
       "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\servicio_spa\\servicio_spa.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\servicio_spa\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Spa\\servicio_spa\\servicio_spa.csproj",
+      "projectName": "servicio_spa",
+      "projectPath": "C:\\Users\\user\\Desktop\\Spa\\servicio_spa\\servicio_spa.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Spa\\servicio_spa\\obj\\",
+>>>>>>> 35d708d (validacion de las pruebas)
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1209,8 +1217,13 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj": {
               "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj"
+=======
+            "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\Lib_spa.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\Lib_spa.csproj"
+>>>>>>> 35d708d (validacion de las pruebas)
             }
           }
         }

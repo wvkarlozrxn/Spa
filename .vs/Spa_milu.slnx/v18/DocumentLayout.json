@@ -1,9 +1,101 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Proyecto\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Spa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F257FEB-577E-5FAB-D8BB-624D275628EF}|presentaciones_Spa\\presentaciones_Spa.csproj|c:\\users\\user\\desktop\\proyecto\\presentaciones_spa\\implementaciones\\cargospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\user\\desktop\\spa\\pruebas_spa\\comprasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|solutionrelative:pruebas_spa\\comprasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\user\\desktop\\spa\\pruebas_spa\\detalle_comprasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|solutionrelative:pruebas_spa\\detalle_comprasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\user\\desktop\\spa\\pruebas_spa\\detalle_facturasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|solutionrelative:pruebas_spa\\detalle_facturasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\user\\desktop\\spa\\pruebas_spa\\reservasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|solutionrelative:pruebas_spa\\reservasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\user\\desktop\\spa\\pruebas_spa\\productosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|solutionrelative:pruebas_spa\\productosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\user\\desktop\\spa\\pruebas_spa\\pagosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|solutionrelative:pruebas_spa\\pagosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\user\\desktop\\spa\\pruebas_spa\\facturasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|solutionrelative:pruebas_spa\\facturasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\user\\desktop\\spa\\pruebas_spa\\empleadosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|solutionrelative:pruebas_spa\\empleadosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\user\\desktop\\spa\\pruebas_spa\\empleados_turnosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|solutionrelative:pruebas_spa\\empleados_turnosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\user\\desktop\\spa\\pruebas_spa\\detalle_reservasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|solutionrelative:pruebas_spa\\detalle_reservasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|c:\\users\\user\\desktop\\spa\\pruebas_spa\\pruebas_spa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ACC24169-32FF-0E2A-8C6A-FFC5E020A51F}|Pruebas_spa\\Pruebas_spa.csproj|solutionrelative:pruebas_spa\\pruebas_spa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|c:\\users\\user\\desktop\\spa\\lib_spa\\lib_spa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|solutionrelative:lib_spa\\lib_spa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52238278-694B-BB47-0C25-CDE8E7184C00}|Front_spa\\Front_spa.csproj|c:\\users\\user\\desktop\\spa\\front_spa\\front_spa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{52238278-694B-BB47-0C25-CDE8E7184C00}|Front_spa\\Front_spa.csproj|solutionrelative:front_spa\\front_spa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|c:\\users\\user\\desktop\\spa\\lib_spa\\implementaciones\\reservasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|solutionrelative:lib_spa\\implementaciones\\reservasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|c:\\users\\user\\desktop\\spa\\lib_spa\\implementaciones\\productosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|solutionrelative:lib_spa\\implementaciones\\productosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|c:\\users\\user\\desktop\\spa\\lib_spa\\implementaciones\\metodos_pagosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|solutionrelative:lib_spa\\implementaciones\\metodos_pagosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|c:\\users\\user\\desktop\\spa\\lib_spa\\implementaciones\\facturasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|solutionrelative:lib_spa\\implementaciones\\facturasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|c:\\users\\user\\desktop\\spa\\lib_spa\\implementaciones\\empleados_turnosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|solutionrelative:lib_spa\\implementaciones\\empleados_turnosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|c:\\users\\user\\desktop\\spa\\lib_spa\\implementaciones\\empleadosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|solutionrelative:lib_spa\\implementaciones\\empleadosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|c:\\users\\user\\desktop\\spa\\lib_spa\\implementaciones\\detalle_reservasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|solutionrelative:lib_spa\\implementaciones\\detalle_reservasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|c:\\users\\user\\desktop\\spa\\lib_spa\\implementaciones\\detalle_facturasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|solutionrelative:lib_spa\\implementaciones\\detalle_facturasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|c:\\users\\user\\desktop\\spa\\lib_spa\\implementaciones\\detalle_comprasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|solutionrelative:lib_spa\\implementaciones\\detalle_comprasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|c:\\users\\user\\desktop\\spa\\lib_spa\\implementaciones\\comprasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C934E0AB-43FB-F125-7D66-4C776CC9D4DD}|Lib_Spa\\Lib_spa.csproj|solutionrelative:lib_spa\\implementaciones\\comprasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F257FEB-577E-5FAB-D8BB-624D275628EF}|presentaciones_Spa\\presentaciones_Spa.csproj|c:\\users\\user\\desktop\\spa\\presentaciones_spa\\implementaciones\\cargospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F257FEB-577E-5FAB-D8BB-624D275628EF}|presentaciones_Spa\\presentaciones_Spa.csproj|solutionrelative:presentaciones_spa\\implementaciones\\cargospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,20 +106,318 @@
       "DocumentGroups": [
         {
           "DockedWidth": 238,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReservasPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\ReservasPrueba.cs",
+              "RelativeDocumentMoniker": "Pruebas_spa\\ReservasPrueba.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\ReservasPrueba.cs",
+              "RelativeToolTip": "Pruebas_spa\\ReservasPrueba.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAuwCQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:53:09.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductosPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\ProductosPrueba.cs",
+              "RelativeDocumentMoniker": "Pruebas_spa\\ProductosPrueba.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\ProductosPrueba.cs",
+              "RelativeToolTip": "Pruebas_spa\\ProductosPrueba.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwDUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:52:56.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PagosPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\PagosPrueba.cs",
+              "RelativeDocumentMoniker": "Pruebas_spa\\PagosPrueba.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\PagosPrueba.cs",
+              "RelativeToolTip": "Pruebas_spa\\PagosPrueba.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAmwCIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:52:44.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ComprasPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\ComprasPrueba.cs",
+              "RelativeDocumentMoniker": "Pruebas_spa\\ComprasPrueba.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\ComprasPrueba.cs",
+              "RelativeToolTip": "Pruebas_spa\\ComprasPrueba.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAewCkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:50:53.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Detalle_FacturasPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\Detalle_FacturasPrueba.cs",
+              "RelativeDocumentMoniker": "Pruebas_spa\\Detalle_FacturasPrueba.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\Detalle_FacturasPrueba.cs",
+              "RelativeToolTip": "Pruebas_spa\\Detalle_FacturasPrueba.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:51:29.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Detalle_ComprasPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\Detalle_ComprasPrueba.cs",
+              "RelativeDocumentMoniker": "Pruebas_spa\\Detalle_ComprasPrueba.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\Detalle_ComprasPrueba.cs",
+              "RelativeToolTip": "Pruebas_spa\\Detalle_ComprasPrueba.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwDUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:51:11.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FacturasPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\FacturasPrueba.cs",
+              "RelativeDocumentMoniker": "Pruebas_spa\\FacturasPrueba.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\FacturasPrueba.cs",
+              "RelativeToolTip": "Pruebas_spa\\FacturasPrueba.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwDUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:52:30.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmpleadosPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\EmpleadosPrueba.cs",
+              "RelativeDocumentMoniker": "Pruebas_spa\\EmpleadosPrueba.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\EmpleadosPrueba.cs",
+              "RelativeToolTip": "Pruebas_spa\\EmpleadosPrueba.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAmwDMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:51:56.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Empleados_TurnosPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\Empleados_TurnosPrueba.cs",
+              "RelativeDocumentMoniker": "Pruebas_spa\\Empleados_TurnosPrueba.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\Empleados_TurnosPrueba.cs",
+              "RelativeToolTip": "Pruebas_spa\\Empleados_TurnosPrueba.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAmwDMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:51:47.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Detalle_ReservasPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\Detalle_ReservasPrueba.cs",
+              "RelativeDocumentMoniker": "Pruebas_spa\\Detalle_ReservasPrueba.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\Detalle_ReservasPrueba.cs",
+              "RelativeToolTip": "Pruebas_spa\\Detalle_ReservasPrueba.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAmwDMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:51:39.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Pruebas_spa",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\Pruebas_spa.csproj",
+              "RelativeDocumentMoniker": "Pruebas_spa\\Pruebas_spa.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Pruebas_spa\\Pruebas_spa.csproj",
+              "RelativeToolTip": "Pruebas_spa\\Pruebas_spa.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-07T16:50:13.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Lib_spa",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\Lib_spa.csproj",
+              "RelativeDocumentMoniker": "Lib_Spa\\Lib_spa.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\Lib_spa.csproj",
+              "RelativeToolTip": "Lib_Spa\\Lib_spa.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-07T16:50:06.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Front_spa",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Front_spa\\Front_spa.csproj",
+              "RelativeDocumentMoniker": "Front_spa\\Front_spa.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Front_spa\\Front_spa.csproj",
+              "RelativeToolTip": "Front_spa\\Front_spa.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-07T16:50:05.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReservasAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\ReservasAplicacion.cs",
+              "RelativeDocumentMoniker": "Lib_Spa\\implementaciones\\ReservasAplicacion.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\ReservasAplicacion.cs",
+              "RelativeToolTip": "Lib_Spa\\implementaciones\\ReservasAplicacion.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAA0wDgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:48:57.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductosAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\ProductosAplicacion.cs",
+              "RelativeDocumentMoniker": "Lib_Spa\\implementaciones\\ProductosAplicacion.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\ProductosAplicacion.cs",
+              "RelativeToolTip": "Lib_Spa\\implementaciones\\ProductosAplicacion.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwDkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:48:39.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Metodos_PagosAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\Metodos_PagosAplicacion.cs",
+              "RelativeDocumentMoniker": "Lib_Spa\\implementaciones\\Metodos_PagosAplicacion.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\Metodos_PagosAplicacion.cs",
+              "RelativeToolTip": "Lib_Spa\\implementaciones\\Metodos_PagosAplicacion.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAA0wDUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:48:17.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FacturasAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\FacturasAplicacion.cs",
+              "RelativeDocumentMoniker": "Lib_Spa\\implementaciones\\FacturasAplicacion.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\FacturasAplicacion.cs",
+              "RelativeToolTip": "Lib_Spa\\implementaciones\\FacturasAplicacion.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwDoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:47:55.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Empleados_TurnosAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\Empleados_TurnosAplicacion.cs",
+              "RelativeDocumentMoniker": "Lib_Spa\\implementaciones\\Empleados_TurnosAplicacion.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\Empleados_TurnosAplicacion.cs",
+              "RelativeToolTip": "Lib_Spa\\implementaciones\\Empleados_TurnosAplicacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:47:19.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EmpleadosAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\EmpleadosAplicacion.cs",
+              "RelativeDocumentMoniker": "Lib_Spa\\implementaciones\\EmpleadosAplicacion.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\EmpleadosAplicacion.cs",
+              "RelativeToolTip": "Lib_Spa\\implementaciones\\EmpleadosAplicacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:46:48.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Detalle_ReservasAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\Detalle_ReservasAplicacion.cs",
+              "RelativeDocumentMoniker": "Lib_Spa\\implementaciones\\Detalle_ReservasAplicacion.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\Detalle_ReservasAplicacion.cs",
+              "RelativeToolTip": "Lib_Spa\\implementaciones\\Detalle_ReservasAplicacion.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwDUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:46:08.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Detalle_FacturasAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\Detalle_FacturasAplicacion.cs",
+              "RelativeDocumentMoniker": "Lib_Spa\\implementaciones\\Detalle_FacturasAplicacion.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\Detalle_FacturasAplicacion.cs",
+              "RelativeToolTip": "Lib_Spa\\implementaciones\\Detalle_FacturasAplicacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:45:35.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Detalle_ComprasAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\Detalle_ComprasAplicacion.cs",
+              "RelativeDocumentMoniker": "Lib_Spa\\implementaciones\\Detalle_ComprasAplicacion.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\Detalle_ComprasAplicacion.cs",
+              "RelativeToolTip": "Lib_Spa\\implementaciones\\Detalle_ComprasAplicacion.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAcwDkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:44:46.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ComprasAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\ComprasAplicacion.cs",
+              "RelativeDocumentMoniker": "Lib_Spa\\implementaciones\\ComprasAplicacion.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\implementaciones\\ComprasAplicacion.cs",
+              "RelativeToolTip": "Lib_Spa\\implementaciones\\ComprasAplicacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:44:15.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "CargosPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto\\presentaciones_Spa\\implementaciones\\CargosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Spa\\presentaciones_Spa\\implementaciones\\CargosPresentacion.cs",
               "RelativeDocumentMoniker": "presentaciones_Spa\\implementaciones\\CargosPresentacion.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto\\presentaciones_Spa\\implementaciones\\CargosPresentacion.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Spa\\presentaciones_Spa\\implementaciones\\CargosPresentacion.cs",
               "RelativeToolTip": "presentaciones_Spa\\implementaciones\\CargosPresentacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T15:57:13.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-02T15:57:13.268Z"
             }
           ]
         }

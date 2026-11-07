@@ -19,7 +19,7 @@ namespace Lib_spa.interfaces
 
             if (string.IsNullOrEmpty(entidad.Descripcion) ||
                 string.IsNullOrEmpty(entidad.Metodo_Pago) ||
-                entidad.Pago <= 0)
+                entidad.Id_Pago <= 0)
                 throw new Exception("Faltan valores O son inválidos");
 
             var entry = this.IConexion!.Entry<Metodos_Pagos>(entidad);
@@ -51,7 +51,7 @@ namespace Lib_spa.interfaces
 
             if (string.IsNullOrEmpty(entidad.Descripcion) ||
                 string.IsNullOrEmpty(entidad.Metodo_Pago) ||
-                entidad.Pago <= 0)
+                entidad.Id_Pago <= 0)
                 throw new Exception("Faltan valores O son inválidos ");
 
             this.IConexion.Metodos_Pagos!.Add(entidad!);

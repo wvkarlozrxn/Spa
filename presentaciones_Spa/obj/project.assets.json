@@ -1786,7 +1786,11 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+<<<<<<< HEAD
       "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj",
+=======
+      "C:\\Users\\user\\Desktop\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj",
+>>>>>>> 35d708d (validacion de las pruebas)
       "Lib_spa >= 1.0.0",
       "Newtonsoft.Json >= 13.0.3"
     ]
@@ -1798,11 +1802,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj",
       "projectName": "presentaciones_Spa",
       "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\presentaciones_Spa\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj",
+      "projectName": "presentaciones_Spa",
+      "projectPath": "C:\\Users\\user\\Desktop\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Spa\\presentaciones_Spa\\obj\\",
+>>>>>>> 35d708d (validacion de las pruebas)
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1824,11 +1836,19 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj": {
               "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj"
             },
             "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj": {
               "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj"
+=======
+            "C:\\Users\\user\\Desktop\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj"
+            },
+            "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\Lib_spa.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\Lib_spa.csproj"
+>>>>>>> 35d708d (validacion de las pruebas)
             }
           }
         }
@@ -2153,8 +2173,13 @@
     {
       "code": "NU1104",
       "level": "Error",
+<<<<<<< HEAD
       "message": "No se encuentra el proyecto \"C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
       "libraryId": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj",
+=======
+      "message": "No se encuentra el proyecto \"C:\\Users\\user\\Desktop\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "libraryId": "C:\\Users\\user\\Desktop\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj",
+>>>>>>> 35d708d (validacion de las pruebas)
       "targetGraphs": [
         "net10.0"
       ]

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\obj\\",
+=======
+    "C:\\Users\\user\\Desktop\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\Lib_spa.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\Lib_spa.csproj",
+        "projectName": "Lib_spa",
+        "projectPath": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\Lib_spa.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\obj\\",
+>>>>>>> 35d708d (validacion de las pruebas)
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -351,6 +365,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -359,6 +374,16 @@
         "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\presentaciones_Spa\\obj\\",
+=======
+    "C:\\Users\\user\\Desktop\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj",
+        "projectName": "presentaciones_Spa",
+        "projectPath": "C:\\Users\\user\\Desktop\\Spa\\presentaciones_Spa\\presentaciones_Spa.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Spa\\presentaciones_Spa\\obj\\",
+>>>>>>> 35d708d (validacion de las pruebas)
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -380,11 +405,19 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj": {
                 "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj"
               },
               "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj": {
                 "projectPath": "C:\\Users\\USUARIO\\Documents\\PROGRAMACION\\rama_de_avance\\Spa\\Lib_Spa\\Lib_spa.csproj"
+=======
+              "C:\\Users\\user\\Desktop\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\Spa\\aplicaciones_horarios\\aplicaciones_horarios.csproj"
+              },
+              "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\Lib_spa.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\Spa\\Lib_Spa\\Lib_spa.csproj"
+>>>>>>> 35d708d (validacion de las pruebas)
               }
             }
           }

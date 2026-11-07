@@ -33,8 +33,8 @@ namespace presentacion_mst
             {
                 Cantidad = 2,
                 Precio = 250000,
-                Reserva = 1,
-                Servicio = 1
+                Id_Reserva = 1,
+                Id_Servicio = 1
             };
             this.conexion.Detalle_Reservas!.Add(this.entidad!);
             this.conexion.SaveChanges();
@@ -49,7 +49,7 @@ namespace presentacion_mst
 
         private void Actualizar()
         {
-            this.entidad!.Reserva = 1;
+            this.entidad!.Id_Reserva = 1;
 
             var entry = this.conexion!.Entry<Detalle_Reservas>(this.entidad);
             entry.State = EntityState.Modified;

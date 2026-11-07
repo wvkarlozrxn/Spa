@@ -31,8 +31,8 @@ namespace presentacion_mst
         {
             this.entidad = new Empleados()
             {
-                Persona = 1,
-                Cargo = 1,
+                Id_Persona = 1,
+                Id_Cargo = 1,
                 Fecha_Contrato = DateTime.Now
 
             };
@@ -49,7 +49,7 @@ namespace presentacion_mst
 
        private void Actualizar()
         {
-            this.entidad!.Persona = 1;
+            this.entidad!.Id_Persona = 1;
 
             var entry = this.conexion!.Entry<Empleados>(this.entidad);
             entry.State = EntityState.Modified;

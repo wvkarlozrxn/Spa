@@ -11,9 +11,9 @@ namespace Lib_spa.entidades
         public decimal Compra { get; set; }
         public decimal Total { get; set; }
         public int Estado { get; set; }
-        public int Proveedor { get; set; }
+        public int Id_Proveedor { get; set; }
 
-        [ForeignKey("Proveedor")] public Proveedores? _Proveedor { get; set; }
+        [ForeignKey("Id_Proveedor")] public Proveedores? _Proveedor { get; set; }
 
 
         public List<Detalle_Compras>? Detalle_Compras { get; set; }

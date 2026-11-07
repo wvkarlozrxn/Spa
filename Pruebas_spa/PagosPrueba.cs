@@ -32,7 +32,7 @@ namespace presentacion_mst
             this.entidad = new Pagos()
             {
                 Fecha_Pago = DateTime.Now,
-                Factura = 1
+                Id_Factura = 1
 
             };
             this.conexion.Pagos!.Add(this.entidad!);

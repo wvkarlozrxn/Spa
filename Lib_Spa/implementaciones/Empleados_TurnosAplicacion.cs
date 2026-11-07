@@ -17,8 +17,8 @@ namespace Lib_spa.interfaces
             if (entidad.Id_Empleado_Turno == 0)
                 throw new Exception("No se guardo");
 
-            if (entidad.Empleado <= 0 ||
-                entidad.Turno <= 0 )
+            if (entidad.Id_Empleado <= 0 ||
+                entidad.Id_Turno <= 0 )
                 throw new Exception("Faltan valores o datos erroneos");
 
             var entry = this.IConexion!.Entry<Empleados_Turnos>(entidad);
@@ -48,8 +48,8 @@ namespace Lib_spa.interfaces
             if (entidad.Id_Empleado_Turno != 0)
                 throw new Exception("Ya se guardo");
 
-            if (entidad.Empleado <= 0 ||
-                entidad.Turno <= 0)
+            if (entidad.Id_Empleado <= 0 ||
+                entidad.Id_Turno <= 0)
                 throw new Exception("Faltan valores o datos erroneos    ");
 
             this.IConexion.Empleados_Turnos!.Add(entidad!);

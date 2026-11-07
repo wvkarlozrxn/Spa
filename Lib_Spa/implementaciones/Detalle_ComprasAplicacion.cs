@@ -20,8 +20,8 @@ namespace Lib_spa.interfaces
             if (entidad.Cantidad <= 0 ||
                 entidad.Precio_Unidad <= 0 ||
                 entidad.Subtotal <= 0 ||
-                entidad.Compra <= 0 ||
-                entidad.Producto <= 0)
+                entidad.Id_Compra <= 0 ||
+                entidad.Id_Producto <= 0)
                 throw new Exception("Faltan valores o datos erroneos");
 
             var entry = this.IConexion!.Entry<Detalle_Compras>(entidad);
@@ -54,8 +54,8 @@ namespace Lib_spa.interfaces
             if (entidad.Cantidad <= 0 ||
                 entidad.Precio_Unidad <= 0 ||
                 entidad.Subtotal <= 0 ||
-                entidad.Compra <= 0 ||
-                entidad.Producto <= 0)
+                entidad.Id_Compra <= 0 ||
+                entidad.Id_Producto <= 0)
                 throw new Exception("Faltan valores o datos erroneos");
 
             this.IConexion.Detalle_Compras!.Add(entidad!);

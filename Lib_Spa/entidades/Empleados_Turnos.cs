@@ -7,11 +7,11 @@ namespace Lib_spa.entidades
     {
         [Key]
         public int Id_Empleado_Turno { get; set; }
-        public int Turno { get; set; }
-        public int Empleado { get; set; }
+        public int Id_Turno { get; set; }
+        public int Id_Empleado { get; set; }
 
-        [ForeignKey("Turno")] public Turnos? _Turno { get; set; }
-        [ForeignKey("Empleado")] public Empleados? _Empleado { get; set; }
+        [ForeignKey("Id_Turno")] public Turnos? _Turno { get; set; }
+        [ForeignKey("Id_Empleado")] public Empleados? _Empleado { get; set; }
     }
 
 }

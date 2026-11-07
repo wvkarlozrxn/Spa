@@ -20,7 +20,7 @@ namespace Lib_spa.interfaces
             if (entidad.Subtotal <= 0 ||
                 entidad.Descuento <= 0 ||
                 entidad.Total <= 0 ||
-                entidad.Reserva <= 0 )
+                entidad.Id_Reserva <= 0 )
                 throw new Exception("Faltan valores o son inválidos");
 
             if (entidad.Fecha == null)
@@ -56,7 +56,7 @@ namespace Lib_spa.interfaces
             if (entidad.Subtotal <= 0 ||
                 entidad.Descuento <= 0 ||
                 entidad.Total <= 0 ||
-                entidad.Reserva <= 0)
+                entidad.Id_Reserva <= 0)
                 throw new Exception("Faltan valores o son inválidos");
 
             if (entidad.Fecha == null)

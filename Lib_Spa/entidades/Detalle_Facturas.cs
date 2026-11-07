@@ -7,14 +7,14 @@ namespace Lib_spa.entidades
     {
         [Key]
         public int Id_Detalle_Factura { get; set; }
-        public int Factura { get; set; }
-        public int Servicio { get; set; }
+        public int Id_Factura { get; set; }
+        public int Id_Servicio { get; set; }
         public int Cantidad { get; set; }
         public decimal Precio_Unidad { get; set; }
         public decimal Subtotal { get; set; }
 
-        [ForeignKey("Factura")] public Facturas? _Factura { get; set; }
-        [ForeignKey("Servicio")] public Servicios? _Servicio { get; set; }
+        [ForeignKey("Id_Factura")] public Facturas? _Factura { get; set; }
+        [ForeignKey("Id_Servicio")] public Servicios? _Servicio { get; set; }
     }
 
 }

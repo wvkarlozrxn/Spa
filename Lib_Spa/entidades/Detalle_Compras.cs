@@ -10,11 +10,11 @@ namespace Lib_spa.entidades
         public int Cantidad { get; set; }
         public decimal Precio_Unidad { get; set; }
         public decimal Subtotal { get; set; }
-        public int Compra { get; set; }
-        public int Producto { get; set; }
+        public int Id_Compra { get; set; }
+        public int Id_Producto { get; set; }
 
-        [ForeignKey("Compra")] public Compras? _Compra { get; set; }
-        [ForeignKey("Producto")] public Productos? _Producto { get; set; }
+        [ForeignKey("Id_Compra")] public Compras? _Compra { get; set; }
+        [ForeignKey("Id_Producto")] public Productos? _Producto { get; set; }
     }
 
 }

@@ -21,8 +21,8 @@ namespace Lib_spa.interfaces
             if (entidad.Cantidad <= 0 ||
                 entidad.Precio_Unidad <= 0 ||
                 entidad.Subtotal <= 0 ||
-                entidad.Factura <= 0 ||
-                entidad.Servicio <= 0)
+                entidad.Id_Factura <= 0 ||
+                entidad.Id_Servicio <= 0)
                 throw new Exception("Faltan valores o datos erroneos");
 
             var entry = this.IConexion!.Entry<Detalle_Facturas>(entidad);
@@ -55,8 +55,8 @@ namespace Lib_spa.interfaces
             if (entidad.Cantidad <= 0 ||
                 entidad.Precio_Unidad <= 0 ||
                 entidad.Subtotal <= 0 ||
-                entidad.Factura <= 0 ||
-                entidad.Servicio <= 0)
+                entidad.Id_Factura <= 0 ||
+                entidad.Id_Servicio <= 0)
                 throw new Exception("Faltan valores o datos erroneos");
 
             this.IConexion.Detalle_Facturas!.Add(entidad!);

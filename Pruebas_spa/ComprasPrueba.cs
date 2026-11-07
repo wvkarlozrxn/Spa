@@ -35,7 +35,7 @@ namespace presentacion_mst
                 Compra = 152364,
                 Total = 123654,
                 Estado = 12365,
-                Proveedor = 1
+                Id_Proveedor = 1
 
             };
             this.conexion.Compras!.Add(this.entidad!);
