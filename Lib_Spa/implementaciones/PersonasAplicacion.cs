@@ -1,5 +1,6 @@
 ﻿using Lib_spa.entidades;
 using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
 
 namespace Lib_spa.interfaces
 {
@@ -21,6 +22,12 @@ namespace Lib_spa.interfaces
                 string.IsNullOrEmpty(entidad.Telefono) ||
                 string.IsNullOrEmpty(entidad.Cedula))
                 throw new Exception("Faltan valores O son inválidos");
+
+            if (!Regex.IsMatch(entidad.Nombre, @"^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$"))
+                throw new Exception("El nombre solo debe contener letras");
+
+            if (!Regex.IsMatch(entidad.Cedula, @"^\d+$") || !Regex.IsMatch(entidad.Telefono, @"^\d+$"))
+                throw new Exception("Este campo solo debe contener números");
 
             var entry = this.IConexion!.Entry<Personas>(entidad);
             entry.State = EntityState.Modified;
@@ -53,6 +60,12 @@ namespace Lib_spa.interfaces
                 string.IsNullOrEmpty(entidad.Telefono) ||
                 string.IsNullOrEmpty(entidad.Cedula))
                 throw new Exception("Faltan valores O son inválidos");
+
+            if (!Regex.IsMatch(entidad.Nombre, @"^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$"))
+                throw new Exception("El nombre solo debe contener letras");
+
+            if (!Regex.IsMatch(entidad.Cedula, @"^\d+$") || !Regex.IsMatch(entidad.Telefono, @"^\d+$"))
+                throw new Exception("Este campo solo debe contener números");
 
             this.IConexion.Personas!.Add(entidad!);
             this.IConexion.SaveChanges();

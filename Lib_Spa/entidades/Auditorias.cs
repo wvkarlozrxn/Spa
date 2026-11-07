@@ -7,7 +7,8 @@ namespace Lib_spa.entidades
         [Key]
 
         public int Id_Auditoria { get; set; }
-        public DateTime Fecha { get; set; }    
+        public DateTime Fecha { get; set; } 
+        public string? Usuario { get; set; }
 
     }
 }

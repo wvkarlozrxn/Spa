@@ -1,5 +1,6 @@
 ﻿using Lib_spa.entidades;
 using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
 
 namespace Lib_spa.interfaces
 {
@@ -22,6 +23,9 @@ namespace Lib_spa.interfaces
                 entidad.Duracion <= 0 ||
                 entidad.Precio <= 0 )
                 throw new Exception("Faltan valores O inválidos");
+
+            if (!Regex.IsMatch(entidad.Nombre, @"^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$"))
+                throw new Exception("El nombre solo debe contener letras");
 
             var entry = this.IConexion!.Entry<Servicios>(entidad);
             entry.State = EntityState.Modified;

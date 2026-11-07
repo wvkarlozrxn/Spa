@@ -1,5 +1,6 @@
 ﻿using Lib_spa.entidades;
 using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
 
 namespace Lib_spa.interfaces
 {
@@ -21,6 +22,9 @@ namespace Lib_spa.interfaces
                 string.IsNullOrEmpty(entidad.Usuario) ||
                 string.IsNullOrEmpty(entidad.Contraseña))
                 throw new Exception("Faltan valores");
+
+            if (!Regex.IsMatch(entidad.Nombre, @"^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$"))
+                throw new Exception("El nombre solo debe contener letras");
 
             var entry = this.IConexion!.Entry<Usuarios>(entidad);
             entry.State = EntityState.Modified;

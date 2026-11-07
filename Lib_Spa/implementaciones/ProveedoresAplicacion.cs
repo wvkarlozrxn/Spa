@@ -1,5 +1,6 @@
 ﻿using Lib_spa.entidades;
 using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
 
 namespace Lib_spa.interfaces
 {
@@ -22,6 +23,12 @@ namespace Lib_spa.interfaces
                 string.IsNullOrEmpty(entidad.Telefono) ||
                 string.IsNullOrEmpty(entidad.Direccion))
                 throw new Exception("Faltan valores");
+
+            if (!Regex.IsMatch(entidad.Nombre, @"^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$"))
+                throw new Exception("El nombre solo debe contener letras");
+
+            if (!Regex.IsMatch(entidad.Telefono, @"^\d+$") || !Regex.IsMatch(entidad.Telefono, @"^\d+$"))
+                throw new Exception("Este campo solo debe contener números");
 
             var entry = this.IConexion!.Entry<Proveedores>(entidad);
             entry.State = EntityState.Modified;
@@ -55,6 +62,12 @@ namespace Lib_spa.interfaces
                 string.IsNullOrEmpty(entidad.Telefono) ||
                 string.IsNullOrEmpty(entidad.Direccion))
                 throw new Exception("Faltan valores");
+
+            if (!Regex.IsMatch(entidad.Nombre, @"^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$"))
+                throw new Exception("El nombre solo debe contener letras");
+
+            if (!Regex.IsMatch(entidad.Telefono, @"^\d+$") || !Regex.IsMatch(entidad.Telefono, @"^\d+$"))
+                throw new Exception("Este campo solo debe contener números");
 
             this.IConexion.Proveedores!.Add(entidad!);
             this.IConexion.SaveChanges();
