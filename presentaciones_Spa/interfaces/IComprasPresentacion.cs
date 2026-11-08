@@ -1,6 +1,4 @@
-﻿
-
-using Lib_spa.entidades;
+﻿using Lib_spa.entidades;
 
 namespace presentaciones_Spa.interfaces
 {

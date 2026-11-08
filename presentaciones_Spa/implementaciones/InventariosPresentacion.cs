@@ -5,11 +5,11 @@ using presentaciones_Spa.interfaces;
 
 namespace presentaciones_Spa.implementaciones
 {
-    public class CargosPresentacion : IComprasPresentacion
+    public class InventariosPresentacion : IInventariosPresentacion
     {
         private IComunicaciones IComunicaciones;
 
-        public CargosPresentacion(IComunicaciones IComunicaciones)
+        public InventariosPresentacion(IComunicaciones IComunicaciones)
         {
             this.IComunicaciones = IComunicaciones;
         }

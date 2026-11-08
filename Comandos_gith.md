@@ -21,7 +21,7 @@ Flujo de trabajo para rastrear, confirmar y subir modificaciones al servidor.
 
 ```bash
 # Preparar todos los archivos modificados y nuevos para el commit
-git add *
+git add .
 
 # Confirmar cambios rastreados en un solo paso añadiendo un mensaje
 git commit -am "Descripción de los cambios"

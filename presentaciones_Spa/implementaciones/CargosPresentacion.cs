@@ -5,7 +5,7 @@ using presentaciones_Spa.interfaces;
 
 namespace presentaciones_Spa.implementaciones
 {
-    public class CargosPresentacion : IComprasPresentacion
+    public class CargosPresentacion : ICargosPresentacion
     {
         private IComunicaciones IComunicaciones;
 

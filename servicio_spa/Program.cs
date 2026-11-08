@@ -1,5 +1,6 @@
 using Lib_spa.implementaciones;
 using Lib_spa.interfaces;
+using Lib_spa.nucleo;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +29,8 @@ builder.Services.AddScoped<IServiciosAplicacion, ServiciosAplicacion>();
 builder.Services.AddScoped<ITurnosAplicacion, TurnosAplicacion>();
 builder.Services.AddScoped<IUsuariosAplicacion, UsuariosAplicacion>();
 
+builder.Services.AddScoped<IConexion>(sp =>
+    new Conexion { StringConexion = Datosgenerales.ObtenerStringConexion() });
 var app = builder.Build();
 
 app.UseHttpsRedirection();
