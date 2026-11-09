@@ -55,5 +55,6 @@ namespace Lib_spa.implementaciones
         public DbSet<Permisos>? Permisos { get; set; }
 
         public DbSet<Turnos>? Turnos { get; set; }
+       
     }
 }

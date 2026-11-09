@@ -1,4 +1,5 @@
 ﻿using Lib_spa.entidades;
+using Lib_spa.DTOS;
 
 namespace Lib_spa.interfaces
 {
@@ -8,5 +9,6 @@ namespace Lib_spa.interfaces
         Reservas Actualizar(Reservas entidad);
         List<Reservas> Consultar();
         Reservas Borrar(Reservas entidad);
+        ReservaRespuesta Reservar(ReservaRequest datos);
     }
 }

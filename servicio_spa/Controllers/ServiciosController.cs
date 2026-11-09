@@ -1,3 +1,4 @@
+
 using Lib_spa.entidades;
 using Lib_spa.interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -38,5 +39,6 @@ namespace servicio_spa.Controllers
         {
             return this.IServiciosAplicacion.Borrar(entidad);
         }
+
     }
 }

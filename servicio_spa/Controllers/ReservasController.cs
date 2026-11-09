@@ -1,3 +1,4 @@
+using Lib_spa.DTOS;
 using Lib_spa.entidades;
 using Lib_spa.interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -37,6 +38,12 @@ namespace servicio_spa.Controllers
         public Reservas Borrar(Reservas entidad)
         {
             return this.IReservasAplicacion.Borrar(entidad);
+        }
+
+        [HttpPost]
+        public ReservaRespuesta Reservar(ReservaRequest datos)
+        {
+            return this.IReservasAplicacion.Reservar(datos);
         }
     }
 }

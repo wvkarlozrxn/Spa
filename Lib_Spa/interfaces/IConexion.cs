@@ -1,6 +1,8 @@
 ﻿using Lib_spa.entidades;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+
 
 namespace Lib_spa.interfaces
 {
@@ -51,8 +53,9 @@ namespace Lib_spa.interfaces
                 DbSet<Roles>? Roles { get; set; }
 
                 DbSet<Permisos>? Permisos { get; set; }
+                DatabaseFacade Database { get; }
 
                 EntityEntry<T> Entry<T>(T entity) where T : class;
-                int SaveChanges();
+                        int SaveChanges();
         }
 }
