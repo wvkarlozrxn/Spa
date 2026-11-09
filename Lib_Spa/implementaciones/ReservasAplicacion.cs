@@ -68,7 +68,7 @@ namespace Lib_spa.interfaces
         }
         public ReservaRespuesta Reservar(ReservaRequest datos)
         {
-            if (datos.Id_Cliente == 0 || datos.Id_Empleado == 0 || datos.Id_Servicio == 0)
+            if (datos.Id_Cliente == 0 || datos.Id_Empleado == 0 || datos.Id_Servicio == 0) 
                 throw new Exception("Faltan valores O son inválidos");
 
             var servicio = this.IConexion.Servicios!.Find(datos.Id_Servicio)
@@ -106,6 +106,7 @@ namespace Lib_spa.interfaces
                 Id_Reserva = reserva.Id_Reserva,
                 Id_Servicio = servicio.Id_Servicio
             });
+            this.IConexion.SaveChanges();
 
             var factura = new Facturas
             {
