@@ -2,12 +2,12 @@
 
 namespace presentaciones_Spa.interfaces
 {
-    public interface IDetalle_Compras_Presentacion
+    public interface IDetalle_Detalle_Compras_Presentacion
     {
-        Compras Insertar(Compras entidad);
-        Compras Actualizar(Compras entidad);
-        List<Compras> Consultar();
-        List<Compras> Buscar(Compras entidad);
-        Compras Borrar(Compras entidad);
+        Detalle_Compras Insertar(Detalle_Compras entidad);
+        Detalle_Compras Actualizar(Detalle_Compras entidad);
+        List<Detalle_Compras> Consultar();
+        List<Detalle_Compras> Buscar(Detalle_Compras entidad);
+        Detalle_Compras Borrar(Detalle_Compras entidad);
     }
 }

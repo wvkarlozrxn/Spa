@@ -5,7 +5,7 @@ using presentaciones_Spa.interfaces;
 
 namespace presentaciones_Spa.implementaciones
 {
-    public class Detalle_Compras_Presentacion : IDetalle_Compras_Presentacion
+    public class Detalle_Compras_Presentacion : IDetalle_Detalle_Compras_Presentacion
     {
         private IComunicaciones IComunicaciones;
 
@@ -14,7 +14,7 @@ namespace presentaciones_Spa.implementaciones
             this.IComunicaciones = IComunicaciones;
         }
 
-        public Compras Actualizar(Compras entidad)
+        public Detalle_Compras Actualizar(Detalle_Compras entidad)
         {
             if (entidad.Id_Compra == 0)
                 throw new Exception("No se ha guardo");
@@ -22,44 +22,44 @@ namespace presentaciones_Spa.implementaciones
             if (Validar(entidad))
                 throw new Exception("Falta informacion");
 
-            var task = this.IComunicaciones.Ejecutar<Compras>(
-                "Compras/Actualizar",
+            var task = this.IComunicaciones.Ejecutar<Detalle_Compras>(
+                "Detalle_Compras/Actualizar",
                 entidad);
             task.Wait();
             return task.Result;
         }
 
-        public Compras Borrar(Compras entidad)
+        public Detalle_Compras Borrar(Detalle_Compras entidad)
         {
             if (entidad.Id_Compra == 0)
                 throw new Exception("No se ha guardo");
 
-            var task = this.IComunicaciones.Ejecutar<Compras>(
-                "Compras/Borrar",
+            var task = this.IComunicaciones.Ejecutar<Detalle_Compras>(
+                "Detalle_Compras/Borrar",
                 entidad);
             task.Wait();
             return task.Result;
         }
 
-        public List<Compras> Buscar(Compras entidad)
+        public List<Detalle_Compras> Buscar(Detalle_Compras entidad)
         {
-            var task = this.IComunicaciones.Ejecutar<List<Compras>>(
-                "Compras/Buscar",
+            var task = this.IComunicaciones.Ejecutar<List<Detalle_Compras>>(
+                "Detalle_Compras/Buscar",
                 entidad);
             task.Wait();
             return task.Result;
         }
 
-        public List<Compras> Consultar()
+        public List<Detalle_Compras> Consultar()
         {
-            var task = this.IComunicaciones.Ejecutar<List<Compras>>(
-                "Compras/Consultar",
+            var task = this.IComunicaciones.Ejecutar<List<Detalle_Compras>>(
+                "Detalle_Compras/Consultar",
                 null);
             task.Wait();
             return task.Result;
         }
 
-        public Compras Insertar(Compras entidad)
+        public Detalle_Compras Insertar(Detalle_Compras entidad)
         {
             if (entidad.Id_Compra != 0)
                 throw new Exception("Ya se guardo");
@@ -67,14 +67,14 @@ namespace presentaciones_Spa.implementaciones
             if (Validar(entidad))
                 throw new Exception("Falta informacion");
 
-            var task = this.IComunicaciones.Ejecutar<Compras>(
-                "Compras/Insertar",
+            var task = this.IComunicaciones.Ejecutar<Detalle_Compras>(
+                "Detalle_Compras/Insertar",
                 entidad);
             task.Wait();
             return task.Result;
         }
 
-        private bool Validar(Compras entidad)
+        private bool Validar(Detalle_Compras entidad)
         {
             /* return string.IsNullOrEmpty(entidad.) ||
                  string.IsNullOrEmpty(entidad.Nombre) ||

@@ -4,10 +4,10 @@ namespace presentaciones_Spa.interfaces
 {
     public interface IInventariosPresentacion
     {
-        Compras Insertar(Compras entidad);
-        Compras Actualizar(Compras entidad);
-        List<Compras> Consultar();
-        List<Compras> Buscar(Compras entidad);
-        Compras Borrar(Compras entidad);
+        Inventarios Insertar(Inventarios entidad);
+        Inventarios Actualizar(Inventarios entidad);
+        List<Inventarios> Consultar();
+        List<Inventarios> Buscar(Inventarios entidad);
+        Inventarios Borrar(Inventarios entidad);
     }
 }

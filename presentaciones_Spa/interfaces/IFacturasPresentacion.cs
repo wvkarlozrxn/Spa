@@ -4,10 +4,10 @@ namespace presentaciones_Spa.interfaces
 {
     public interface IFacturasPresentacion
     {
-        Compras Insertar(Compras entidad);
-        Compras Actualizar(Compras entidad);
-        List<Compras> Consultar();
-        List<Compras> Buscar(Compras entidad);
-        Compras Borrar(Compras entidad);
+        Facturas Insertar(Facturas entidad);
+        Facturas Actualizar(Facturas entidad);
+        List<Facturas> Consultar();
+        List<Facturas> Buscar(Facturas entidad);
+        Facturas Borrar(Facturas entidad);
     }
 }

@@ -4,10 +4,10 @@ namespace presentaciones_Spa.interfaces
 {
     public interface IPagosPresentacion
     {
-        Compras Insertar(Compras entidad);
-        Compras Actualizar(Compras entidad);
-        List<Compras> Consultar();
-        List<Compras> Buscar(Compras entidad);
-        Compras Borrar(Compras entidad);
+        Pagos Insertar(Pagos entidad);
+        Pagos Actualizar(Pagos entidad);
+        List<Pagos> Consultar();
+        List<Pagos> Buscar(Pagos entidad);
+        Pagos Borrar(Pagos entidad);
     }
 }

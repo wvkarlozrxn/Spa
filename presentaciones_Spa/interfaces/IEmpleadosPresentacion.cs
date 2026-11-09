@@ -4,10 +4,10 @@ namespace presentaciones_Spa.interfaces
 {
     public interface IEmpleadosPresentacion
     {
-        Compras Insertar(Compras entidad);
-        Compras Actualizar(Compras entidad);
-        List<Compras> Consultar();
-        List<Compras> Buscar(Compras entidad);
-        Compras Borrar(Compras entidad);
+        Empleados Insertar(Empleados entidad);
+        Empleados Actualizar(Empleados entidad);
+        List<Empleados> Consultar();
+        List<Empleados> Buscar(Empleados entidad);
+        Empleados Borrar(Empleados entidad);
     }
 }

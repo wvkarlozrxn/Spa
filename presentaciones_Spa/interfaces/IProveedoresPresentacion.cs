@@ -4,10 +4,10 @@ namespace presentaciones_Spa.interfaces
 {
     public interface IProveedoresPresentacion
     {
-        Compras Insertar(Compras entidad);
-        Compras Actualizar(Compras entidad);
-        List<Compras> Consultar();
-        List<Compras> Buscar(Compras entidad);
-        Compras Borrar(Compras entidad);
+        Proveedores Insertar(Proveedores entidad);
+        Proveedores Actualizar(Proveedores entidad);
+        List<Proveedores> Consultar();
+        List<Proveedores> Buscar(Proveedores entidad);
+        Proveedores Borrar(Proveedores entidad);
     }
 }

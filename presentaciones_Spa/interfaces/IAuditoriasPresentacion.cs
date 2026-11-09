@@ -4,10 +4,10 @@ namespace presentaciones_Spa.implementaciones
 {
     public interface IAuditoriasPresentacion
     {
-        Compras Insertar(Compras entidad);
-        Compras Actualizar(Compras entidad);
-        List<Compras> Consultar();
-        List<Compras> Buscar(Compras entidad);
-        Compras Borrar(Compras entidad);
+        Auditorias Insertar(Auditorias entidad);
+        Auditorias Actualizar(Auditorias entidad);
+        List<Auditorias> Consultar();
+        List<Auditorias> Buscar(Auditorias entidad);
+        Auditorias Borrar(Auditorias entidad);
     }
 }

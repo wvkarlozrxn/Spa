@@ -4,10 +4,10 @@ namespace presentaciones_Spa.interfaces
 {
     public interface ITurnosPresentacion
     {
-        Compras Insertar(Compras entidad);
-        Compras Actualizar(Compras entidad);
-        List<Compras> Consultar();
-        List<Compras> Buscar(Compras entidad);
-        Compras Borrar(Compras entidad);
+        Turnos Insertar(Turnos entidad);
+        Turnos Actualizar(Turnos entidad);
+        List<Turnos> Consultar();
+        List<Turnos> Buscar(Turnos entidad);
+        Turnos Borrar(Turnos entidad);
     }
 }

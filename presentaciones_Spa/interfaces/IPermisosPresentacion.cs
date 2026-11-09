@@ -4,10 +4,10 @@ namespace presentaciones_Spa.interfaces
 {
     public interface IPermisosPresentacion
     {
-        Compras Insertar(Compras entidad);
-        Compras Actualizar(Compras entidad);
-        List<Compras> Consultar();
-        List<Compras> Buscar(Compras entidad);
-        Compras Borrar(Compras entidad);
+        Permisos Insertar(Permisos entidad);
+        Permisos Actualizar(Permisos entidad);
+        List<Permisos> Consultar();
+        List<Permisos> Buscar(Permisos entidad);
+        Permisos Borrar(Permisos entidad);
     }
 }

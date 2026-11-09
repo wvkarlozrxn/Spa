@@ -4,10 +4,10 @@ namespace presentaciones_Spa.interfaces
 {
     public interface IDetalle_Reservas_Presentacion
     {
-        Compras Insertar(Compras entidad);
-        Compras Actualizar(Compras entidad);
-        List<Compras> Consultar();
-        List<Compras> Buscar(Compras entidad);
-        Compras Borrar(Compras entidad);
+        Detalle_Reservas Insertar(Detalle_Reservas entidad);
+        Detalle_Reservas Actualizar(Detalle_Reservas entidad);
+        List<Detalle_Reservas> Consultar();
+        List<Detalle_Reservas> Buscar(Detalle_Reservas entidad);
+        Detalle_Reservas Borrar(Detalle_Reservas entidad);
     }
 }

@@ -4,10 +4,10 @@ namespace presentaciones_Spa.interfaces
 {
     public interface IRolesPresentacion
     {
-        Compras Insertar(Compras entidad);
-        Compras Actualizar(Compras entidad);
-        List<Compras> Consultar();
-        List<Compras> Buscar(Compras entidad);
-        Compras Borrar(Compras entidad);
+        Roles Insertar(Roles entidad);
+        Roles Actualizar(Roles entidad);
+        List<Roles> Consultar();
+        List<Roles> Buscar(Roles entidad);
+        Roles Borrar(Roles entidad);
     }
 }

@@ -4,10 +4,10 @@ namespace presentaciones_Spa.interfaces
 {
     public interface IProductosPresentacion
     {
-        Compras Insertar(Compras entidad);
-        Compras Actualizar(Compras entidad);
-        List<Compras> Consultar();
-        List<Compras> Buscar(Compras entidad);
-        Compras Borrar(Compras entidad);
+        Productos Insertar(Productos entidad);
+        Productos Actualizar(Productos entidad);
+        List<Productos> Consultar();
+        List<Productos> Buscar(Productos entidad);
+        Productos Borrar(Productos entidad);
     }
 }
