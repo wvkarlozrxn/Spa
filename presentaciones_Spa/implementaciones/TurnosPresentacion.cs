@@ -14,7 +14,7 @@ namespace presentaciones_Spa.implementaciones
             this.IComunicaciones = IComunicaciones;
         }
 
-        public Compras Actualizar(Compras entidad)
+        public Turnos Actualizar(Turnos entidad)
         {
             if (entidad.Id_Compra == 0)
                 throw new Exception("No se ha guardo");
@@ -22,44 +22,44 @@ namespace presentaciones_Spa.implementaciones
             if (Validar(entidad))
                 throw new Exception("Falta informacion");
 
-            var task = this.IComunicaciones.Ejecutar<Compras>(
-                "Compras/Actualizar",
+            var task = this.IComunicaciones.Ejecutar<Turnos>(
+                "Turnos/Actualizar",
                 entidad);
             task.Wait();
             return task.Result;
         }
 
-        public Compras Borrar(Compras entidad)
+        public Turnos Borrar(Turnos entidad)
         {
             if (entidad.Id_Compra == 0)
                 throw new Exception("No se ha guardo");
 
-            var task = this.IComunicaciones.Ejecutar<Compras>(
-                "Compras/Borrar",
+            var task = this.IComunicaciones.Ejecutar<Turnos>(
+                "Turnos/Borrar",
                 entidad);
             task.Wait();
             return task.Result;
         }
 
-        public List<Compras> Buscar(Compras entidad)
+        public List<Turnos> Buscar(Turnos entidad)
         {
-            var task = this.IComunicaciones.Ejecutar<List<Compras>>(
-                "Compras/Buscar",
+            var task = this.IComunicaciones.Ejecutar<List<Turnos>>(
+                "Turnos/Buscar",
                 entidad);
             task.Wait();
             return task.Result;
         }
 
-        public List<Compras> Consultar()
+        public List<Turnos> Consultar()
         {
-            var task = this.IComunicaciones.Ejecutar<List<Compras>>(
-                "Compras/Consultar",
+            var task = this.IComunicaciones.Ejecutar<List<Turnos>>(
+                "Turnos/Consultar",
                 null);
             task.Wait();
             return task.Result;
         }
 
-        public Compras Insertar(Compras entidad)
+        public Turnos Insertar(Turnos entidad)
         {
             if (entidad.Id_Compra != 0)
                 throw new Exception("Ya se guardo");
@@ -67,14 +67,14 @@ namespace presentaciones_Spa.implementaciones
             if (Validar(entidad))
                 throw new Exception("Falta informacion");
 
-            var task = this.IComunicaciones.Ejecutar<Compras>(
-                "Compras/Insertar",
+            var task = this.IComunicaciones.Ejecutar<Turnos>(
+                "Turnos/Insertar",
                 entidad);
             task.Wait();
             return task.Result;
         }
 
-        private bool Validar(Compras entidad)
+        private bool Validar(Turnos entidad)
         {
             /* return string.IsNullOrEmpty(entidad.) ||
                  string.IsNullOrEmpty(entidad.Nombre) ||

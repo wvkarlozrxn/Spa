@@ -5,7 +5,7 @@ using presentaciones_Spa.interfaces;
 
 namespace presentaciones_Spa.implementaciones
 {
-    public class Detalle_Compras_Presentacion : IDetalle_Detalle_Compras_Presentacion
+    public class Detalle_Compras_Presentacion : IDetalle_Compras_Presentacion
     {
         private IComunicaciones IComunicaciones;
 

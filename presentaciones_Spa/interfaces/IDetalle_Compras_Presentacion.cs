@@ -2,7 +2,7 @@
 
 namespace presentaciones_Spa.interfaces
 {
-    public interface IDetalle_Detalle_Compras_Presentacion
+    public interface IDetalle_Compras_Presentacion
     {
         Detalle_Compras Insertar(Detalle_Compras entidad);
         Detalle_Compras Actualizar(Detalle_Compras entidad);
