@@ -16,7 +16,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Empleados_Turnos Actualizar(Empleados_Turnos entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Empleado_Turno == 0)
                 throw new Exception("No se ha guardo");
 
             if (Validar(entidad))
@@ -31,7 +31,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Empleados_Turnos Borrar(Empleados_Turnos entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Empleado_Turno == 0)
                 throw new Exception("No se ha guardo");
 
             var task = this.IComunicaciones.Ejecutar<Empleados_Turnos>(
@@ -61,7 +61,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Empleados_Turnos Insertar(Empleados_Turnos entidad)
         {
-            if (entidad.Id_Compra != 0)
+            if (entidad.Id_Empleado_Turno != 0)
                 throw new Exception("Ya se guardo");
 
             if (Validar(entidad))

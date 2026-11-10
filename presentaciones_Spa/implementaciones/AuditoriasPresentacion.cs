@@ -15,7 +15,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Auditorias Actualizar(Auditorias entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Auditoria == 0)
                 throw new Exception("No se ha guardo");
 
             if (Validar(entidad))

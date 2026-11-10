@@ -16,7 +16,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Servicios Actualizar(Servicios entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Servicio == 0)
                 throw new Exception("No se ha guardo");
 
             if (Validar(entidad))
