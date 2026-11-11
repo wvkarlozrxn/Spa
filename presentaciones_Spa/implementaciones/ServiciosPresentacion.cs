@@ -31,7 +31,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Servicios Borrar(Servicios entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Servicio == 0)
                 throw new Exception("No se ha guardo");
 
             var task = this.IComunicaciones.Ejecutar<Servicios>(
@@ -61,7 +61,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Servicios Insertar(Servicios entidad)
         {
-            if (entidad.Id_Compra != 0)
+            if (entidad.Id_Servicio != 0)
                 throw new Exception("Ya se guardo");
 
             if (Validar(entidad))

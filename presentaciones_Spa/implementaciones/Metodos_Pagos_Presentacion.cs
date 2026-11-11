@@ -16,7 +16,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Metodos_Pagos Actualizar(Metodos_Pagos entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Detalle_Pago == 0)
                 throw new Exception("No se ha guardo");
 
             if (Validar(entidad))
@@ -31,7 +31,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Metodos_Pagos Borrar(Metodos_Pagos entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Detalle_Pago == 0)
                 throw new Exception("No se ha guardo");
 
             var task = this.IComunicaciones.Ejecutar<Metodos_Pagos>(
@@ -61,7 +61,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Metodos_Pagos Insertar(Metodos_Pagos entidad)
         {
-            if (entidad.Id_Compra != 0)
+            if (entidad.Id_Detalle_Pago != 0)
                 throw new Exception("Ya se guardo");
 
             if (Validar(entidad))

@@ -16,7 +16,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Permisos Actualizar(Permisos entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Permiso == 0)
                 throw new Exception("No se ha guardo");
 
             if (Validar(entidad))
@@ -31,7 +31,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Permisos Borrar(Permisos entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Permiso == 0)
                 throw new Exception("No se ha guardo");
 
             var task = this.IComunicaciones.Ejecutar<Permisos>(
@@ -61,7 +61,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Permisos Insertar(Permisos entidad)
         {
-            if (entidad.Id_Compra != 0)
+            if (entidad.Id_Permiso != 0)
                 throw new Exception("Ya se guardo");
 
             if (Validar(entidad))

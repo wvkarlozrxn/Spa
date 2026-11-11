@@ -16,7 +16,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Personas Actualizar(Personas entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Persona == 0)
                 throw new Exception("No se ha guardo");
 
             if (Validar(entidad))
@@ -31,7 +31,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Personas Borrar(Personas entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Persona == 0)
                 throw new Exception("No se ha guardo");
 
             var task = this.IComunicaciones.Ejecutar<Personas>(
@@ -61,7 +61,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Personas Insertar(Personas entidad)
         {
-            if (entidad.Id_Compra != 0)
+            if (entidad.Id_Persona != 0)
                 throw new Exception("Ya se guardo");
 
             if (Validar(entidad))

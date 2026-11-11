@@ -16,7 +16,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Productos Actualizar(Productos entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Producto == 0)
                 throw new Exception("No se ha guardo");
 
             if (Validar(entidad))
@@ -31,7 +31,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Productos Borrar(Productos entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Producto == 0)
                 throw new Exception("No se ha guardo");
 
             var task = this.IComunicaciones.Ejecutar<Productos>(
@@ -61,7 +61,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Productos Insertar(Productos entidad)
         {
-            if (entidad.Id_Compra != 0)
+            if (entidad.Id_Producto != 0)
                 throw new Exception("Ya se guardo");
 
             if (Validar(entidad))

@@ -30,7 +30,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Auditorias Borrar(Auditorias entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Auditoria == 0)
                 throw new Exception("No se ha guardo");
 
             var task = this.IComunicaciones.Ejecutar<Auditorias>(
@@ -60,7 +60,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Auditorias Insertar(Auditorias entidad)
         {
-            if (entidad.Id_Compra != 0)
+            if (entidad.Id_Auditoria != 0)
                 throw new Exception("Ya se guardo");
 
             if (Validar(entidad))

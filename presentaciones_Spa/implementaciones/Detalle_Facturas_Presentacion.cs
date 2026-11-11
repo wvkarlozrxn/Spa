@@ -16,7 +16,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Detalle_Facturas Actualizar(Detalle_Facturas entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Detalle_Factura == 0)
                 throw new Exception("No se ha guardo");
 
             if (Validar(entidad))
@@ -31,7 +31,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Detalle_Facturas Borrar(Detalle_Facturas entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Detalle_Factura == 0)
                 throw new Exception("No se ha guardo");
 
             var task = this.IComunicaciones.Ejecutar<Detalle_Facturas>(
@@ -61,7 +61,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Detalle_Facturas Insertar(Detalle_Facturas entidad)
         {
-            if (entidad.Id_Compra != 0)
+            if (entidad.Id_Detalle_Factura != 0)
                 throw new Exception("Ya se guardo");
 
             if (Validar(entidad))

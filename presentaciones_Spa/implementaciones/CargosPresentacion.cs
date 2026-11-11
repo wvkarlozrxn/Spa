@@ -16,7 +16,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Cargos Actualizar(Cargos entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Cargo == 0)
                 throw new Exception("No se ha guardo");
 
             if (Validar(entidad))
@@ -31,7 +31,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Cargos Borrar(Cargos entidad)
         {
-            if (entidad.Id_Compra == 0)
+            if (entidad.Id_Cargo == 0)
                 throw new Exception("No se ha guardo");
 
             var task = this.IComunicaciones.Ejecutar<Cargos>(
@@ -61,7 +61,7 @@ namespace presentaciones_Spa.implementaciones
 
         public Cargos Insertar(Cargos entidad)
         {
-            if (entidad.Id_Compra != 0)
+            if (entidad.Id_Cargo != 0)
                 throw new Exception("Ya se guardo");
 
             if (Validar(entidad))
