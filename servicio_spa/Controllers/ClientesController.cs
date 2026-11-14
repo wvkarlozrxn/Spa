@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IClientesAplicacion = IClientesAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Clientes> Consultar()
         {
             return this.IClientesAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IClientesAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Clientes Actualizar(Clientes entidad)
         {
             return this.IClientesAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Clientes Borrar(Clientes entidad)
         {
             return this.IClientesAplicacion.Borrar(entidad);
