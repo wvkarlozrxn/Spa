@@ -63,23 +63,18 @@ namespace Lib_spa.interfaces
 
         public Usuarios Validar(UsuariosRequest datos)
         {
-            if (datos.Id_Usuario == 0 )
-                throw new Exception("Faltan valores O son inválidos");
+            if (string.IsNullOrWhiteSpace(datos.Usuario) ||
+                string.IsNullOrWhiteSpace(datos.Contraseña))
+                throw new Exception("Faltan valores o son inválidos");
 
-            var servicio = this.IConexion.Servicios!.Find(datos.Id_Usuario)
-                ?? throw new Exception("El servicio no existe");
+            var usuario = this.IConexion.Usuarios!
+                .FirstOrDefault(u => u.Usuario == datos.Usuario &&
+                                     u.Contraseña == datos.Contraseña);
 
-            foreach (var usuarios in this.IConexion.Usuarios!)
-            {
-                if (usuarios.Id_Usuario == datos.Id_Usuario &&
-                    usuarios.Usuario == datos.Usuario &&
-                    usuarios.Contraseña == datos.Contraseña)
-                {
-                    return usuarios;
-                }
-            }
-            
-            throw new Exception("Credenciales inválidas");
+            if (usuario == null)
+                throw new Exception("Credenciales inválidas");
+
+            return usuario;
         }
     }
 }
