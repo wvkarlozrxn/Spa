@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IProductosAplicacion = IProductosAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Productos> Consultar()
         {
             return this.IProductosAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IProductosAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Productos Actualizar(Productos entidad)
         {
             return this.IProductosAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Productos Borrar(Productos entidad)
         {
             return this.IProductosAplicacion.Borrar(entidad);

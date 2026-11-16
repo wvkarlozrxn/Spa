@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IDetalle_ReservasAplicacion = IDetalle_ReservasAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Detalle_Reservas> Consultar()
         {
             return this.IDetalle_ReservasAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IDetalle_ReservasAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Detalle_Reservas Actualizar(Detalle_Reservas entidad)
         {
             return this.IDetalle_ReservasAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Detalle_Reservas Borrar(Detalle_Reservas entidad)
         {
             return this.IDetalle_ReservasAplicacion.Borrar(entidad);

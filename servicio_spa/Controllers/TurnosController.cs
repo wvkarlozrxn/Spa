@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.ITurnosAplicacion = ITurnosAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Turnos> Consultar()
         {
             return this.ITurnosAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.ITurnosAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Turnos Actualizar(Turnos entidad)
         {
             return this.ITurnosAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Turnos Borrar(Turnos entidad)
         {
             return this.ITurnosAplicacion.Borrar(entidad);

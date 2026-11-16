@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IPersonasAplicacion = IPersonasAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Personas> Consultar()
         {
             return this.IPersonasAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IPersonasAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Personas Actualizar(Personas entidad)
         {
             return this.IPersonasAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Personas Borrar(Personas entidad)
         {
             return this.IPersonasAplicacion.Borrar(entidad);

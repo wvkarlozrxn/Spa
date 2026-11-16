@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.ICargosAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Cargos Actualizar(Cargos entidad)
         {
             return this.ICargosAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Cargos Borrar(Cargos entidad)
         {
             return this.ICargosAplicacion.Borrar(entidad);

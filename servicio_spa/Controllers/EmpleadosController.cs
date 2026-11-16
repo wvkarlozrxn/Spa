@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IEmpleadosAplicacion = IEmpleadosAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Empleados> Consultar()
         {
             return this.IEmpleadosAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IEmpleadosAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Empleados Actualizar(Empleados entidad)
         {
             return this.IEmpleadosAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Empleados Borrar(Empleados entidad)
         {
             return this.IEmpleadosAplicacion.Borrar(entidad);

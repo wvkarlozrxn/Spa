@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IComprasAplicacion = IComprasAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Compras> Consultar()
         {
             return this.IComprasAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IComprasAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Compras Actualizar(Compras entidad)
         {
             return this.IComprasAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Compras Borrar(Compras entidad)
         {
             return this.IComprasAplicacion.Borrar(entidad);

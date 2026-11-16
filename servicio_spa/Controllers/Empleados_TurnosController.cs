@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IEmpleados_TurnosAplicacion = IEmpleados_TurnosAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Empleados_Turnos> Consultar()
         {
             return this.IEmpleados_TurnosAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IEmpleados_TurnosAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Empleados_Turnos Actualizar(Empleados_Turnos entidad)
         {
             return this.IEmpleados_TurnosAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Empleados_Turnos Borrar(Empleados_Turnos entidad)
         {
             return this.IEmpleados_TurnosAplicacion.Borrar(entidad);

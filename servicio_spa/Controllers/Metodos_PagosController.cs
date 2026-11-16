@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IMetodos_PagosAplicacion = IMetodos_PagosAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Metodos_Pagos> Consultar()
         {
             return this.IMetodos_PagosAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IMetodos_PagosAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Metodos_Pagos Actualizar(Metodos_Pagos entidad)
         {
             return this.IMetodos_PagosAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Metodos_Pagos Borrar(Metodos_Pagos entidad)
         {
             return this.IMetodos_PagosAplicacion.Borrar(entidad);

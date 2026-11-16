@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IPagosAplicacion = IPagosAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Pagos> Consultar()
         {
             return this.IPagosAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IPagosAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Pagos Actualizar(Pagos entidad)
         {
             return this.IPagosAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Pagos Borrar(Pagos entidad)
         {
             return this.IPagosAplicacion.Borrar(entidad);

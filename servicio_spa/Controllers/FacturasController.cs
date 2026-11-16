@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IFacturasAplicacion = IFacturasAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Facturas> Consultar()
         {
             return this.IFacturasAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IFacturasAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Facturas Actualizar(Facturas entidad)
         {
             return this.IFacturasAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Facturas Borrar(Facturas entidad)
         {
             return this.IFacturasAplicacion.Borrar(entidad);

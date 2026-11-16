@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IAuditoriasAplicacion = IAuditoriasAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Auditorias> Consultar()
         {
             return this.IAuditoriasAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IAuditoriasAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Auditorias Actualizar(Auditorias entidad)
         {
             return this.IAuditoriasAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Auditorias Borrar(Auditorias entidad)
         {
             return this.IAuditoriasAplicacion.Borrar(entidad);

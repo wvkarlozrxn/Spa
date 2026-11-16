@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IRolesAplicacion = IRolesAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Roles> Consultar()
         {
             return this.IRolesAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IRolesAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Roles Actualizar(Roles entidad)
         {
             return this.IRolesAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Roles Borrar(Roles entidad)
         {
             return this.IRolesAplicacion.Borrar(entidad);

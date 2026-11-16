@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IPermisosAplicacion = IPermisosAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Permisos> Consultar()
         {
             return this.IPermisosAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IPermisosAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Permisos Actualizar(Permisos entidad)
         {
             return this.IPermisosAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Permisos Borrar(Permisos entidad)
         {
             return this.IPermisosAplicacion.Borrar(entidad);

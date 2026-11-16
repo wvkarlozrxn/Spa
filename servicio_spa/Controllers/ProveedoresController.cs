@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IProveedoresAplicacion = IProveedoresAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Proveedores> Consultar()
         {
             return this.IProveedoresAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IProveedoresAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Proveedores Actualizar(Proveedores entidad)
         {
             return this.IProveedoresAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Proveedores Borrar(Proveedores entidad)
         {
             return this.IProveedoresAplicacion.Borrar(entidad);

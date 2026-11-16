@@ -15,7 +15,7 @@ namespace servicio_spa.Controllers
             this.IInventariosAplicacion = IInventariosAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Inventarios> Consultar()
         {
             return this.IInventariosAplicacion.Consultar();
@@ -27,13 +27,13 @@ namespace servicio_spa.Controllers
             return this.IInventariosAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
+        [HttpPost]
         public Inventarios Actualizar(Inventarios entidad)
         {
             return this.IInventariosAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public Inventarios Borrar(Inventarios entidad)
         {
             return this.IInventariosAplicacion.Borrar(entidad);
