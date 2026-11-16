@@ -176,7 +176,6 @@ CREATE TABLE [Roles] (
 
 CREATE TABLE [Usuarios] (
     [Id_Usuario] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
-    [Nombre] NVARCHAR(250) NULL,
     [Usuario] NVARCHAR(100) NULL,
     [Contraseña] NVARCHAR(250) NULL
 );

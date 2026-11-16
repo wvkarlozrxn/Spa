@@ -1,4 +1,5 @@
-﻿using Lib_spa.entidades;
+﻿using Lib_spa.DTOS;
+using Lib_spa.entidades;
 
 namespace Lib_spa.interfaces
 {
@@ -8,5 +9,6 @@ namespace Lib_spa.interfaces
         Usuarios Actualizar(Usuarios entidad);
         List<Usuarios> Consultar();
         Usuarios Borrar(Usuarios entidad);
+        Usuarios Validar(UsuariosRequest datos);
     }
 }
