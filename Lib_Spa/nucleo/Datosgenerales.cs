@@ -4,7 +4,7 @@
     {
         public static string ObtenerStringConexion()
         {
-            return "server=localhost\\SQLEXPRESS;database=DB_SPA;Integrated Security=True;TrustServerCertificate=true;";
+            return "server=localhost;database=DB_SPA;Integrated Security=True;TrustServerCertificate=true;";
         }
     }
 }

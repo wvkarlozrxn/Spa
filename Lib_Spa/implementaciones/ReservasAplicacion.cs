@@ -38,6 +38,10 @@ namespace Lib_spa.interfaces
                 throw new Exception("No se guardo");
 
             this.IConexion.Reservas!.Remove(entidad!);
+            this.IConexion.Detalle_Facturas!.Remove(Reservar.Id_Reserva);
+            this.IConexion.Detalle_Reservas!.Remove(entidad!);
+            this.IConexion.Facturas!.Remove(entidad!);
+
             this.IConexion.SaveChanges();
             return entidad;
         }
