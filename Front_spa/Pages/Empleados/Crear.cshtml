@@ -1,0 +1,39 @@
+@page
+@model Front_spa.Pages.Empleados.CrearModel
+@{
+    ViewData["Title"] = "Nuevo empleado";
+}
+
+<h2 class="mb-3">Nuevo empleado</h2>
+
+@if (!string.IsNullOrEmpty(Model.Mensaje))
+{
+    <div class="alert alert-danger">@Model.Mensaje</div>
+}
+
+<form method="post" style="max-width:450px">
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label">Nombre</label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Telefono" class="form-label">Teléfono</label>
+        <input asp-for="Telefono" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Cedula" class="form-label">Cédula</label>
+        <input asp-for="Cedula" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="IdCargo" class="form-label">Cargo</label>
+        <select asp-for="IdCargo" asp-items="Model.Cargos" class="form-select">
+            <option value="0">Selecciona un cargo</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label asp-for="FechaContrato" class="form-label">Fecha de contrato</label>
+        <input asp-for="FechaContrato" type="date" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
+</form>

@@ -1,0 +1,90 @@
+@page
+@using Lib_spa.DTOS
+@model Front_spa.Pages.Citas.IndexModel
+@{
+    ViewData["Title"] = "Citas";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Citas</h2>
+    <a asp-page="Agendar" class="btn btn-primary">Agendar cita</a>
+</div>
+
+@if (!string.IsNullOrEmpty(Model.Mensaje))
+{
+    <div class="alert alert-danger">@Model.Mensaje</div>
+}
+
+<form method="get" class="row g-2 mb-3">
+    <div class="col-md-3">
+        <label asp-for="FiltroFecha" class="form-label">Fecha</label>
+        <input asp-for="FiltroFecha" type="date" class="form-control" />
+    </div>
+    <div class="col-md-3">
+        <label asp-for="FiltroEmpleado" class="form-label">Empleado</label>
+        <select asp-for="FiltroEmpleado" asp-items="Model.ListaEmpleados" class="form-select">
+            <option value="0">Todos</option>
+        </select>
+    </div>
+    <div class="col-md-3">
+        <label asp-for="FiltroEstado" class="form-label">Estado</label>
+        <select asp-for="FiltroEstado" class="form-select">
+            <option value="0">Todos</option>
+            <option value="@((int)EstadoReserva.Confirmada)">Confirmada</option>
+            <option value="@((int)EstadoReserva.Completada)">Completada</option>
+            <option value="@((int)EstadoReserva.Cancelada)">Cancelada</option>
+        </select>
+    </div>
+    <div class="col-md-3 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary me-2">Filtrar</button>
+        <a asp-page="Index" class="btn btn-secondary">Limpiar</a>
+    </div>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Fecha y hora</th>
+            <th>Clienta</th>
+            <th>Servicio</th>
+            <th>Empleado</th>
+            <th>Estado</th>
+            <th>Total</th>
+            <th>Pago</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reserva in Model.Lista)
+        {
+            var factura = Model.FacturaDe(reserva.Id_Reserva);
+            <tr>
+                <td>@reserva.Fecha.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@Model.NombreCliente(reserva.Id_Cliente)</td>
+                <td>@Model.NombreServicio(reserva.Id_Reserva)</td>
+                <td>@Model.NombreEmpleado(reserva.Id_Empleado)</td>
+                <td>@((EstadoReserva)reserva.Estado)</td>
+                <td>@(factura?.Total.ToString("N0"))</td>
+                <td>
+                    @if (factura != null)
+                    {
+                        @(Model.EstaPagada(factura.Id_Factura) ? "Pagada" : "Pendiente")
+                    }
+                </td>
+                <td class="text-end">
+                    @if (reserva.Estado == (int)EstadoReserva.Confirmada)
+                    {
+                        <a asp-page="Reprogramar" asp-route-id="@reserva.Id_Reserva" class="btn btn-sm btn-outline-primary">Reprogramar</a>
+                        <form method="post" asp-page-handler="Completar" asp-route-id="@reserva.Id_Reserva" class="d-inline">
+                            <button type="submit" class="btn btn-sm btn-outline-success">Completar</button>
+                        </form>
+                        <form method="post" asp-page-handler="Cancelar" asp-route-id="@reserva.Id_Reserva" class="d-inline"
+                              onsubmit="return confirm('¿Cancelar esta cita?');">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">Cancelar</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

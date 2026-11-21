@@ -1,0 +1,51 @@
+@page
+@model Front_spa.Pages.Empleados.IndexModel
+@{
+    ViewData["Title"] = "Empleados";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Empleados</h2>
+    @if (HttpContext.Session.GetString("Rol") == "Administrador")
+    {
+        <a asp-page="Crear" class="btn btn-primary">Nuevo empleado</a>
+    }
+</div>
+
+@if (!string.IsNullOrEmpty(Model.Mensaje))
+{
+    <div class="alert alert-danger">@Model.Mensaje</div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Cargo</th>
+            <th>Fecha de contrato</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var empleado in Model.Lista)
+        {
+            <tr>
+                <td>@Model.NombreDe(empleado.Id_Persona)</td>
+                <td>@Model.TelefonoDe(empleado.Id_Persona)</td>
+                <td>@Model.CargoDe(empleado.Id_Cargo)</td>
+                <td>@empleado.Fecha_Contrato.ToString("dd/MM/yyyy")</td>
+                <td class="text-end">
+                    @if (HttpContext.Session.GetString("Rol") == "Administrador")
+                    {
+                        <a asp-page="Editar" asp-route-id="@empleado.Id_Empleado" class="btn btn-sm btn-outline-primary">Editar</a>
+                        <form method="post" asp-page-handler="Eliminar" asp-route-id="@empleado.Id_Empleado" class="d-inline"
+                              onsubmit="return confirm('¿Eliminar este empleado?');">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">Eliminar</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

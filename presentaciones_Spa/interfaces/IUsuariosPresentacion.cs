@@ -1,4 +1,5 @@
-﻿using Lib_spa.entidades;
+﻿using Lib_spa.DTOS;
+using Lib_spa.entidades;
 
 namespace presentaciones_Spa.interfaces
 {
@@ -9,5 +10,6 @@ namespace presentaciones_Spa.interfaces
         List<Usuarios> Consultar();
         List<Usuarios> Buscar(Usuarios entidad);
         Usuarios Borrar(Usuarios entidad);
+        Usuarios Validar(UsuariosRequest datos);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lib_spa.entidades
 {
@@ -7,6 +8,7 @@ namespace Lib_spa.entidades
         [Key]
 
         public int Id_Rol { get; set; }
+        [Column("Descripcion")]
         public string? Rol { get; set; }
 
     }

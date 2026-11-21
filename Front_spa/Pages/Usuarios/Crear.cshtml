@@ -1,0 +1,31 @@
+@page
+@model Front_spa.Pages.Usuarios.CrearModel
+@{
+    ViewData["Title"] = "Nuevo usuario";
+}
+
+<h2 class="mb-3">Nuevo usuario</h2>
+
+@if (!string.IsNullOrEmpty(Model.Mensaje))
+{
+    <div class="alert alert-danger">@Model.Mensaje</div>
+}
+
+<form method="post" style="max-width:400px">
+    <div class="mb-3">
+        <label asp-for="Usuario" class="form-label">Usuario</label>
+        <input asp-for="Usuario" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Contrasena" class="form-label">Contraseña</label>
+        <input asp-for="Contrasena" type="password" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="IdRol" class="form-label">Rol</label>
+        <select asp-for="IdRol" asp-items="Model.Roles" class="form-select">
+            <option value="0">Selecciona un rol</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
+</form>

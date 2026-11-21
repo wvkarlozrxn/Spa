@@ -1,0 +1,30 @@
+@page "{id:int}"
+@model Front_spa.Pages.Citas.ReprogramarModel
+@{
+    ViewData["Title"] = "Reprogramar cita";
+}
+
+<h2 class="mb-3">Reprogramar cita</h2>
+
+@if (!string.IsNullOrEmpty(Model.Mensaje))
+{
+    <div class="alert alert-danger">@Model.Mensaje</div>
+}
+
+<dl class="row" style="max-width:450px">
+    <dt class="col-sm-4">Clienta</dt>
+    <dd class="col-sm-8">@Model.Clienta</dd>
+    <dt class="col-sm-4">Servicio</dt>
+    <dd class="col-sm-8">@Model.Servicio</dd>
+    <dt class="col-sm-4">Empleado</dt>
+    <dd class="col-sm-8">@Model.Empleado</dd>
+</dl>
+
+<form method="post" style="max-width:450px">
+    <div class="mb-3">
+        <label asp-for="Fecha" class="form-label">Nueva fecha y hora</label>
+        <input asp-for="Fecha" type="datetime-local" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
+</form>

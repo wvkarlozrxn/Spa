@@ -1,3 +1,4 @@
+using Lib_spa.DTOS;
 using Lib_spa.entidades;
 using Lib_spa.interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -37,6 +38,12 @@ namespace servicio_spa.Controllers
         public Usuarios Borrar(Usuarios entidad)
         {
             return this.IUsuariosAplicacion.Borrar(entidad);
+        }
+
+        [HttpPost]
+        public Usuarios Validar(UsuariosRequest datos)
+        {
+            return this.IUsuariosAplicacion.Validar(datos);
         }
     }
 }

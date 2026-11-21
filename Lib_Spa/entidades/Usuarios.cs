@@ -9,6 +9,7 @@ namespace Lib_spa.entidades
         public int Id_Usuario { get; set; }
         public string? Usuario { get; set; }
         public string? Contraseña { get; set; }
+        public int Id_Rol { get; set; }
 
     }
 }

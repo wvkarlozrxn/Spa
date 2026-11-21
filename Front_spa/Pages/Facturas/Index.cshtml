@@ -1,0 +1,62 @@
+@page
+@using Lib_spa.DTOS
+@model Front_spa.Pages.Facturas.IndexModel
+@{
+    ViewData["Title"] = "Facturas";
+}
+
+<h2 class="mb-3">Facturas</h2>
+
+@if (!string.IsNullOrEmpty(Model.Mensaje))
+{
+    <div class="alert alert-danger">@Model.Mensaje</div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>N.°</th>
+            <th>Fecha</th>
+            <th>Clienta</th>
+            <th>Servicio</th>
+            <th>Total</th>
+            <th>Estado</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var factura in Model.Lista)
+        {
+            var reserva = Model.ReservaDe(factura.Id_Reserva);
+            var pagada = Model.EstaPagada(factura.Id_Factura);
+            var cancelada = reserva?.Estado == (int)EstadoReserva.Cancelada;
+            <tr>
+                <td>@factura.Id_Factura</td>
+                <td>@factura.Fecha.ToString("dd/MM/yyyy")</td>
+                <td>@Model.NombreCliente(factura.Id_Reserva)</td>
+                <td>@Model.NombreServicio(factura.Id_Reserva)</td>
+                <td>@factura.Total.ToString("N0")</td>
+                <td>
+                    @if (pagada)
+                    {
+                        <span class="badge bg-success">Pagada</span>
+                    }
+                    else if (cancelada)
+                    {
+                        <span class="badge bg-secondary">Cita cancelada</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-warning text-dark">Pendiente</span>
+                    }
+                </td>
+                <td class="text-end">
+                    @if (!pagada && !cancelada)
+                    {
+                        <a asp-page="Pagar" asp-route-id="@factura.Id_Factura" class="btn btn-sm btn-primary">Registrar pago</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

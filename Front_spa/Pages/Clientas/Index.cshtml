@@ -1,0 +1,57 @@
+@page
+@model Front_spa.Pages.Clientas.IndexModel
+@{
+    ViewData["Title"] = "Clientas";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Clientas</h2>
+    <a asp-page="Crear" class="btn btn-primary">Nueva clienta</a>
+</div>
+
+@if (!string.IsNullOrEmpty(Model.Mensaje))
+{
+    <div class="alert alert-danger">@Model.Mensaje</div>
+}
+
+<form method="get" class="row g-2 mb-3">
+    <div class="col-md-6">
+        <input asp-for="Buscar" class="form-control" placeholder="Buscar por nombre o cédula" />
+    </div>
+    <div class="col-md-6">
+        <button type="submit" class="btn btn-primary me-2">Buscar</button>
+        <a asp-page="Index" class="btn btn-secondary">Limpiar</a>
+    </div>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Cédula</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cliente in Model.Lista)
+        {
+            var persona = Model.PersonaDe(cliente.Persona);
+            <tr>
+                <td>@persona?.Nombre</td>
+                <td>@persona?.Telefono</td>
+                <td>@persona?.Cedula</td>
+                <td class="text-end">
+                    <a asp-page="Editar" asp-route-id="@cliente.Id_Cliente" class="btn btn-sm btn-outline-primary">Editar</a>
+                    @if (HttpContext.Session.GetString("Rol") == "Administrador")
+                    {
+                        <form method="post" asp-page-handler="Eliminar" asp-route-id="@cliente.Id_Cliente" class="d-inline"
+                              onsubmit="return confirm('¿Eliminar esta clienta?');">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">Eliminar</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

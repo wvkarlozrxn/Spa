@@ -17,7 +17,7 @@ namespace Lib_spa.interfaces
             if (entidad.Id_Pago == 0)
                 throw new Exception("No se guardo");
 
-            if (entidad.Id_Pago <= 0)
+            if (entidad.Id_Factura <= 0)
                 throw new Exception("Faltan valores O son inválidos");
 
             if (entidad.Fecha_Pago == null)
@@ -50,7 +50,7 @@ namespace Lib_spa.interfaces
             if (entidad.Id_Pago != 0)
                 throw new Exception("Ya se guardo");
 
-            if (entidad.Id_Pago <= 0)
+            if (entidad.Id_Factura <= 0)
                 throw new Exception("Faltan valores O son inválidos");
 
             if (entidad.Fecha_Pago == null)

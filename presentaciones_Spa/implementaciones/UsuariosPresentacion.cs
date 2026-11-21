@@ -1,4 +1,5 @@
-﻿using Lib_spa.entidades;
+﻿using Lib_spa.DTOS;
+using Lib_spa.entidades;
 using presentaciones_Spa.interfaces;
 
 
@@ -18,9 +19,6 @@ namespace presentaciones_Spa.implementaciones
         {
             if (entidad.Id_Usuario == 0)
                 throw new Exception("No se ha guardo");
-
-            if (Validar(entidad))
-                throw new Exception("Falta informacion");
 
             var task = this.IComunicaciones.Ejecutar<Usuarios>(
                 "Usuarios/Actualizar",
@@ -64,9 +62,6 @@ namespace presentaciones_Spa.implementaciones
             if (entidad.Id_Usuario != 0)
                 throw new Exception("Ya se guardo");
 
-            if (Validar(entidad))
-                throw new Exception("Falta informacion");
-
             var task = this.IComunicaciones.Ejecutar<Usuarios>(
                 "Usuarios/Insertar",
                 entidad);
@@ -74,16 +69,13 @@ namespace presentaciones_Spa.implementaciones
             return task.Result;
         }
 
-        private bool Validar(Usuarios entidad)
+        public Usuarios Validar(UsuariosRequest datos)
         {
-            /* return string.IsNullOrEmpty(entidad.) ||
-                 string.IsNullOrEmpty(entidad.Nombre) ||
-                 string.IsNullOrEmpty(entidad.Lugar) ||
-                 entidad.Inicio == null ||
-                 entidad.Final == null ||
-                 string.IsNullOrEmpty(entidad.Notas);
-            */
-            return true;
+            var task = this.IComunicaciones.Ejecutar<Usuarios>(
+                "Usuarios/Validar",
+                datos);
+            task.Wait();
+            return task.Result;
         }
     }
 }

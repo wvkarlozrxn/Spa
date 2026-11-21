@@ -177,7 +177,9 @@ CREATE TABLE [Roles] (
 CREATE TABLE [Usuarios] (
     [Id_Usuario] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
     [Usuario] NVARCHAR(100) NULL,
-    [Contraseña] NVARCHAR(250) NULL
+    [Contraseña] NVARCHAR(250) NULL,
+    [Id_Rol] INT NOT NULL,
+    FOREIGN KEY ([Id_Rol]) REFERENCES [Roles]([Id_Rol])
 );
   
 

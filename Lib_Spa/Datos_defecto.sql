@@ -62,4 +62,14 @@ INSERT INTO [Inventarios] (Cantidad, Stock_min) VALUES
 INSERT INTO [Productos] (Nombre, Descripcion, Precio_Compra, Precio_Venta, Id_Inventario) VALUES
 ('Aceite esencial de lavanda', 'Frasco 100ml',   18000.00, 30000.00, 2),
 ('Crema hidratante facial',    'Pote 250g',      22000.00, 38000.00, 3);
+
+-- 10. ROLES (Id 1, 2)
+INSERT INTO [Roles] (Descripcion) VALUES
+('Administrador'),
+('Recepcionista');
+
+-- 11. USUARIOS (rol 1 = Administrador, rol 2 = Recepcionista)
+INSERT INTO [Usuarios] (Usuario, Contraseña, Id_Rol) VALUES
+('admin',     'admin123',     1),
+('recepcion', 'recepcion123', 2);
 GO

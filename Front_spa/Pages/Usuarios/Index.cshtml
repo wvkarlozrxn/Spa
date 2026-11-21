@@ -1,0 +1,41 @@
+@page
+@model Front_spa.Pages.Usuarios.IndexModel
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Usuarios</h2>
+    <a asp-page="Crear" class="btn btn-primary">Nuevo usuario</a>
+</div>
+
+@if (!string.IsNullOrEmpty(Model.Mensaje))
+{
+    <div class="alert alert-danger">@Model.Mensaje</div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Usuario</th>
+            <th>Rol</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model.Lista)
+        {
+            <tr>
+                <td>@usuario.Usuario</td>
+                <td>@Model.NombreRol(usuario.Id_Rol)</td>
+                <td class="text-end">
+                    <a asp-page="Editar" asp-route-id="@usuario.Id_Usuario" class="btn btn-sm btn-outline-primary">Editar</a>
+                    <form method="post" asp-page-handler="Eliminar" asp-route-id="@usuario.Id_Usuario" class="d-inline"
+                          onsubmit="return confirm('¿Eliminar este usuario?');">
+                        <button type="submit" class="btn btn-sm btn-outline-danger">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

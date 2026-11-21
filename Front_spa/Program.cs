@@ -1,11 +1,22 @@
-
+using Front_spa.Seguridad;
 using presentaciones_Spa.implementaciones;
 using presentaciones_Spa.interfaces;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages(opciones =>
+{
+    opciones.Conventions.ConfigureFilter(new FiltroSesion());
+});
+
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(opciones =>
+{
+    opciones.IdleTimeout = TimeSpan.FromMinutes(30);
+    opciones.Cookie.HttpOnly = true;
+    opciones.Cookie.IsEssential = true;
+});
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<IComunicaciones, Comunicaciones>();
@@ -46,7 +57,7 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseSession();
 
 app.MapStaticAssets();
 app.MapRazorPages()

@@ -30,7 +30,7 @@ namespace Lib_spa.interfaces
             entry.State = EntityState.Modified;
             this.IConexion!.SaveChanges();
             return entidad;
-        }
+        }   
 
         public Reservas Borrar(Reservas entidad)
         {
@@ -38,12 +38,9 @@ namespace Lib_spa.interfaces
                 throw new Exception("No se guardo");
 
             this.IConexion.Reservas!.Remove(entidad!);
-            this.IConexion.Detalle_Facturas!.Remove(Reservar.Id_Reserva);
-            this.IConexion.Detalle_Reservas!.Remove(entidad!);
-            this.IConexion.Facturas!.Remove(entidad!);
-
             this.IConexion.SaveChanges();
             return entidad;
+        
         }
 
         public List<Reservas> Consultar()
