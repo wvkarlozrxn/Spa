@@ -99,6 +99,8 @@
                             }
                         </td>
                         <td class="text-end">
+                            <a asp-page="Imprimir" asp-route-id="@elemento.Id_Factura"
+                               class="btn btn-sm btn-outline-secondary">Imprimir</a>
                             @if (!pagada && !cancelada)
                             {
                                 <input type="submit" value="Registrar pago" class="btn btn-sm btn-primary"

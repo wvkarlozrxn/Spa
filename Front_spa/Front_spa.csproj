@@ -10,4 +10,9 @@
     <ProjectReference Include="..\presentaciones_Spa\presentaciones_Spa.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.105.1" />
+    <PackageReference Include="QuestPDF" Version="2026.9.2" />
+  </ItemGroup>
+
 </Project>
