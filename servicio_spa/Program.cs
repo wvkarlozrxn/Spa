@@ -29,8 +29,17 @@ builder.Services.AddScoped<IServiciosAplicacion, ServiciosAplicacion>();
 builder.Services.AddScoped<ITurnosAplicacion, TurnosAplicacion>();
 builder.Services.AddScoped<IUsuariosAplicacion, UsuariosAplicacion>();
 
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IConexion>(sp =>
-    new Conexion { StringConexion = Datosgenerales.ObtenerStringConexion() });
+{
+    var peticion = sp.GetRequiredService<IHttpContextAccessor>().HttpContext;
+    var usuario = peticion?.Request.Headers["Usuario"].ToString();
+
+    var conexion = new Conexion();
+    conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
+    conexion.Usuario = string.IsNullOrEmpty(usuario) ? "" : Uri.UnescapeDataString(usuario);
+    return conexion;
+});
 var app = builder.Build();
 
 app.UseHttpsRedirection();

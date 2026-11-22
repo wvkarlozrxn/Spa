@@ -13,6 +13,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Lib_spa\Lib_spa.csproj" />
+    <ProjectReference Include="..\presentaciones_Spa\presentaciones_Spa.csproj" />
+    <ProjectReference Include="..\Front_spa\Front_spa.csproj" />
   </ItemGroup>
 
   <ItemGroup>

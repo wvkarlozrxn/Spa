@@ -1,3 +1,4 @@
+using Front_spa;
 using Front_spa.Seguridad;
 using presentaciones_Spa.implementaciones;
 using presentaciones_Spa.interfaces;
@@ -42,6 +43,7 @@ builder.Services.AddScoped<IRolesPresentacion, RolesPresentacion>();
 builder.Services.AddScoped<IServiciosPresentacion, ServiciosPresentacion>();
 builder.Services.AddScoped<ITurnosPresentacion, TurnosPresentacion>();
 builder.Services.AddScoped<IUsuariosPresentacion, UsuariosPresentacion>();
+builder.Services.AddScoped<Datos>();
 
 
 var app = builder.Build();

@@ -18,9 +18,6 @@ namespace presentaciones_Spa.implementaciones
             if (entidad.Id_Compra == 0)
                 throw new Exception("No se ha guardo");
 
-            if (Validar(entidad))
-                throw new Exception("Falta informacion");
-
             var task = this.IComunicaciones.Ejecutar<Compras>(
                 "Compras/Actualizar",
                 entidad);
@@ -63,9 +60,6 @@ namespace presentaciones_Spa.implementaciones
             if (entidad.Id_Compra != 0)
                 throw new Exception("Ya se guardo");
 
-            if (Validar(entidad))
-                throw new Exception("Falta informacion");
-
             var task = this.IComunicaciones.Ejecutar<Compras>(
                 "Compras/Insertar",
                 entidad);
@@ -73,16 +67,5 @@ namespace presentaciones_Spa.implementaciones
             return task.Result;
         }
 
-        private bool Validar(Compras entidad)
-        {
-            /* return string.IsNullOrEmpty(entidad.) ||
-                 string.IsNullOrEmpty(entidad.Nombre) ||
-                 string.IsNullOrEmpty(entidad.Lugar) ||
-                 entidad.Inicio == null ||
-                 entidad.Final == null ||
-                 string.IsNullOrEmpty(entidad.Notas);
-            */
-            return true;
-        }
     }
 }

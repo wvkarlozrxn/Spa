@@ -55,6 +55,47 @@ namespace Lib_spa.implementaciones
         public DbSet<Permisos>? Permisos { get; set; }
 
         public DbSet<Turnos>? Turnos { get; set; }
-       
+
+        // Usuario que hace los cambios; llega desde el front y se guarda en las auditorías.
+        public string? Usuario { get; set; }
+
+        // Guarda los cambios pedidos y después registra una auditoría por cada uno.
+        public override int SaveChanges()
+        {
+            var cambios = ChangeTracker.Entries()
+                .Where(e => e.Entity.GetType() != typeof(Auditorias) &&
+                            (e.State == EntityState.Added ||
+                             e.State == EntityState.Modified ||
+                             e.State == EntityState.Deleted))
+                .ToList();
+            var acciones = cambios.Select(e => e.State).ToList();
+
+            var resultado = base.SaveChanges();
+
+            for (var i = 0; i < cambios.Count; i++)
+            {
+                var clave = cambios[i].Metadata.FindPrimaryKey()!.Properties[0].Name;
+
+                var auditoria = new Auditorias();
+                auditoria.Fecha = DateTime.Now;
+                auditoria.Usuario = Usuario ?? "";
+                auditoria.Entidad = cambios[i].Entity.GetType().Name;
+                auditoria.Id_Registro = Convert.ToInt32(cambios[i].Property(clave).CurrentValue);
+
+                if (acciones[i] == EntityState.Added)
+                    auditoria.Accion = "Insertar";
+                else if (acciones[i] == EntityState.Modified)
+                    auditoria.Accion = "Actualizar";
+                else
+                    auditoria.Accion = "Borrar";
+
+                Auditorias!.Add(auditoria);
+            }
+
+            if (cambios.Count > 0)
+                base.SaveChanges();
+
+            return resultado;
+        }
     }
 }

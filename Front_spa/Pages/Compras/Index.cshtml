@@ -1,0 +1,119 @@
+@page
+@model Front_spa.Pages.Compras.IndexModel
+@{
+    ViewData["Title"] = "Compras";
+}
+
+<h2 class="mb-3">Compras</h2>
+
+<form method="post">
+
+    @if (!string.IsNullOrEmpty(Model.Mensaje))
+    {
+        <div class="alert alert-danger">@Model.Mensaje</div>
+    }
+
+    @if (!Model.Formulario)
+    {
+        <div class="row g-2 mb-3">
+            <div class="col-md-4">
+                <select asp-for="FiltroProveedor"
+                        asp-items="@(new SelectList(Model.ListaProveedores, "Id_Proveedor", "Nombre"))"
+                        class="form-select">
+                    <option value="0">Todos los proveedores</option>
+                </select>
+            </div>
+            <div class="col-md-8">
+                <input type="submit" value="Consultar" class="btn btn-secondary"
+                       asp-page-handler="BtConsultar" />
+                <input type="submit" value="Nueva compra" class="btn btn-primary"
+                       asp-page-handler="BtNuevo" />
+            </div>
+        </div>
+    }
+
+    @if (Model.Formulario)
+    {
+        <div style="max-width:700px">
+            <h4>Nueva compra</h4>
+
+            <div class="mb-3" style="max-width:450px">
+                <label class="form-label">Proveedor</label>
+                <select asp-for="Actual.Id_Proveedor"
+                        asp-items="@(new SelectList(Model.ListaProveedores, "Id_Proveedor", "Nombre"))"
+                        class="form-select">
+                    <option value="0">Selecciona un proveedor</option>
+                </select>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio por unidad</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (var i = 0; i < Model.Lineas.Count; i++)
+                    {
+                        <tr>
+                            <td>
+                                <select asp-for="Lineas[i].Id_Producto"
+                                        asp-items="@(new SelectList(Model.ListaProductos, "Id_Producto", "Nombre"))"
+                                        class="form-select">
+                                    <option value="0">Selecciona un producto</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input asp-for="Lineas[i].Cantidad" type="number" class="form-control" />
+                            </td>
+                            <td>
+                                <input asp-for="Lineas[i].Precio_Unidad" type="number" class="form-control" />
+                            </td>
+                            <td>
+                                <input type="submit" value="Quitar" class="btn btn-sm btn-outline-danger"
+                                       asp-page-handler="BtQuitar"
+                                       asp-route-data="@i" />
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <input type="submit" value="Agregar producto" class="btn btn-secondary"
+                   asp-page-handler="BtAgregar" />
+            <input type="submit" value="Guardar compra" class="btn btn-primary"
+                   asp-page-handler="BtGuardar" />
+            <input type="submit" value="Cancelar" class="btn btn-secondary"
+                   asp-page-handler="BtConsultar" />
+        </div>
+    }
+
+    @if (!Model.Formulario)
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Proveedor</th>
+                    <th>Productos</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var elemento in Model.Lista)
+                {
+                    <tr>
+                        <td>@elemento.Fecha.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>@Model.NombreProveedor(elemento.Id_Proveedor)</td>
+                        <td>@Model.Resumen(elemento.Id_Compra)</td>
+                        <td>@elemento.Total.ToString("N0")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+</form>

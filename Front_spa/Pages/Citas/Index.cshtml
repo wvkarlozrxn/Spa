@@ -5,86 +5,167 @@
     ViewData["Title"] = "Citas";
 }
 
-<div class="d-flex justify-content-between align-items-center mb-3">
-    <h2>Citas</h2>
-    <a asp-page="Agendar" class="btn btn-primary">Agendar cita</a>
-</div>
+<h2 class="mb-3">Citas</h2>
 
-@if (!string.IsNullOrEmpty(Model.Mensaje))
-{
-    <div class="alert alert-danger">@Model.Mensaje</div>
-}
+<form method="post">
 
-<form method="get" class="row g-2 mb-3">
-    <div class="col-md-3">
-        <label asp-for="FiltroFecha" class="form-label">Fecha</label>
-        <input asp-for="FiltroFecha" type="date" class="form-control" />
-    </div>
-    <div class="col-md-3">
-        <label asp-for="FiltroEmpleado" class="form-label">Empleado</label>
-        <select asp-for="FiltroEmpleado" asp-items="Model.ListaEmpleados" class="form-select">
-            <option value="0">Todos</option>
-        </select>
-    </div>
-    <div class="col-md-3">
-        <label asp-for="FiltroEstado" class="form-label">Estado</label>
-        <select asp-for="FiltroEstado" class="form-select">
-            <option value="0">Todos</option>
-            <option value="@((int)EstadoReserva.Confirmada)">Confirmada</option>
-            <option value="@((int)EstadoReserva.Completada)">Completada</option>
-            <option value="@((int)EstadoReserva.Cancelada)">Cancelada</option>
-        </select>
-    </div>
-    <div class="col-md-3 d-flex align-items-end">
-        <button type="submit" class="btn btn-primary me-2">Filtrar</button>
-        <a asp-page="Index" class="btn btn-secondary">Limpiar</a>
-    </div>
+    @if (!string.IsNullOrEmpty(Model.Mensaje))
+    {
+        <div class="alert alert-danger">@Model.Mensaje</div>
+    }
+
+    @if (Model.Formulario || Model.Cancelar)
+    {
+        <input type="hidden" asp-for="Actual.Id_Reserva" />
+    }
+
+    @if (!Model.Formulario)
+    {
+        <div class="row g-2 mb-3">
+            <div class="col-md-3">
+                <label class="form-label">Fecha</label>
+                <input asp-for="FiltroFecha" type="date" class="form-control" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Empleado</label>
+                <select asp-for="FiltroEmpleado" asp-items="Model.Empleadas" class="form-select">
+                    <option value="0">Todos</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Estado</label>
+                <select asp-for="FiltroEstado" class="form-select">
+                    <option value="0">Todos</option>
+                    <option value="@((int)EstadoReserva.Confirmada)">Confirmada</option>
+                    <option value="@((int)EstadoReserva.Completada)">Completada</option>
+                    <option value="@((int)EstadoReserva.Cancelada)">Cancelada</option>
+                </select>
+            </div>
+            <div class="col-md-3 d-flex align-items-end">
+                <input type="submit" value="Consultar" class="btn btn-secondary me-2"
+                       asp-page-handler="BtConsultar" />
+                <input type="submit" value="Agendar cita" class="btn btn-primary"
+                       asp-page-handler="BtNuevo" />
+            </div>
+        </div>
+    }
+
+    @if (Model.Formulario)
+    {
+        <div style="max-width:450px">
+            @if (Model.Actual.Id_Reserva == 0)
+            {
+                <h4>Agendar cita</h4>
+
+                <div class="mb-3">
+                    <label class="form-label">Clienta</label>
+                    <select asp-for="Actual.Id_Cliente" asp-items="Model.Clientas" class="form-select">
+                        <option value="0">Selecciona una clienta</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Servicio</label>
+                    <select asp-for="IdServicio" asp-items="Model.Servicios" class="form-select">
+                        <option value="0">Selecciona un servicio</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Empleado</label>
+                    <select asp-for="Actual.Id_Empleado" asp-items="Model.Empleadas" class="form-select">
+                        <option value="0">Selecciona un empleado</option>
+                    </select>
+                </div>
+            }
+            else
+            {
+                <h4>Reprogramar cita</h4>
+
+                <dl class="row">
+                    <dt class="col-sm-4">Clienta</dt>
+                    <dd class="col-sm-8">@Model.NombreCliente(Model.Actual.Id_Cliente)</dd>
+                    <dt class="col-sm-4">Servicio</dt>
+                    <dd class="col-sm-8">@Model.NombreServicio(Model.Actual.Id_Reserva)</dd>
+                    <dt class="col-sm-4">Empleado</dt>
+                    <dd class="col-sm-8">@Model.NombreEmpleado(Model.Actual.Id_Empleado)</dd>
+                </dl>
+            }
+
+            <div class="mb-3">
+                <label class="form-label">Fecha y hora</label>
+                <input asp-for="Actual.Fecha" type="datetime-local" class="form-control" />
+            </div>
+
+            <input type="submit" value="Guardar" class="btn btn-primary"
+                   asp-page-handler="BtGuardar" />
+            <input type="submit" value="Cancelar" class="btn btn-secondary"
+                   asp-page-handler="BtConsultar" />
+        </div>
+    }
+
+    @if (Model.Cancelar)
+    {
+        <div class="alert alert-warning">
+            <h5>
+                ¿Quiere cancelar la cita de @Model.NombreCliente(Model.Actual.Id_Cliente)
+                del @Model.Actual.Fecha.ToString("dd/MM/yyyy HH:mm")?
+            </h5>
+            <input type="submit" value="No" class="btn btn-secondary"
+                   asp-page-handler="BtConsultar" />
+            <input type="submit" value="Sí, cancelar" class="btn btn-danger"
+                   asp-page-handler="BtCancelar" />
+        </div>
+    }
+
+    @if (!Model.Formulario)
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Fecha y hora</th>
+                    <th>Clienta</th>
+                    <th>Servicio</th>
+                    <th>Empleado</th>
+                    <th>Estado</th>
+                    <th>Total</th>
+                    <th>Pago</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var elemento in Model.Lista)
+                {
+                    var factura = Model.FacturaDe(elemento.Id_Reserva);
+                    <tr>
+                        <td>@elemento.Fecha.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>@Model.NombreCliente(elemento.Id_Cliente)</td>
+                        <td>@Model.NombreServicio(elemento.Id_Reserva)</td>
+                        <td>@Model.NombreEmpleado(elemento.Id_Empleado)</td>
+                        <td>@((EstadoReserva)elemento.Estado)</td>
+                        <td>@(factura?.Total.ToString("N0"))</td>
+                        <td>
+                            @if (factura != null)
+                            {
+                                @(Model.EstaPagada(factura.Id_Factura) ? "Pagada" : "Pendiente")
+                            }
+                        </td>
+                        <td class="text-end">
+                            @if (elemento.Estado == (int)EstadoReserva.Confirmada)
+                            {
+                                <input type="submit" value="Reprogramar" class="btn btn-sm btn-outline-primary"
+                                       asp-page-handler="BtEditar"
+                                       asp-route-data="@elemento.Id_Reserva" />
+                                <input type="submit" value="Completar" class="btn btn-sm btn-outline-success"
+                                       asp-page-handler="BtCompletar"
+                                       asp-route-data="@elemento.Id_Reserva" />
+                                <input type="submit" value="Cancelar" class="btn btn-sm btn-outline-danger"
+                                       asp-page-handler="BtPregCancelar"
+                                       asp-route-data="@elemento.Id_Reserva" />
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
 </form>
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Fecha y hora</th>
-            <th>Clienta</th>
-            <th>Servicio</th>
-            <th>Empleado</th>
-            <th>Estado</th>
-            <th>Total</th>
-            <th>Pago</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var reserva in Model.Lista)
-        {
-            var factura = Model.FacturaDe(reserva.Id_Reserva);
-            <tr>
-                <td>@reserva.Fecha.ToString("dd/MM/yyyy HH:mm")</td>
-                <td>@Model.NombreCliente(reserva.Id_Cliente)</td>
-                <td>@Model.NombreServicio(reserva.Id_Reserva)</td>
-                <td>@Model.NombreEmpleado(reserva.Id_Empleado)</td>
-                <td>@((EstadoReserva)reserva.Estado)</td>
-                <td>@(factura?.Total.ToString("N0"))</td>
-                <td>
-                    @if (factura != null)
-                    {
-                        @(Model.EstaPagada(factura.Id_Factura) ? "Pagada" : "Pendiente")
-                    }
-                </td>
-                <td class="text-end">
-                    @if (reserva.Estado == (int)EstadoReserva.Confirmada)
-                    {
-                        <a asp-page="Reprogramar" asp-route-id="@reserva.Id_Reserva" class="btn btn-sm btn-outline-primary">Reprogramar</a>
-                        <form method="post" asp-page-handler="Completar" asp-route-id="@reserva.Id_Reserva" class="d-inline">
-                            <button type="submit" class="btn btn-sm btn-outline-success">Completar</button>
-                        </form>
-                        <form method="post" asp-page-handler="Cancelar" asp-route-id="@reserva.Id_Reserva" class="d-inline"
-                              onsubmit="return confirm('¿Cancelar esta cita?');">
-                            <button type="submit" class="btn btn-sm btn-outline-danger">Cancelar</button>
-                        </form>
-                    }
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>

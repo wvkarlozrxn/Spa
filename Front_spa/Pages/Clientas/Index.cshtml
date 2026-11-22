@@ -4,54 +4,107 @@
     ViewData["Title"] = "Clientas";
 }
 
-<div class="d-flex justify-content-between align-items-center mb-3">
-    <h2>Clientas</h2>
-    <a asp-page="Crear" class="btn btn-primary">Nueva clienta</a>
-</div>
+<h2 class="mb-3">Clientas</h2>
 
-@if (!string.IsNullOrEmpty(Model.Mensaje))
-{
-    <div class="alert alert-danger">@Model.Mensaje</div>
-}
+<form method="post">
 
-<form method="get" class="row g-2 mb-3">
-    <div class="col-md-6">
-        <input asp-for="Buscar" class="form-control" placeholder="Buscar por nombre o cédula" />
-    </div>
-    <div class="col-md-6">
-        <button type="submit" class="btn btn-primary me-2">Buscar</button>
-        <a asp-page="Index" class="btn btn-secondary">Limpiar</a>
-    </div>
+    @if (!string.IsNullOrEmpty(Model.Mensaje))
+    {
+        <div class="alert alert-danger">@Model.Mensaje</div>
+    }
+
+    @if (Model.Formulario || Model.Borrar)
+    {
+        <input type="hidden" asp-for="Actual.Id_Cliente" />
+        <input type="hidden" asp-for="Actual.Persona" />
+        <input type="hidden" asp-for="Persona.Id_Persona" />
+    }
+
+    @if (!Model.Formulario)
+    {
+        <div class="row g-2 mb-3">
+            <div class="col-md-4">
+                <input asp-for="Buscar" class="form-control" placeholder="Nombre o cédula" />
+            </div>
+            <div class="col-md-8">
+                <input type="submit" value="Consultar" class="btn btn-secondary"
+                       asp-page-handler="BtConsultar" />
+                <input type="submit" value="Nuevo" class="btn btn-primary"
+                       asp-page-handler="BtNuevo" />
+            </div>
+        </div>
+    }
+
+    @if (Model.Formulario)
+    {
+        <div style="max-width:450px">
+            <h4>Clienta</h4>
+
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input asp-for="Persona.Nombre" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Teléfono</label>
+                <input asp-for="Persona.Telefono" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Cédula</label>
+                <input asp-for="Persona.Cedula" class="form-control" />
+            </div>
+
+            <input type="submit" value="Guardar" class="btn btn-primary"
+                   asp-page-handler="BtGuardar" />
+            <input type="submit" value="Cancelar" class="btn btn-secondary"
+                   asp-page-handler="BtConsultar" />
+        </div>
+    }
+
+    @if (Model.Borrar)
+    {
+        <div class="alert alert-warning">
+            <h5>¿Quiere borrar a la clienta @Model.Persona.Nombre?</h5>
+            <input type="submit" value="Cancelar" class="btn btn-secondary"
+                   asp-page-handler="BtConsultar" />
+            <input type="submit" value="Borrar" class="btn btn-danger"
+                   asp-page-handler="BtBorrar" />
+        </div>
+    }
+
+    @if (!Model.Formulario)
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Cédula</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var elemento in Model.Lista)
+                {
+                    var persona = Model.PersonaDe(elemento.Persona);
+                    <tr>
+                        <td>@persona?.Nombre</td>
+                        <td>@persona?.Telefono</td>
+                        <td>@persona?.Cedula</td>
+                        <td class="text-end">
+                            <input type="submit" value="Editar" class="btn btn-sm btn-outline-primary"
+                                   asp-page-handler="BtEditar"
+                                   asp-route-data="@elemento.Id_Cliente" />
+                            @if (Model.EsAdmin)
+                            {
+                                <input type="submit" value="Borrar" class="btn btn-sm btn-outline-danger"
+                                       asp-page-handler="BtPregBorrar"
+                                       asp-route-data="@elemento.Id_Cliente" />
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
 </form>
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Teléfono</th>
-            <th>Cédula</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var cliente in Model.Lista)
-        {
-            var persona = Model.PersonaDe(cliente.Persona);
-            <tr>
-                <td>@persona?.Nombre</td>
-                <td>@persona?.Telefono</td>
-                <td>@persona?.Cedula</td>
-                <td class="text-end">
-                    <a asp-page="Editar" asp-route-id="@cliente.Id_Cliente" class="btn btn-sm btn-outline-primary">Editar</a>
-                    @if (HttpContext.Session.GetString("Rol") == "Administrador")
-                    {
-                        <form method="post" asp-page-handler="Eliminar" asp-route-id="@cliente.Id_Cliente" class="d-inline"
-                              onsubmit="return confirm('¿Eliminar esta clienta?');">
-                            <button type="submit" class="btn btn-sm btn-outline-danger">Eliminar</button>
-                        </form>
-                    }
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>

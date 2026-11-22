@@ -1,20 +1,16 @@
 using Lib_spa.DTOS;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using presentaciones_Spa.interfaces;
 
 namespace Front_spa.Pages
 {
     public class LoginModel : PageModel
     {
-        private IUsuariosPresentacion IUsuariosPresentacion;
-        private IRolesPresentacion IRolesPresentacion;
+        public Datos Datos;
 
-        public LoginModel(IUsuariosPresentacion IUsuariosPresentacion,
-            IRolesPresentacion IRolesPresentacion)
+        public LoginModel(Datos Datos)
         {
-            this.IUsuariosPresentacion = IUsuariosPresentacion;
-            this.IRolesPresentacion = IRolesPresentacion;
+            this.Datos = Datos;
         }
 
         [BindProperty]
@@ -43,9 +39,9 @@ namespace Front_spa.Pages
                 datos.Usuario = Usuario;
                 datos.Contraseña = Contrasena;
 
-                var usuario = this.IUsuariosPresentacion.Validar(datos);
+                var usuario = Datos.Usuarios.Validar(datos);
 
-                var roles = this.IRolesPresentacion.Consultar();
+                var roles = Datos.Roles.Consultar();
                 var rol = roles.FirstOrDefault(r => r.Id_Rol == usuario.Id_Rol);
 
                 HttpContext.Session.SetString("IdUsuario", usuario.Id_Usuario.ToString());

@@ -26,6 +26,7 @@ CREATE TABLE [Productos] (
     [Descripcion] NVARCHAR(500) NULL,
     [Precio_Compra] DECIMAL(18, 2) NOT NULL,
     [Precio_Venta] DECIMAL(18, 2) NOT NULL,
+    [Imagen] NVARCHAR(MAX) NULL,
     [Id_Inventario] INT NOT NULL REFERENCES [Inventarios]([Id_Inventario])
 );
 
@@ -160,6 +161,10 @@ CREATE TABLE [Metodos_Pagos] (
 CREATE TABLE [Auditorias] (
     [Id_Auditoria] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
     [Fecha] DATETIME NOT NULL,
+    [Usuario] NVARCHAR(100) NOT NULL DEFAULT '',
+    [Entidad] NVARCHAR(100) NOT NULL DEFAULT '',
+    [Accion] NVARCHAR(50) NOT NULL DEFAULT '',
+    [Id_Registro] INT NOT NULL DEFAULT 0
 );
 
 

@@ -1,37 +1,59 @@
+using System.Text.RegularExpressions;
 using Lib_spa.entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using presentaciones_Spa.interfaces;
+using Empleado = Lib_spa.entidades.Empleados;
 
 namespace Front_spa.Pages.Empleados
 {
     public class IndexModel : PageModel
     {
-        private IEmpleadosPresentacion IEmpleadosPresentacion;
-        private IPersonasPresentacion IPersonasPresentacion;
-        private ICargosPresentacion ICargosPresentacion;
+        public Datos Datos;
 
-        public IndexModel(IEmpleadosPresentacion IEmpleadosPresentacion,
-            IPersonasPresentacion IPersonasPresentacion,
-            ICargosPresentacion ICargosPresentacion)
+        public IndexModel(Datos Datos)
         {
-            this.IEmpleadosPresentacion = IEmpleadosPresentacion;
-            this.IPersonasPresentacion = IPersonasPresentacion;
-            this.ICargosPresentacion = ICargosPresentacion;
+            this.Datos = Datos;
         }
 
-        public List<Lib_spa.entidades.Empleados> Lista { get; set; } = new();
-        public List<Personas> Personas { get; set; } = new();
-        public List<Cargos> Cargos { get; set; } = new();
+        public List<Empleado> Lista { get; set; } = new();
+        public List<Personas> ListaPersonas { get; set; } = new();
+        public List<Cargos> ListaCargos { get; set; } = new();
+        [BindProperty] public string Buscar { get; set; } = "";
+        [BindProperty] public Empleado Actual { get; set; } = new();
+        [BindProperty] public Personas Persona { get; set; } = new();
+        public bool Formulario { get; set; } = false;
+        public bool Borrar { get; set; } = false;
         public string Mensaje { get; set; } = "";
+
+        public bool EsAdmin
+        {
+            get { return HttpContext.Session.GetString("Rol") == "Administrador"; }
+        }
 
         public void OnGet()
         {
+            OnPostBtConsultar();
+        }
+
+        public void OnPostBtConsultar()
+        {
             try
             {
-                Lista = this.IEmpleadosPresentacion.Consultar();
-                Personas = this.IPersonasPresentacion.Consultar();
-                Cargos = this.ICargosPresentacion.Consultar();
+                Lista = Datos.Empleados.Consultar();
+                ListaPersonas = Datos.Personas.Consultar();
+                ListaCargos = Datos.Cargos.Consultar();
+
+                if (!string.IsNullOrWhiteSpace(Buscar))
+                {
+                    var texto = Buscar.Trim();
+                    Lista = Lista.Where(e =>
+                    {
+                        var persona = PersonaDe(e.Id_Persona);
+                        return persona != null &&
+                            ((persona.Nombre ?? "").Contains(texto, StringComparison.OrdinalIgnoreCase) ||
+                             (persona.Cedula ?? "").Contains(texto));
+                    }).ToList();
+                }
             }
             catch (Exception)
             {
@@ -39,59 +61,187 @@ namespace Front_spa.Pages.Empleados
             }
         }
 
-        public IActionResult OnPostEliminar(int id)
+        public void OnPostBtNuevo()
         {
-            if (HttpContext.Session.GetString("Rol") != "Administrador")
-                return RedirectToPage("/AccesoDenegado");
+            if (SinPermiso())
+                return;
+
+            Formulario = true;
+            Actual = new Empleado();
+            Actual.Fecha_Contrato = DateTime.Today;
+            Persona = new Personas();
+            CargarCargos();
+        }
+
+        public void OnPostBtGuardar()
+        {
+            if (SinPermiso())
+                return;
+
+            if (string.IsNullOrWhiteSpace(Persona.Nombre) ||
+                string.IsNullOrWhiteSpace(Persona.Telefono) ||
+                string.IsNullOrWhiteSpace(Persona.Cedula) ||
+                Actual.Id_Cargo == 0)
+            {
+                Formulario = true;
+                CargarCargos();
+                Mensaje = "Todos los campos son obligatorios.";
+                return;
+            }
+
+            if (!Regex.IsMatch(Persona.Nombre, @"^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$"))
+            {
+                Formulario = true;
+                CargarCargos();
+                Mensaje = "El nombre solo debe contener letras.";
+                return;
+            }
+
+            if (!Regex.IsMatch(Persona.Telefono, @"^\d+$") || !Regex.IsMatch(Persona.Cedula, @"^\d+$"))
+            {
+                Formulario = true;
+                CargarCargos();
+                Mensaje = "El teléfono y la cédula solo deben contener números.";
+                return;
+            }
 
             try
             {
-                var empleado = this.IEmpleadosPresentacion.Consultar()
-                    .FirstOrDefault(e => e.Id_Empleado == id);
-
-                if (empleado != null)
+                if (Actual.Id_Empleado == 0)
                 {
-                    this.IEmpleadosPresentacion.Borrar(empleado);
-
-                    try
-                    {
-                        var persona = this.IPersonasPresentacion.Consultar()
-                            .FirstOrDefault(p => p.Id_Persona == empleado.Id_Persona);
-                        if (persona != null)
-                            this.IPersonasPresentacion.Borrar(persona);
-                    }
-                    catch (Exception)
-                    {
-                        // la persona sigue en uso (por ejemplo, también es clienta)
-                    }
+                    Persona = Datos.Personas.Insertar(Persona);
+                    Actual.Id_Persona = Persona.Id_Persona;
+                    Datos.Empleados.Insertar(Actual);
                 }
-
-                return RedirectToPage();
+                else
+                {
+                    Datos.Personas.Actualizar(Persona);
+                    Datos.Empleados.Actualizar(Actual);
+                }
             }
             catch (Exception)
             {
-                OnGet();
-                Mensaje = "No se pudo eliminar el empleado. Puede que tenga citas registradas.";
-                return Page();
+                Formulario = true;
+                CargarCargos();
+                Mensaje = "No se pudo guardar el empleado.";
+                return;
             }
+
+            OnPostBtConsultar();
         }
 
-        public string NombreDe(int idPersona)
+        public void OnPostBtEditar(string data)
         {
-            var persona = Personas.FirstOrDefault(p => p.Id_Persona == idPersona);
-            return persona?.Nombre ?? "";
+            if (SinPermiso())
+                return;
+
+            if (!BuscarEmpleado(data))
+                return;
+
+            Formulario = true;
+            CargarCargos();
         }
 
-        public string TelefonoDe(int idPersona)
+        public void OnPostBtPregBorrar(string data)
         {
-            var persona = Personas.FirstOrDefault(p => p.Id_Persona == idPersona);
-            return persona?.Telefono ?? "";
+            if (SinPermiso())
+                return;
+
+            if (!BuscarEmpleado(data))
+                return;
+
+            OnPostBtConsultar();
+            Borrar = true;
+        }
+
+        public void OnPostBtBorrar()
+        {
+            if (SinPermiso())
+                return;
+
+            try
+            {
+                Datos.Empleados.Borrar(Actual);
+
+                try
+                {
+                    Datos.Personas.Borrar(Persona);
+                }
+                catch (Exception)
+                {
+                    // la persona sigue en uso (por ejemplo, también es clienta)
+                }
+            }
+            catch (Exception)
+            {
+                Mensaje = "No se pudo eliminar el empleado. Puede que tenga citas registradas.";
+            }
+
+            var mensaje = Mensaje;
+            OnPostBtConsultar();
+            Mensaje = mensaje;
+        }
+
+        public Personas? PersonaDe(int idPersona)
+        {
+            return ListaPersonas.FirstOrDefault(p => p.Id_Persona == idPersona);
         }
 
         public string CargoDe(int idCargo)
         {
-            var cargo = Cargos.FirstOrDefault(c => c.Id_Cargo == idCargo);
-            return cargo?.Cargo ?? "";
+            return ListaCargos.FirstOrDefault(c => c.Id_Cargo == idCargo)?.Cargo ?? "";
+        }
+
+        public void CargarCargos()
+        {
+            try
+            {
+                ListaCargos = Datos.Cargos.Consultar();
+            }
+            catch (Exception)
+            {
+                Mensaje = "No se pudieron cargar los cargos.";
+            }
+        }
+
+        // Busca el empleado y su persona y los deja en Actual y Persona.
+        public bool BuscarEmpleado(string data)
+        {
+            try
+            {
+                var id = Convert.ToInt32(data);
+                var empleado = Datos.Empleados.Consultar()
+                    .FirstOrDefault(x => x.Id_Empleado == id);
+                var persona = Datos.Personas.Consultar()
+                    .FirstOrDefault(x => x.Id_Persona == empleado?.Id_Persona);
+
+                if (empleado != null && persona != null)
+                {
+                    Actual = empleado;
+                    Persona = persona;
+                    return true;
+                }
+
+                Mensaje = "El empleado no existe.";
+            }
+            catch (Exception)
+            {
+                Mensaje = "No se pudo cargar el empleado.";
+            }
+
+            OnPostBtConsultar();
+            return false;
+        }
+
+        // Solo el administrador puede crear, editar o borrar.
+        public bool SinPermiso()
+        {
+            if (EsAdmin)
+                return false;
+
+            Mensaje = "Solo el administrador puede hacer esta acción.";
+            OnPostBtConsultar();
+            return true;
         }
     }
 }

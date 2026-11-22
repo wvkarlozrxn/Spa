@@ -4,38 +4,107 @@
     ViewData["Title"] = "Usuarios";
 }
 
-<div class="d-flex justify-content-between align-items-center mb-3">
-    <h2>Usuarios</h2>
-    <a asp-page="Crear" class="btn btn-primary">Nuevo usuario</a>
-</div>
+<h2 class="mb-3">Usuarios</h2>
 
-@if (!string.IsNullOrEmpty(Model.Mensaje))
-{
-    <div class="alert alert-danger">@Model.Mensaje</div>
-}
+<form method="post">
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Usuario</th>
-            <th>Rol</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var usuario in Model.Lista)
-        {
-            <tr>
-                <td>@usuario.Usuario</td>
-                <td>@Model.NombreRol(usuario.Id_Rol)</td>
-                <td class="text-end">
-                    <a asp-page="Editar" asp-route-id="@usuario.Id_Usuario" class="btn btn-sm btn-outline-primary">Editar</a>
-                    <form method="post" asp-page-handler="Eliminar" asp-route-id="@usuario.Id_Usuario" class="d-inline"
-                          onsubmit="return confirm('¿Eliminar este usuario?');">
-                        <button type="submit" class="btn btn-sm btn-outline-danger">Eliminar</button>
-                    </form>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+    @if (!string.IsNullOrEmpty(Model.Mensaje))
+    {
+        <div class="alert alert-danger">@Model.Mensaje</div>
+    }
+
+    @if (Model.Formulario || Model.Borrar)
+    {
+        <input type="hidden" asp-for="Actual.Id_Usuario" />
+    }
+
+    @if (!Model.Formulario)
+    {
+        <div class="row g-2 mb-3">
+            <div class="col-md-4">
+                <input asp-for="Buscar" class="form-control" placeholder="Usuario" />
+            </div>
+            <div class="col-md-8">
+                <input type="submit" value="Consultar" class="btn btn-secondary"
+                       asp-page-handler="BtConsultar" />
+                <input type="submit" value="Nuevo" class="btn btn-primary"
+                       asp-page-handler="BtNuevo" />
+            </div>
+        </div>
+    }
+
+    @if (Model.Formulario)
+    {
+        <div style="max-width:450px">
+            <h4>Usuario</h4>
+
+            <div class="mb-3">
+                <label class="form-label">Usuario</label>
+                <input asp-for="Actual.Usuario" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Contraseña</label>
+                <input asp-for="Actual.Contraseña" type="password" class="form-control" />
+                @if (Model.Actual.Id_Usuario != 0)
+                {
+                    <div class="form-text">Déjala vacía para conservar la actual.</div>
+                }
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Rol</label>
+                <select asp-for="Actual.Id_Rol"
+                        asp-items="@(new SelectList(Model.ListaRoles, "Id_Rol", "Rol"))"
+                        class="form-select">
+                    <option value="0">Selecciona un rol</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Guardar" class="btn btn-primary"
+                   asp-page-handler="BtGuardar" />
+            <input type="submit" value="Cancelar" class="btn btn-secondary"
+                   asp-page-handler="BtConsultar" />
+        </div>
+    }
+
+    @if (Model.Borrar)
+    {
+        <div class="alert alert-warning">
+            <h5>¿Quiere borrar al usuario @Model.Actual.Usuario?</h5>
+            <input type="submit" value="Cancelar" class="btn btn-secondary"
+                   asp-page-handler="BtConsultar" />
+            <input type="submit" value="Borrar" class="btn btn-danger"
+                   asp-page-handler="BtBorrar" />
+        </div>
+    }
+
+    @if (!Model.Formulario)
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Rol</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var elemento in Model.Lista)
+                {
+                    <tr>
+                        <td>@elemento.Usuario</td>
+                        <td>@Model.NombreRol(elemento.Id_Rol)</td>
+                        <td class="text-end">
+                            <input type="submit" value="Editar" class="btn btn-sm btn-outline-primary"
+                                   asp-page-handler="BtEditar"
+                                   asp-route-data="@elemento.Id_Usuario" />
+                            <input type="submit" value="Borrar" class="btn btn-sm btn-outline-danger"
+                                   asp-page-handler="BtPregBorrar"
+                                   asp-route-data="@elemento.Id_Usuario" />
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+</form>

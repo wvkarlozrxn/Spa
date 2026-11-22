@@ -40,8 +40,19 @@
                         </li>
                         @if (Context.Session.GetString("Rol") == "Administrador")
                         {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Inventario</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-area="" asp-page="/Productos/Index">Productos</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-page="/Proveedores/Index">Proveedores</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-page="/Compras/Index">Compras</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-page="/Usuarios/Index">Usuarios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Auditorias/Index">Auditorías</a>
                             </li>
                         }
                     </ul>

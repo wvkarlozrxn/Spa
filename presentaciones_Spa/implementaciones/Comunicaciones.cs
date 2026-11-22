@@ -6,6 +6,9 @@ namespace presentaciones_Spa.implementaciones
 {
     public class Comunicaciones : IComunicaciones
     {
+        // Usuario que hace la petición; viaja en un encabezado para las auditorías.
+        public string? Usuario { get; set; }
+
         public async Task<T> Ejecutar<T>(string url, object entidad)
         {
             url = "http://localhost:5094/" + url;
@@ -16,6 +19,9 @@ namespace presentaciones_Spa.implementaciones
             
             var cliente_http = new HttpClient();
             cliente_http.Timeout = new TimeSpan(0, 4, 0);
+
+            if (!string.IsNullOrEmpty(Usuario))
+                cliente_http.DefaultRequestHeaders.Add("Usuario", Uri.EscapeDataString(Usuario));
 
             var message = await cliente_http.PostAsync(url, body);
 

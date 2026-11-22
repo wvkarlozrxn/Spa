@@ -1,5 +1,4 @@
 @page
-@using Lib_spa.DTOS
 @model Front_spa.Pages.Facturas.IndexModel
 @{
     ViewData["Title"] = "Facturas";
@@ -7,56 +6,110 @@
 
 <h2 class="mb-3">Facturas</h2>
 
-@if (!string.IsNullOrEmpty(Model.Mensaje))
-{
-    <div class="alert alert-danger">@Model.Mensaje</div>
-}
+<form method="post">
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>N.°</th>
-            <th>Fecha</th>
-            <th>Clienta</th>
-            <th>Servicio</th>
-            <th>Total</th>
-            <th>Estado</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var factura in Model.Lista)
-        {
-            var reserva = Model.ReservaDe(factura.Id_Reserva);
-            var pagada = Model.EstaPagada(factura.Id_Factura);
-            var cancelada = reserva?.Estado == (int)EstadoReserva.Cancelada;
-            <tr>
-                <td>@factura.Id_Factura</td>
-                <td>@factura.Fecha.ToString("dd/MM/yyyy")</td>
-                <td>@Model.NombreCliente(factura.Id_Reserva)</td>
-                <td>@Model.NombreServicio(factura.Id_Reserva)</td>
-                <td>@factura.Total.ToString("N0")</td>
-                <td>
-                    @if (pagada)
-                    {
-                        <span class="badge bg-success">Pagada</span>
-                    }
-                    else if (cancelada)
-                    {
-                        <span class="badge bg-secondary">Cita cancelada</span>
-                    }
-                    else
-                    {
-                        <span class="badge bg-warning text-dark">Pendiente</span>
-                    }
-                </td>
-                <td class="text-end">
-                    @if (!pagada && !cancelada)
-                    {
-                        <a asp-page="Pagar" asp-route-id="@factura.Id_Factura" class="btn btn-sm btn-primary">Registrar pago</a>
-                    }
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+    @if (!string.IsNullOrEmpty(Model.Mensaje))
+    {
+        <div class="alert alert-danger">@Model.Mensaje</div>
+    }
+
+    @if (Model.Formulario)
+    {
+        <input type="hidden" asp-for="Actual.Id_Factura" />
+    }
+
+    @if (!Model.Formulario)
+    {
+        <div class="row g-2 mb-3">
+            <div class="col-md-4">
+                <select asp-for="FiltroPago" class="form-select">
+                    <option value="">Todas</option>
+                    <option value="Pendiente">Pendientes</option>
+                    <option value="Pagada">Pagadas</option>
+                </select>
+            </div>
+            <div class="col-md-8">
+                <input type="submit" value="Consultar" class="btn btn-secondary"
+                       asp-page-handler="BtConsultar" />
+            </div>
+        </div>
+    }
+
+    @if (Model.Formulario)
+    {
+        <div style="max-width:350px">
+            <h4>Registrar pago</h4>
+
+            <p>Factura N.° <strong>@Model.Actual.Id_Factura</strong></p>
+            <p>Subtotal: @Model.Actual.Subtotal.ToString("N0")</p>
+            <p>Descuento: @Model.Actual.Descuento.ToString("N0")</p>
+            <p class="fs-5">Total a pagar: <strong>@Model.Actual.Total.ToString("N0")</strong></p>
+
+            <div class="mb-3">
+                <label class="form-label">Método de pago</label>
+                <select asp-for="Metodo" asp-items="@(new SelectList(Model.Metodos))" class="form-select">
+                    <option value="">Selecciona un método</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Registrar pago" class="btn btn-primary"
+                   asp-page-handler="BtGuardar" />
+            <input type="submit" value="Cancelar" class="btn btn-secondary"
+                   asp-page-handler="BtConsultar" />
+        </div>
+    }
+
+    @if (!Model.Formulario)
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>N.°</th>
+                    <th>Fecha</th>
+                    <th>Clienta</th>
+                    <th>Servicio</th>
+                    <th>Total</th>
+                    <th>Estado</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var elemento in Model.Lista)
+                {
+                    var pagada = Model.EstaPagada(elemento.Id_Factura);
+                    var cancelada = Model.EstaCancelada(elemento.Id_Reserva);
+                    <tr>
+                        <td>@elemento.Id_Factura</td>
+                        <td>@elemento.Fecha.ToString("dd/MM/yyyy")</td>
+                        <td>@Model.NombreCliente(elemento.Id_Reserva)</td>
+                        <td>@Model.NombreServicio(elemento.Id_Reserva)</td>
+                        <td>@elemento.Total.ToString("N0")</td>
+                        <td>
+                            @if (pagada)
+                            {
+                                <span class="badge bg-success">Pagada</span>
+                            }
+                            else if (cancelada)
+                            {
+                                <span class="badge bg-secondary">Cita cancelada</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-warning text-dark">Pendiente</span>
+                            }
+                        </td>
+                        <td class="text-end">
+                            @if (!pagada && !cancelada)
+                            {
+                                <input type="submit" value="Registrar pago" class="btn btn-sm btn-primary"
+                                       asp-page-handler="BtPagar"
+                                       asp-route-data="@elemento.Id_Factura" />
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+</form>
