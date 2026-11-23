@@ -12,7 +12,7 @@ using Servicio = Lib_spa.entidades.Servicios;
 
 namespace Front_spa.Pages.Reportes
 {
-    // Un reporte es una tabla: un título, los encabezados y las filas.
+
     public class Tabla
     {
         public string Titulo = "";

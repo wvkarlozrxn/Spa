@@ -35,12 +35,28 @@ namespace Lib_spa.interfaces
         public Reservas Borrar(Reservas entidad)
         {
             if (entidad.Id_Reserva == 0)
-                throw new Exception("No se guardo");
+                throw new Exception("No se guardó");
 
-            this.IConexion.Reservas!.Remove(entidad!);
-            this.IConexion.SaveChanges();
-            return entidad;
+            var reserva = this.IConexion.Reservas!.Find(entidad.Id_Reserva)
+                ?? throw new Exception("La reserva no existe");
+
+          
+            var facturas = this.IConexion.Facturas!
+                .Where(f => f.Id_Reserva == reserva.Id_Reserva)
+                .ToList();
+            this.IConexion.Facturas!.RemoveRange(facturas);
+
         
+            var detalles = this.IConexion.Detalle_Reservas!
+                .Where(d => d.Id_Reserva == reserva.Id_Reserva)
+                .ToList();
+            this.IConexion.Detalle_Reservas!.RemoveRange(detalles);
+
+           
+            this.IConexion.Reservas!.Remove(reserva);
+
+            this.IConexion.SaveChanges();
+            return reserva;
         }
 
         public List<Reservas> Consultar()

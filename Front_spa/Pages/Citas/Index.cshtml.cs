@@ -89,6 +89,15 @@ namespace Front_spa.Pages.Citas
         }
 
         // Sirve para agendar una cita nueva o para reprogramar una existente.
+        public void OnPostBtBorrar()
+        {
+            Datos.Reservas.Actualizar(new Reservas
+            {
+                Id_Reserva = Actual.Id_Reserva,
+                Estado = (int)EstadoReserva.Cancelada
+            });
+        }
+
         public void OnPostBtGuardar()
         {
             CargarDatos();

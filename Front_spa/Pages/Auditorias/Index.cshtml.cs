@@ -46,7 +46,7 @@ namespace Front_spa.Pages.Auditorias
                     Lista = Lista.Where(x => (x.Usuario ?? "").Contains(FiltroUsuario.Trim(),
                         StringComparison.OrdinalIgnoreCase)).ToList();
 
-                // se muestran solo las 200 más recientes
+                
                 Lista = Lista.Take(200).ToList();
             }
             catch (Exception)
