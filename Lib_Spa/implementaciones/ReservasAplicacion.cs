@@ -37,10 +37,43 @@ namespace Lib_spa.interfaces
             if (entidad.Id_Reserva == 0)
                 throw new Exception("No se guardo");
 
+            using var tx = this.IConexion.Database.BeginTransaction();
+
+            var facturas = this.IConexion.Facturas!
+                .Where(f => f.Id_Reserva == entidad.Id_Reserva).ToList();
+
+            foreach (var factura in facturas)
+            {
+                var pagos = this.IConexion.Pagos!
+                    .Where(p => p.Id_Factura == factura.Id_Factura).ToList();
+
+                foreach (var pago in pagos)
+                {
+                    this.IConexion.Metodos_Pagos!.RemoveRange(
+                        this.IConexion.Metodos_Pagos!.Where(m => m.Id_Pago == pago.Id_Pago).ToList());
+                }
+                this.IConexion.SaveChanges();
+
+                this.IConexion.Pagos!.RemoveRange(pagos);
+                this.IConexion.SaveChanges();
+
+                this.IConexion.Detalle_Facturas!.RemoveRange(
+                    this.IConexion.Detalle_Facturas!.Where(d => d.Id_Factura == factura.Id_Factura).ToList());
+                this.IConexion.SaveChanges();
+            }
+
+            this.IConexion.Facturas!.RemoveRange(facturas);
+            this.IConexion.SaveChanges();
+
+            this.IConexion.Detalle_Reservas!.RemoveRange(
+                this.IConexion.Detalle_Reservas!.Where(d => d.Id_Reserva == entidad.Id_Reserva).ToList());
+            this.IConexion.SaveChanges();
+
             this.IConexion.Reservas!.Remove(entidad!);
             this.IConexion.SaveChanges();
+
+            tx.Commit();
             return entidad;
-        
         }
 
         public List<Reservas> Consultar()

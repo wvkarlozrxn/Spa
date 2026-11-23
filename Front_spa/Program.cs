@@ -3,10 +3,6 @@ using Front_spa.Seguridad;
 using presentaciones_Spa.implementaciones;
 using presentaciones_Spa.interfaces;
 
-
-// licencia gratuita de QuestPDF para proyectos pequeños y académicos
-QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages(opciones =>
@@ -47,7 +43,6 @@ builder.Services.AddScoped<IServiciosPresentacion, ServiciosPresentacion>();
 builder.Services.AddScoped<ITurnosPresentacion, TurnosPresentacion>();
 builder.Services.AddScoped<IUsuariosPresentacion, UsuariosPresentacion>();
 builder.Services.AddScoped<Datos>();
-
 
 var app = builder.Build();
 

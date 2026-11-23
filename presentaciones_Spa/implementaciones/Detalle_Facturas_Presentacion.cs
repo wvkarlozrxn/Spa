@@ -1,8 +1,6 @@
 ﻿using Lib_spa.entidades;
 using presentaciones_Spa.interfaces;
 
-
-
 namespace presentaciones_Spa.implementaciones
 {
     public class Detalle_Facturas_Presentacion : IDetalle_Facturas_Presentacion
@@ -76,13 +74,6 @@ namespace presentaciones_Spa.implementaciones
 
         private bool Validar(Detalle_Facturas entidad)
         {
-            /* return string.IsNullOrEmpty(entidad.) ||
-                 string.IsNullOrEmpty(entidad.Nombre) ||
-                 string.IsNullOrEmpty(entidad.Lugar) ||
-                 entidad.Inicio == null ||
-                 entidad.Final == null ||
-                 string.IsNullOrEmpty(entidad.Notas);
-            */
             return true;
         }
     }

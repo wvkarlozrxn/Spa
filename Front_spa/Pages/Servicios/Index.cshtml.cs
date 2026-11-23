@@ -169,7 +169,6 @@ namespace Front_spa.Pages.Servicios
             Mensaje = mensaje;
         }
 
-        // Solo el administrador puede crear, editar o borrar.
         public bool SinPermiso()
         {
             if (EsAdmin)

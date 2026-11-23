@@ -36,9 +36,14 @@ namespace Front_spa.Pages.Citas
         [BindProperty] public int IdServicio { get; set; }
         public bool Formulario { get; set; } = false;
         public bool Cancelar { get; set; } = false;
+        public bool Borrar { get; set; } = false;
         public string Mensaje { get; set; } = "";
 
-        // Listas para los select del formulario y del filtro
+        public bool EsAdmin
+        {
+            get { return HttpContext.Session.GetString("Rol") == "Administrador"; }
+        }
+
         public List<SelectListItem> Clientas
         {
             get
@@ -88,7 +93,6 @@ namespace Front_spa.Pages.Citas
             Actual.Fecha = DateTime.Today.AddDays(1).AddHours(9);
         }
 
-        // Sirve para agendar una cita nueva o para reprogramar una existente.
         public void OnPostBtGuardar()
         {
             CargarDatos();
@@ -147,7 +151,6 @@ namespace Front_spa.Pages.Citas
             OnPostBtConsultar();
         }
 
-        // Reprogramar: solo se puede cambiar la fecha de una cita confirmada.
         public void OnPostBtEditar(string data)
         {
             if (!BuscarCita(data))
@@ -175,6 +178,56 @@ namespace Front_spa.Pages.Citas
             CambiarEstado(Actual.Id_Reserva, EstadoReserva.Cancelada);
         }
 
+        public void OnPostBtPregBorrar(string data)
+        {
+            if (SinPermiso())
+                return;
+
+            CargarDatos();
+            var id = Convert.ToInt32(data);
+            var cita = ListaReservas.FirstOrDefault(r => r.Id_Reserva == id);
+
+            if (cita == null)
+            {
+                Mensaje = "La cita no existe.";
+                Filtrar();
+                return;
+            }
+
+            Actual = cita;
+            Filtrar();
+            Borrar = true;
+        }
+
+        public void OnPostBtBorrar()
+        {
+            if (SinPermiso())
+                return;
+
+            try
+            {
+                Datos.Reservas.Borrar(Actual);
+            }
+            catch (Exception)
+            {
+                Mensaje = "No se pudo borrar la cita.";
+            }
+
+            var mensaje = Mensaje;
+            OnPostBtConsultar();
+            Mensaje = mensaje;
+        }
+
+        public bool SinPermiso()
+        {
+            if (EsAdmin)
+                return false;
+
+            Mensaje = "Solo el administrador puede borrar citas.";
+            OnPostBtConsultar();
+            return true;
+        }
+
         public void CambiarEstado(int id, EstadoReserva nuevo)
         {
             try
@@ -198,7 +251,6 @@ namespace Front_spa.Pages.Citas
             Mensaje = mensaje;
         }
 
-        // Dos citas del mismo empleado chocan si una empieza antes de que la otra termine.
         public bool HayChoque(int idEmpleado, DateTime inicio, int duracion, int idReservaActual)
         {
             var fin = inicio.AddMinutes(duracion);
@@ -262,7 +314,6 @@ namespace Front_spa.Pages.Citas
             return ListaPagos.Any(p => p.Id_Factura == idFactura);
         }
 
-        // Trae todas las listas que necesita la página.
         public void CargarDatos()
         {
             try
@@ -283,7 +334,6 @@ namespace Front_spa.Pages.Citas
             }
         }
 
-        // Aplica los filtros de fecha, empleado y estado.
         public void Filtrar()
         {
             Lista = ListaReservas.OrderByDescending(r => r.Fecha).ToList();
@@ -298,7 +348,6 @@ namespace Front_spa.Pages.Citas
                 Lista = Lista.Where(r => r.Fecha.Date == FiltroFecha.Value.Date).ToList();
         }
 
-        // Busca la cita confirmada y la deja en Actual.
         public bool BuscarCita(string data)
         {
             CargarDatos();

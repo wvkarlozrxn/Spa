@@ -56,10 +56,8 @@ namespace Lib_spa.implementaciones
 
         public DbSet<Turnos>? Turnos { get; set; }
 
-        // Usuario que hace los cambios; llega desde el front y se guarda en las auditorías.
         public string? Usuario { get; set; }
 
-        // Guarda los cambios pedidos y después registra una auditoría por cada uno.
         public override int SaveChanges()
         {
             var cambios = ChangeTracker.Entries()

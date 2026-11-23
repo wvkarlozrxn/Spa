@@ -61,7 +61,6 @@ namespace Front_spa.Pages.Facturas
             }
         }
 
-        // Muestra el formulario para registrar el pago de una factura.
         public void OnPostBtPagar(string data)
         {
             OnPostBtConsultar();

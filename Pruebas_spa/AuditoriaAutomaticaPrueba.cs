@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace presentacion_mst
 {
-    // Comprueba que cada cambio en cualquier entidad deja una auditoría.
     [TestClass]
     public class AuditoriaAutomaticaPrueba
     {
@@ -56,7 +55,6 @@ namespace presentacion_mst
             Verificar("Borrar");
         }
 
-        // Busca la auditoría de esa acción sobre el cargo de prueba.
         private void Verificar(string accion)
         {
             var existe = this.conexion.Auditorias!.Any(a =>
@@ -68,7 +66,6 @@ namespace presentacion_mst
                 throw new Exception("No se registró la auditoría de " + accion);
         }
 
-        // Borra las auditorías que dejó la prueba.
         private void Limpiar()
         {
             var otra = new Conexion();

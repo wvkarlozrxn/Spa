@@ -1,54 +1,28 @@
-using Front_spa.Pages.Reportes;
 using Pagina = Front_spa.Pages.Reportes.IndexModel;
 
 namespace presentacion_mst
 {
-    // Comprueba que los archivos del reporte se generan bien. No usa la base.
     [TestClass]
     public class ReportesPrueba
     {
         private Pagina pagina;
-        private Tabla tabla;
 
         public ReportesPrueba()
         {
             this.pagina = new Pagina(null!);
-
-            this.tabla = new Tabla();
-            this.tabla.Titulo = "Reporte de prueba";
-            this.tabla.Encabezados = new List<string> { "Fecha", "Nombre", "Total" };
-            this.tabla.Filas.Add(new List<object> { new DateTime(2030, 1, 10, 10, 0, 0), "Ana", 150000m });
-            this.tabla.Filas.Add(new List<object> { new DateTime(2030, 1, 11, 9, 30, 0), "Luisa", 90000m });
+            this.pagina.Titulo = "Reporte de prueba";
+            this.pagina.Encabezados = new List<string> { "Fecha", "Nombre", "Total" };
+            this.pagina.Filas.Add(new List<string> { "10/01/2030", "Ana", "150.000" });
+            this.pagina.Filas.Add(new List<string> { "11/01/2030", "Luisa", "90.000" });
         }
 
         [TestMethod]
         public void GeneraPdf()
         {
-            var bytes = this.pagina.CrearPdf(this.tabla);
+            var bytes = this.pagina.CrearPdf();
 
-            // todo PDF empieza con "%PDF"
             if (bytes.Length < 100 || bytes[0] != '%' || bytes[1] != 'P' || bytes[2] != 'D' || bytes[3] != 'F')
                 throw new Exception("El archivo no es un PDF válido");
-        }
-
-        [TestMethod]
-        public void GeneraExcel()
-        {
-            var bytes = this.pagina.CrearExcel(this.tabla);
-
-            // un .xlsx es un zip: empieza con "PK"
-            if (bytes.Length < 100 || bytes[0] != 'P' || bytes[1] != 'K')
-                throw new Exception("El archivo no es un Excel válido");
-        }
-
-        [TestMethod]
-        public void Formatos()
-        {
-            if (this.pagina.Formato(150000m) != "150.000" && this.pagina.Formato(150000m) != "150,000")
-                throw new Exception("Los números deben llevar separador de miles");
-
-            if (this.pagina.Formato(new DateTime(2030, 1, 10, 10, 5, 0)) != "10/01/2030 10:05")
-                throw new Exception("La fecha tiene otro formato");
         }
 
         [TestMethod]

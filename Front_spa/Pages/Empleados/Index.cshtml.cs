@@ -169,7 +169,6 @@ namespace Front_spa.Pages.Empleados
                 }
                 catch (Exception)
                 {
-                    // la persona sigue en uso (por ejemplo, también es clienta)
                 }
             }
             catch (Exception)
@@ -204,7 +203,6 @@ namespace Front_spa.Pages.Empleados
             }
         }
 
-        // Busca el empleado y su persona y los deja en Actual y Persona.
         public bool BuscarEmpleado(string data)
         {
             try
@@ -233,7 +231,6 @@ namespace Front_spa.Pages.Empleados
             return false;
         }
 
-        // Solo el administrador puede crear, editar o borrar.
         public bool SinPermiso()
         {
             if (EsAdmin)

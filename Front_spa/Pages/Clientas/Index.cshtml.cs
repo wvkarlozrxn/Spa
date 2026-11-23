@@ -148,7 +148,6 @@ namespace Front_spa.Pages.Clientas
                 }
                 catch (Exception)
                 {
-                    // la persona sigue en uso (por ejemplo, también es empleada)
                 }
             }
             catch (Exception)
@@ -166,7 +165,6 @@ namespace Front_spa.Pages.Clientas
             return ListaPersonas.FirstOrDefault(p => p.Id_Persona == idPersona);
         }
 
-        // Busca la clienta y su persona y las deja en Actual y Persona.
         public bool BuscarClienta(string data)
         {
             try
@@ -195,7 +193,6 @@ namespace Front_spa.Pages.Clientas
             return false;
         }
 
-        // Solo el administrador puede borrar.
         public bool SinPermiso()
         {
             if (EsAdmin)

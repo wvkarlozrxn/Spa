@@ -48,7 +48,6 @@ namespace presentacion_mst
 
         private void Actualizar()
         {
-            //this.entidad!.Fecha_Pago = DateTime.Now;
 
             var entry = this.conexion!.Entry<Pagos>(this.entidad);
             entry.State = EntityState.Modified;

@@ -98,7 +98,6 @@ namespace Front_spa.Pages.Usuarios
                         return;
                     }
 
-                    // contraseña vacía = conservar la actual
                     if (string.IsNullOrWhiteSpace(Actual.Contraseña))
                         Actual.Contraseña = original.Contraseña;
 
@@ -178,7 +177,6 @@ namespace Front_spa.Pages.Usuarios
             }
         }
 
-        // Muestra el formulario otra vez con un mensaje de error.
         public void ErrorFormulario(string texto)
         {
             Formulario = true;

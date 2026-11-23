@@ -4,7 +4,6 @@ using Lib_spa.nucleo;
 
 namespace presentacion_mst.Nucleo
 {
-    // Funciones que usan varias pruebas.
     public class Ayuda
     {
         public static IConexion NuevaConexion()
@@ -14,7 +13,6 @@ namespace presentacion_mst.Nucleo
             return conexion;
         }
 
-        // La acción debe lanzar un error; si no lo lanza, la prueba falla.
         public static void DebeFallar(Action accion, string caso)
         {
             try
@@ -23,7 +21,6 @@ namespace presentacion_mst.Nucleo
             }
             catch (Exception ex)
             {
-                // si falló la base de datos, la validación no hizo su trabajo
                 if (ex is Microsoft.EntityFrameworkCore.DbUpdateException)
                     throw new Exception("Falló en la base y no en la validación: " + caso);
 

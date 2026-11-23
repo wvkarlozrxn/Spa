@@ -6,7 +6,6 @@ namespace presentaciones_Spa.implementaciones
 {
     public class Comunicaciones : IComunicaciones
     {
-        // Usuario que hace la petición; viaja en un encabezado para las auditorías.
         public string? Usuario { get; set; }
 
         public async Task<T> Ejecutar<T>(string url, object entidad)

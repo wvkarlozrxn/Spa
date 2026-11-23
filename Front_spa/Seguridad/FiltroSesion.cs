@@ -5,7 +5,6 @@ using presentaciones_Spa.interfaces;
 
 namespace Front_spa.Seguridad
 {
-    // Se ejecuta antes de abrir cualquier página: si no hay sesión, manda al login.
     public class FiltroSesion : IAuthorizationFilter
     {
         public static readonly string[] Libres = { "/Login", "/AccesoDenegado", "/Error" };
@@ -23,7 +22,6 @@ namespace Front_spa.Seguridad
                 return;
             }
 
-            // las peticiones a la API llevan el nombre del usuario para las auditorías
             var comunicaciones = contexto.HttpContext.RequestServices.GetService<IComunicaciones>();
             if (comunicaciones != null)
                 comunicaciones.Usuario = usuario;

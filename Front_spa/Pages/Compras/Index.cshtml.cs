@@ -97,7 +97,6 @@ namespace Front_spa.Pages.Compras
 
             try
             {
-                // 1. calcula los subtotales y el total
                 decimal total = 0;
                 foreach (var linea in Lineas)
                 {
@@ -105,13 +104,11 @@ namespace Front_spa.Pages.Compras
                     total = total + linea.Subtotal;
                 }
 
-                // 2. guarda la compra
                 Actual.Compra = total;
                 Actual.Total = total;
                 Actual.Estado = 1;
                 var compra = Datos.Compras.Insertar(Actual);
 
-                // 3. guarda cada línea y suma la cantidad al inventario
                 var inventarios = Datos.Inventarios.Consultar();
                 foreach (var linea in Lineas)
                 {
@@ -145,7 +142,6 @@ namespace Front_spa.Pages.Compras
             return ListaProductos.FirstOrDefault(x => x.Id_Producto == idProducto)?.Nombre ?? "";
         }
 
-        // Resume los productos de una compra: "2 x Aceite, 1 x Crema"
         public string Resumen(int idCompra)
         {
             return string.Join(", ", ListaDetalles

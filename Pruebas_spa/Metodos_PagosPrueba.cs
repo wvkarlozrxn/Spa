@@ -21,7 +21,6 @@ namespace presentacion_mst
         [TestMethod]
         public void Execute()
         {
-            // necesita al menos un pago registrado
             var pago = this.conexion.Pagos!.FirstOrDefault();
             if (pago == null)
             {

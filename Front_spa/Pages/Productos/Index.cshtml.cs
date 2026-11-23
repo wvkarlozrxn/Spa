@@ -107,7 +107,6 @@ namespace Front_spa.Pages.Productos
                 }
                 else if (Actual.Id_Producto != 0)
                 {
-                    // sin imagen nueva: se conserva la que ya tenía
                     Actual.Imagen = Datos.Productos.Consultar()
                         .FirstOrDefault(x => x.Id_Producto == Actual.Id_Producto)?.Imagen;
                 }
@@ -163,7 +162,6 @@ namespace Front_spa.Pages.Productos
                 }
                 catch (Exception)
                 {
-                    // el inventario sigue en uso
                 }
             }
             catch (Exception)
@@ -181,7 +179,6 @@ namespace Front_spa.Pages.Productos
             return ListaInventarios.FirstOrDefault(i => i.Id_Inventario == idInventario);
         }
 
-        // Busca el producto y su inventario y los deja en Actual e Inventario.
         public bool BuscarProducto(string data)
         {
             try

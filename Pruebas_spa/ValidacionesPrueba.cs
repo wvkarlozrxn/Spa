@@ -4,8 +4,6 @@ using presentacion_mst.Nucleo;
 
 namespace presentacion_mst
 {
-    // Comprueba las reglas de cada aplicación: con datos inválidos debe lanzar error.
-    // Estas pruebas fallan antes de llegar a la base, así que no guardan nada.
     [TestClass]
     public class ValidacionesPrueba
     {
@@ -139,7 +137,6 @@ namespace presentacion_mst
             var app = new PagosAplicacion(this.conexion);
 
             Ayuda.DebeFallar(() => app.Insertar(new Pagos { Id_Factura = 0 }), "insertar sin factura");
-            // este caso era el error que se corrigió: antes validaba Id_Pago en lugar de Id_Factura
             Ayuda.DebeFallar(() => app.Actualizar(new Pagos { Id_Pago = 1, Id_Factura = 0 }), "actualizar sin factura");
         }
 

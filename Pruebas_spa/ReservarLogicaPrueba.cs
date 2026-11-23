@@ -6,8 +6,6 @@ using presentacion_mst.Nucleo;
 
 namespace presentacion_mst
 {
-    // Comprueba que Reservar crea la cita, la factura y sus detalles.
-    // Usa un cliente, un empleado y un servicio que ya existan en la base.
     [TestClass]
     public class ReservarLogicaPrueba
     {
@@ -84,7 +82,58 @@ namespace presentacion_mst
             }
         }
 
-        // La cita debe quedar confirmada y con su factura y sus detalles.
+        [TestMethod]
+        public void BorrarCitaConFacturaYPago()
+        {
+            var cliente = this.conexion.Clientes!.FirstOrDefault();
+            var empleado = this.conexion.Empleados!.FirstOrDefault();
+            var servicio = this.conexion.Servicios!.FirstOrDefault();
+            if (cliente == null || empleado == null || servicio == null)
+            {
+                Assert.Inconclusive("Faltan datos en la base.");
+                return;
+            }
+
+            var respuesta = this.app.Reservar(new ReservaRequest
+            {
+                Id_Cliente = cliente.Id_Cliente,
+                Id_Empleado = empleado.Id_Empleado,
+                Id_Servicio = servicio.Id_Servicio,
+                Fecha = DateTime.Now.AddYears(6)
+            });
+
+            var otra = Ayuda.NuevaConexion();
+            var pago = new Pagos() { Fecha_Pago = DateTime.Now, Id_Factura = respuesta.Id_Factura };
+            otra.Pagos!.Add(pago);
+            otra.SaveChanges();
+            otra.Metodos_Pagos!.Add(new Metodos_Pagos()
+            { Descripcion = "Prueba", Metodo_Pago = "Efectivo", Id_Pago = pago.Id_Pago });
+            otra.SaveChanges();
+
+            var otraApp = new ReservasAplicacion(Ayuda.NuevaConexion());
+            otraApp.Borrar(new Reservas() { Id_Reserva = respuesta.Id_Reserva });
+
+            var verificar = Ayuda.NuevaConexion();
+            if (verificar.Reservas!.Any(r => r.Id_Reserva == respuesta.Id_Reserva))
+                throw new Exception("La reserva sigue en la base");
+            if (verificar.Detalle_Reservas!.Any(d => d.Id_Reserva == respuesta.Id_Reserva))
+                throw new Exception("Quedó el detalle de la reserva");
+            if (verificar.Facturas!.Any(f => f.Id_Factura == respuesta.Id_Factura))
+                throw new Exception("Quedó la factura");
+            if (verificar.Detalle_Facturas!.Any(d => d.Id_Factura == respuesta.Id_Factura))
+                throw new Exception("Quedó el detalle de la factura");
+            if (verificar.Pagos!.Any(p => p.Id_Pago == pago.Id_Pago))
+                throw new Exception("Quedó el pago");
+            if (verificar.Metodos_Pagos!.Any(m => m.Id_Pago == pago.Id_Pago))
+                throw new Exception("Quedó el método de pago");
+        }
+
+        [TestMethod]
+        public void BorrarSinIdFalla()
+        {
+            Ayuda.DebeFallar(() => this.app.Borrar(new Reservas() { Id_Reserva = 0 }), "borrar sin id");
+        }
+
         private void Verificar(ReservaRespuesta respuesta, Servicios servicio)
         {
             if (respuesta.Estado != (int)EstadoReserva.Confirmada)
@@ -108,7 +157,6 @@ namespace presentacion_mst
                 throw new Exception("No se guardó el detalle de la factura");
         }
 
-        // Borra lo que creó la prueba, de los detalles hacia la reserva.
         private void Limpiar(ReservaRespuesta respuesta)
         {
             var otra = Ayuda.NuevaConexion();

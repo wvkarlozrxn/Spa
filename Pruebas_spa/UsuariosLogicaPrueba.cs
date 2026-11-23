@@ -5,7 +5,6 @@ using presentacion_mst.Nucleo;
 
 namespace presentacion_mst
 {
-    // Comprueba el inicio de sesión: usuario y contraseña.
     [TestClass]
     public class UsuariosLogicaPrueba
     {
@@ -39,7 +38,6 @@ namespace presentacion_mst
             this.entidad = this.app.Insertar(this.entidad);
         }
 
-        // Con los datos correctos debe devolver el mismo usuario.
         private void ValidarCorrecto()
         {
             var datos = new UsuariosRequest()

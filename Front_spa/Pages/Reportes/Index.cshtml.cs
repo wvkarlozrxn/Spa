@@ -1,4 +1,3 @@
-using ClosedXML.Excel;
 using Front_spa.Seguridad;
 using Lib_spa.DTOS;
 using Lib_spa.entidades;
@@ -12,14 +11,6 @@ using Servicio = Lib_spa.entidades.Servicios;
 
 namespace Front_spa.Pages.Reportes
 {
-    // Un reporte es una tabla: un título, los encabezados y las filas.
-    public class Tabla
-    {
-        public string Titulo = "";
-        public List<string> Encabezados = new();
-        public List<List<object>> Filas = new();
-    }
-
     [SoloAdministrador]
     public class IndexModel : PageModel
     {
@@ -43,70 +34,47 @@ namespace Front_spa.Pages.Reportes
         [BindProperty] public DateTime? Hasta { get; set; }
         public string Mensaje { get; set; } = "";
 
+        public string Titulo { get; set; } = "";
+        public List<string> Encabezados { get; set; } = new();
+        public List<List<string>> Filas { get; set; } = new();
+
         public void OnGet()
         {
         }
 
         public IActionResult OnPostBtPdf()
         {
-            var tabla = ArmarTabla();
-            if (tabla == null)
+            if (Desde != null && Hasta != null && Desde > Hasta)
+            {
+                Mensaje = "La fecha inicial no puede ser mayor que la final.";
                 return Page();
+            }
 
-            var bytes = CrearPdf(tabla);
-            return File(bytes, "application/pdf", NombreArchivo("pdf"));
-        }
-
-        public IActionResult OnPostBtExcel()
-        {
-            var tabla = ArmarTabla();
-            if (tabla == null)
-                return Page();
-
-            var bytes = CrearExcel(tabla);
-            return File(bytes,
-                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                NombreArchivo("xlsx"));
-        }
-
-        public string NombreArchivo(string extension)
-        {
-            return "Reporte_" + Tipo + "_" + DateTime.Now.ToString("yyyyMMdd_HHmm") + "." + extension;
-        }
-
-        // ---------- Datos del reporte ----------
-
-        public Tabla? ArmarTabla()
-        {
             try
             {
-                if (Desde != null && Hasta != null && Desde > Hasta)
-                {
-                    Mensaje = "La fecha inicial no puede ser mayor que la final.";
-                    return null;
-                }
-
                 CargarListas();
 
                 if (Tipo == "Facturas")
-                    return TablaFacturas();
-                if (Tipo == "Inventario")
-                    return TablaInventario();
-                return TablaCitas();
+                    ArmarFacturas();
+                else if (Tipo == "Inventario")
+                    ArmarInventario();
+                else
+                    ArmarCitas();
             }
             catch (Exception)
             {
                 Mensaje = "No se pudo generar el reporte.";
-                return null;
+                return Page();
             }
+
+            var bytes = CrearPdf();
+            return File(bytes, "application/pdf", "Reporte_" + Tipo + ".pdf");
         }
 
-        public Tabla TablaCitas()
+        public void ArmarCitas()
         {
-            var tabla = new Tabla();
-            tabla.Titulo = "Reporte de citas" + TextoRango();
-            tabla.Encabezados = new List<string>
-                { "Fecha y hora", "Clienta", "Servicio", "Empleado", "Estado", "Total" };
+            Titulo = "Reporte de citas" + TextoRango();
+            Encabezados = new List<string> { "Fecha y hora", "Clienta", "Servicio", "Empleado", "Estado", "Total" };
 
             var reservas = Datos.Reservas.Consultar()
                 .Where(r => EnRango(r.Fecha))
@@ -118,27 +86,24 @@ namespace Front_spa.Pages.Reportes
                 var total = ListaFacturas.FirstOrDefault(f => f.Id_Reserva == r.Id_Reserva)?.Total ?? 0;
                 suma = suma + total;
 
-                tabla.Filas.Add(new List<object>
+                Filas.Add(new List<string>
                 {
-                    r.Fecha,
+                    r.Fecha.ToString("dd/MM/yyyy HH:mm"),
                     NombreCliente(r.Id_Cliente),
                     NombreServicio(r.Id_Reserva),
                     NombreEmpleado(r.Id_Empleado),
                     ((EstadoReserva)r.Estado).ToString(),
-                    total
+                    total.ToString("N0")
                 });
             }
 
-            tabla.Filas.Add(new List<object> { "", "", "", "", "Suma", suma });
-            return tabla;
+            Filas.Add(new List<string> { "", "", "", "", "Suma", suma.ToString("N0") });
         }
 
-        public Tabla TablaFacturas()
+        public void ArmarFacturas()
         {
-            var tabla = new Tabla();
-            tabla.Titulo = "Reporte de facturas" + TextoRango();
-            tabla.Encabezados = new List<string>
-                { "N.°", "Fecha", "Clienta", "Servicio", "Total", "Estado" };
+            Titulo = "Reporte de facturas" + TextoRango();
+            Encabezados = new List<string> { "N.°", "Fecha", "Clienta", "Servicio", "Total", "Estado" };
 
             var reservas = Datos.Reservas.Consultar();
             var facturas = ListaFacturas.Where(f => EnRango(f.Fecha)).OrderBy(f => f.Fecha);
@@ -154,28 +119,25 @@ namespace Front_spa.Pages.Reportes
                 if (pagada)
                     pagado = pagado + f.Total;
 
-                tabla.Filas.Add(new List<object>
+                Filas.Add(new List<string>
                 {
-                    f.Id_Factura,
-                    f.Fecha,
+                    f.Id_Factura.ToString(),
+                    f.Fecha.ToString("dd/MM/yyyy"),
                     NombreCliente(reserva?.Id_Cliente ?? 0),
                     NombreServicio(f.Id_Reserva),
-                    f.Total,
+                    f.Total.ToString("N0"),
                     pagada ? "Pagada" : "Pendiente"
                 });
             }
 
-            tabla.Filas.Add(new List<object> { "", "", "", "Total facturado", suma, "" });
-            tabla.Filas.Add(new List<object> { "", "", "", "Total pagado", pagado, "" });
-            return tabla;
+            Filas.Add(new List<string> { "", "", "", "Total facturado", suma.ToString("N0"), "" });
+            Filas.Add(new List<string> { "", "", "", "Total pagado", pagado.ToString("N0"), "" });
         }
 
-        public Tabla TablaInventario()
+        public void ArmarInventario()
         {
-            var tabla = new Tabla();
-            tabla.Titulo = "Reporte de inventario";
-            tabla.Encabezados = new List<string>
-                { "Producto", "Cantidad", "Stock mínimo", "Precio de venta", "Estado" };
+            Titulo = "Reporte de inventario";
+            Encabezados = new List<string> { "Producto", "Cantidad", "Stock mínimo", "Precio de venta", "Estado" };
 
             var inventarios = Datos.Inventarios.Consultar();
 
@@ -185,140 +147,56 @@ namespace Front_spa.Pages.Reportes
                 var cantidad = inventario?.Cantidad ?? 0;
                 var minimo = inventario?.Stock_min ?? 0;
 
-                tabla.Filas.Add(new List<object>
+                Filas.Add(new List<string>
                 {
                     p.Nombre ?? "",
-                    cantidad,
-                    minimo,
-                    p.Precio_Venta,
+                    cantidad.ToString(),
+                    minimo.ToString(),
+                    p.Precio_Venta.ToString("N0"),
                     cantidad <= minimo ? "Stock bajo" : "Normal"
                 });
             }
-
-            return tabla;
         }
 
-        // ---------- Archivos ----------
-
-        public byte[] CrearPdf(Tabla tabla)
+        public byte[] CrearPdf()
         {
+            QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
+
             var documento = Document.Create(contenedor =>
             {
                 contenedor.Page(pagina =>
                 {
                     pagina.Size(PageSizes.A4.Landscape());
                     pagina.Margin(30);
-                    pagina.DefaultTextStyle(x => x.FontSize(10));
 
-                    pagina.Header().Column(columna =>
-                    {
-                        columna.Item().Text(tabla.Titulo).FontSize(18).Bold().FontColor("#4b2e83");
-                        columna.Item().Text("Generado el " + DateTime.Now.ToString("dd/MM/yyyy HH:mm"))
-                            .FontSize(9).FontColor("#666666");
-                    });
+                    pagina.Header().Text(Titulo).FontSize(18).Bold();
 
-                    pagina.Content().PaddingTop(15).Table(t =>
+                    pagina.Content().PaddingTop(15).Table(tabla =>
                     {
-                        t.ColumnsDefinition(columnas =>
+                        tabla.ColumnsDefinition(columnas =>
                         {
-                            foreach (var encabezado in tabla.Encabezados)
+                            foreach (var encabezado in Encabezados)
                                 columnas.RelativeColumn();
                         });
 
-                        t.Header(cabecera =>
+                        tabla.Header(cabecera =>
                         {
-                            foreach (var encabezado in tabla.Encabezados)
+                            foreach (var encabezado in Encabezados)
                                 cabecera.Cell().Background("#6d4aa8").Padding(5)
                                     .Text(encabezado).FontColor("#ffffff").Bold();
                         });
 
-                        foreach (var fila in tabla.Filas)
+                        foreach (var fila in Filas)
                         {
                             foreach (var valor in fila)
-                                t.Cell().BorderBottom(1).BorderColor("#dddddd").Padding(5)
-                                    .Text(Formato(valor));
+                                tabla.Cell().Padding(5).Text(valor);
                         }
-                    });
-
-                    pagina.Footer().AlignCenter().Text(texto =>
-                    {
-                        texto.Span("Página ");
-                        texto.CurrentPageNumber();
-                        texto.Span(" de ");
-                        texto.TotalPages();
                     });
                 });
             });
 
             return documento.GeneratePdf();
         }
-
-        public byte[] CrearExcel(Tabla tabla)
-        {
-            var libro = new XLWorkbook();
-            var hoja = libro.Worksheets.Add("Reporte");
-
-            hoja.Cell(1, 1).Value = tabla.Titulo;
-            hoja.Cell(1, 1).Style.Font.Bold = true;
-            hoja.Cell(1, 1).Style.Font.FontSize = 14;
-
-            // encabezados en la fila 3
-            for (var c = 0; c < tabla.Encabezados.Count; c++)
-            {
-                var celda = hoja.Cell(3, c + 1);
-                celda.Value = tabla.Encabezados[c];
-                celda.Style.Font.Bold = true;
-                celda.Style.Font.FontColor = XLColor.White;
-                celda.Style.Fill.BackgroundColor = XLColor.FromHtml("#6d4aa8");
-            }
-
-            // filas desde la 4
-            for (var f = 0; f < tabla.Filas.Count; f++)
-            {
-                for (var c = 0; c < tabla.Filas[f].Count; c++)
-                {
-                    var valor = tabla.Filas[f][c];
-                    var celda = hoja.Cell(f + 4, c + 1);
-
-                    if (valor is DateTime fecha)
-                    {
-                        celda.Value = fecha;
-                        celda.Style.DateFormat.Format = "dd/MM/yyyy HH:mm";
-                    }
-                    else if (valor is decimal numero)
-                    {
-                        celda.Value = numero;
-                        celda.Style.NumberFormat.Format = "#,##0";
-                    }
-                    else if (valor is int entero)
-                    {
-                        celda.Value = entero;
-                    }
-                    else
-                    {
-                        celda.Value = valor.ToString();
-                    }
-                }
-            }
-
-            hoja.Columns().AdjustToContents();
-
-            var memoria = new MemoryStream();
-            libro.SaveAs(memoria);
-            return memoria.ToArray();
-        }
-
-        // Cómo se escribe cada valor en el PDF.
-        public string Formato(object valor)
-        {
-            if (valor is DateTime fecha)
-                return fecha.ToString("dd/MM/yyyy HH:mm");
-            if (valor is decimal numero)
-                return numero.ToString("N0");
-            return valor.ToString() ?? "";
-        }
-
-        // ---------- Auxiliares ----------
 
         public void CargarListas()
         {

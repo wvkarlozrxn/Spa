@@ -4,8 +4,6 @@ using Front_spa.Pages.Citas;
 
 namespace presentacion_mst
 {
-    // Comprueba la regla del choque de horarios de la página de Citas.
-    // No usa la base: se llenan las listas a mano.
     [TestClass]
     public class ChoqueHorarioPrueba
     {
@@ -14,7 +12,6 @@ namespace presentacion_mst
 
         public ChoqueHorarioPrueba()
         {
-            // una cita del empleado 1, de 10:00 a 11:00 (el servicio dura 60 minutos)
             this.diez = new DateTime(2030, 1, 10, 10, 0, 0);
 
             this.pagina = new IndexModel(null!);
@@ -29,15 +26,12 @@ namespace presentacion_mst
         [TestMethod]
         public void ChocaCuandoSeCruza()
         {
-            // empieza a las 10:30, dentro de la cita
             if (!this.pagina.HayChoque(1, this.diez.AddMinutes(30), 60, 0))
                 throw new Exception("Debió chocar a las 10:30");
 
-            // empieza a las 9:30 y termina a las 10:30
             if (!this.pagina.HayChoque(1, this.diez.AddMinutes(-30), 60, 0))
                 throw new Exception("Debió chocar a las 9:30");
 
-            // empieza a la misma hora
             if (!this.pagina.HayChoque(1, this.diez, 30, 0))
                 throw new Exception("Debió chocar a las 10:00");
         }
@@ -45,11 +39,9 @@ namespace presentacion_mst
         [TestMethod]
         public void NoChocaEnLosBordes()
         {
-            // termina justo cuando empieza la otra
             if (this.pagina.HayChoque(1, this.diez.AddMinutes(-60), 60, 0))
                 throw new Exception("No debió chocar a las 9:00");
 
-            // empieza justo cuando termina la otra
             if (this.pagina.HayChoque(1, this.diez.AddMinutes(60), 60, 0))
                 throw new Exception("No debió chocar a las 11:00");
         }
@@ -73,7 +65,6 @@ namespace presentacion_mst
         [TestMethod]
         public void IgnoraLaPropiaCita()
         {
-            // al reprogramar, la cita no debe chocar consigo misma
             if (this.pagina.HayChoque(1, this.diez.AddMinutes(15), 60, 1))
                 throw new Exception("La cita chocó consigo misma");
         }
