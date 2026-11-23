@@ -61,10 +61,7 @@ namespace Lib_spa.implementaciones
         public override int SaveChanges()
         {
             var cambios = ChangeTracker.Entries()
-                .Where(e => e.Entity.GetType() != typeof(Auditorias) &&
-                            (e.State == EntityState.Added ||
-                             e.State == EntityState.Modified ||
-                             e.State == EntityState.Deleted))
+                .Where(e => e.Entity.GetType() != typeof(Auditorias) && e.State != EntityState.Unchanged)
                 .ToList();
             var acciones = cambios.Select(e => e.State).ToList();
 
@@ -72,13 +69,11 @@ namespace Lib_spa.implementaciones
 
             for (var i = 0; i < cambios.Count; i++)
             {
-                var clave = cambios[i].Metadata.FindPrimaryKey()!.Properties[0].Name;
-
                 var auditoria = new Auditorias();
                 auditoria.Fecha = DateTime.Now;
                 auditoria.Usuario = Usuario ?? "";
                 auditoria.Entidad = cambios[i].Entity.GetType().Name;
-                auditoria.Id_Registro = Convert.ToInt32(cambios[i].Property(clave).CurrentValue);
+                auditoria.Id_Registro = (int)cambios[i].Properties.First().CurrentValue!;
 
                 if (acciones[i] == EntityState.Added)
                     auditoria.Accion = "Insertar";
