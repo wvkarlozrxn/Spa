@@ -157,7 +157,8 @@ namespace Front_spa.Pages.Servicios
 
             try
             {
-                this.IServiciosPresentacion.Borrar(Actual);
+                if (this.IServiciosPresentacion.Borrar(Actual) == null)
+                    Mensaje = "No se pudo eliminar el servicio. Puede que ya tenga citas registradas.";
             }
             catch (Exception)
             {

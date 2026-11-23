@@ -140,15 +140,10 @@ namespace Front_spa.Pages.Clientas
 
             try
             {
-                Datos.Clientes.Borrar(Actual);
-
-                try
-                {
+                if (Datos.Clientes.Borrar(Actual) == null)
+                    Mensaje = "No se pudo eliminar la clienta. Puede que tenga reservas registradas.";
+                else
                     Datos.Personas.Borrar(Persona);
-                }
-                catch (Exception)
-                {
-                }
             }
             catch (Exception)
             {

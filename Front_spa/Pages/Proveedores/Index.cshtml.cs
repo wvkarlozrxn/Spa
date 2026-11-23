@@ -121,7 +121,8 @@ namespace Front_spa.Pages.Proveedores
         {
             try
             {
-                Datos.Proveedores.Borrar(Actual);
+                if (Datos.Proveedores.Borrar(Actual) == null)
+                    Mensaje = "No se pudo eliminar el proveedor. Puede que tenga compras registradas.";
             }
             catch (Exception)
             {

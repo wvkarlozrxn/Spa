@@ -161,15 +161,10 @@ namespace Front_spa.Pages.Empleados
 
             try
             {
-                Datos.Empleados.Borrar(Actual);
-
-                try
-                {
+                if (Datos.Empleados.Borrar(Actual) == null)
+                    Mensaje = "No se pudo eliminar el empleado. Puede que tenga citas registradas.";
+                else
                     Datos.Personas.Borrar(Persona);
-                }
-                catch (Exception)
-                {
-                }
             }
             catch (Exception)
             {

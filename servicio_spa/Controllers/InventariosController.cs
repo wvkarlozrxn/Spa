@@ -34,9 +34,16 @@ namespace servicio_spa.Controllers
         }
 
         [HttpPost]
-        public Inventarios Borrar(Inventarios entidad)
+        public Inventarios? Borrar(Inventarios entidad)
         {
-            return this.IInventariosAplicacion.Borrar(entidad);
+            try
+            {
+                return this.IInventariosAplicacion.Borrar(entidad);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
     }
 }

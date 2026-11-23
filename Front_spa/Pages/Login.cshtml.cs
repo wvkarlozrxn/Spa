@@ -41,6 +41,12 @@ namespace Front_spa.Pages
 
                 var usuario = Datos.Usuarios.Validar(datos);
 
+                if (usuario == null)
+                {
+                    Mensaje = "Usuario o contraseña incorrectos.";
+                    return Page();
+                }
+
                 var roles = Datos.Roles.Consultar();
                 var rol = roles.FirstOrDefault(r => r.Id_Rol == usuario.Id_Rol);
 

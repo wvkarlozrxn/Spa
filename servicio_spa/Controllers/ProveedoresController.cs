@@ -34,9 +34,16 @@ namespace servicio_spa.Controllers
         }
 
         [HttpPost]
-        public Proveedores Borrar(Proveedores entidad)
+        public Proveedores? Borrar(Proveedores entidad)
         {
-            return this.IProveedoresAplicacion.Borrar(entidad);
+            try
+            {
+                return this.IProveedoresAplicacion.Borrar(entidad);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
     }
 }

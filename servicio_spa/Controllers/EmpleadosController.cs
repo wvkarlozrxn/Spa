@@ -34,9 +34,16 @@ namespace servicio_spa.Controllers
         }
 
         [HttpPost]
-        public Empleados Borrar(Empleados entidad)
+        public Empleados? Borrar(Empleados entidad)
         {
-            return this.IEmpleadosAplicacion.Borrar(entidad);
+            try
+            {
+                return this.IEmpleadosAplicacion.Borrar(entidad);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
     }
 }

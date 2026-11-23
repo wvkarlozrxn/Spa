@@ -206,7 +206,8 @@ namespace Front_spa.Pages.Citas
 
             try
             {
-                Datos.Reservas.Borrar(Actual);
+                if (Datos.Reservas.Borrar(Actual) == null)
+                    Mensaje = "No se pudo borrar la cita.";
             }
             catch (Exception)
             {

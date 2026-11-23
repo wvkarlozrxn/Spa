@@ -35,15 +35,29 @@ namespace servicio_spa.Controllers
         }
 
         [HttpPost]
-        public Usuarios Borrar(Usuarios entidad)
+        public Usuarios? Borrar(Usuarios entidad)
         {
-            return this.IUsuariosAplicacion.Borrar(entidad);
+            try
+            {
+                return this.IUsuariosAplicacion.Borrar(entidad);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         [HttpPost]
-        public Usuarios Validar(UsuariosRequest datos)
+        public Usuarios? Validar(UsuariosRequest datos)
         {
-            return this.IUsuariosAplicacion.Validar(datos);
+            try
+            {
+                return this.IUsuariosAplicacion.Validar(datos);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
     }
 }

@@ -34,9 +34,16 @@ namespace servicio_spa.Controllers
         }
 
         [HttpPost]
-        public Clientes Borrar(Clientes entidad)
+        public Clientes? Borrar(Clientes entidad)
         {
-            return this.IClientesAplicacion.Borrar(entidad);
+            try
+            {
+                return this.IClientesAplicacion.Borrar(entidad);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
     }
 }

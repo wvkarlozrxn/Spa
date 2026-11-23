@@ -142,7 +142,8 @@ namespace Front_spa.Pages.Usuarios
             {
                 try
                 {
-                    Datos.Usuarios.Borrar(Actual);
+                    if (Datos.Usuarios.Borrar(Actual) == null)
+                        Mensaje = "No se pudo eliminar el usuario.";
                 }
                 catch (Exception)
                 {

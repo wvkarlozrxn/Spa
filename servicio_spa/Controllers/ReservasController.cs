@@ -35,9 +35,16 @@ namespace servicio_spa.Controllers
         }
 
         [HttpPost]
-        public Reservas Borrar(Reservas entidad)
+        public Reservas? Borrar(Reservas entidad)
         {
-            return this.IReservasAplicacion.Borrar(entidad);
+            try
+            {
+                return this.IReservasAplicacion.Borrar(entidad);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         [HttpPost]

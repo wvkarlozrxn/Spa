@@ -154,15 +154,10 @@ namespace Front_spa.Pages.Productos
         {
             try
             {
-                Datos.Productos.Borrar(Actual);
-
-                try
-                {
+                if (Datos.Productos.Borrar(Actual) == null)
+                    Mensaje = "No se pudo eliminar el producto. Puede que tenga compras registradas.";
+                else
                     Datos.Inventarios.Borrar(Inventario);
-                }
-                catch (Exception)
-                {
-                }
             }
             catch (Exception)
             {
