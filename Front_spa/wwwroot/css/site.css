@@ -1,0 +1,196 @@
+:root {
+  --morado: #6d4aa8;
+  --morado-oscuro: #4b2e83;
+  --morado-suave: #ece6f7;
+  --azul: #8ec9ee;
+  --azul-suave: #e3f3fc;
+  --fondo: #f6f3fb;
+  --texto: #2f2a3d;
+}
+
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+h1, h2, h3, h4 {
+  color: var(--morado-oscuro);
+}
+
+.navbar {
+  background: linear-gradient(90deg, var(--morado-oscuro), var(--morado)) !important;
+  border-bottom: 3px solid var(--azul) !important;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+  border-radius: 6px;
+  margin: 0 2px;
+}
+
+.navbar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: var(--azul-suave) !important;
+}
+
+.navbar span.me-3 {
+  color: var(--azul-suave);
+}
+
+.navbar .btn-outline-secondary {
+  color: #ffffff;
+  border-color: var(--azul);
+}
+
+.navbar .btn-outline-secondary:hover {
+  background-color: var(--azul);
+  border-color: var(--azul);
+  color: var(--morado-oscuro);
+}
+
+.navbar-toggler {
+  background-color: var(--azul-suave);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--morado);
+  --bs-btn-border-color: var(--morado);
+  --bs-btn-hover-bg: var(--morado-oscuro);
+  --bs-btn-hover-border-color: var(--morado-oscuro);
+  --bs-btn-active-bg: var(--morado-oscuro);
+  --bs-btn-active-border-color: var(--morado-oscuro);
+  --bs-btn-disabled-bg: var(--morado);
+  --bs-btn-disabled-border-color: var(--morado);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--morado);
+  --bs-btn-border-color: var(--morado);
+  --bs-btn-hover-bg: var(--morado);
+  --bs-btn-hover-border-color: var(--morado);
+  --bs-btn-active-bg: var(--morado-oscuro);
+  --bs-btn-active-border-color: var(--morado-oscuro);
+}
+
+.btn-secondary {
+  --bs-btn-bg: var(--azul);
+  --bs-btn-border-color: var(--azul);
+  --bs-btn-color: var(--morado-oscuro);
+  --bs-btn-hover-bg: #6fb8e3;
+  --bs-btn-hover-border-color: #6fb8e3;
+  --bs-btn-hover-color: var(--morado-oscuro);
+  --bs-btn-active-bg: #6fb8e3;
+  --bs-btn-active-border-color: #6fb8e3;
+  --bs-btn-active-color: var(--morado-oscuro);
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-select:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(109, 74, 168, 0.25);
+  border-color: var(--morado);
+}
+
+.form-control, .form-select {
+  border-color: #cfc4e6;
+  background-color: #ffffff;
+}
+
+.form-label {
+  color: var(--morado-oscuro);
+  font-weight: 500;
+}
+
+form[method="post"][style], form.row {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(75, 46, 131, 0.08);
+}
+
+form.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.table {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(75, 46, 131, 0.08);
+  --bs-table-striped-bg: var(--azul-suave);
+  --bs-table-hover-bg: var(--morado-suave);
+}
+
+.table thead th {
+  background-color: var(--morado);
+  color: #ffffff;
+  border-bottom: none;
+  font-weight: 500;
+}
+
+.table td, .table th {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+}
+
+.alert-danger {
+  background-color: #fbe9ee;
+  border-color: #f1b8c7;
+  color: #8a2a45;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 60px;
+  background-color: var(--morado-suave);
+  color: var(--morado-oscuro) !important;
+  border-top: 3px solid var(--azul) !important;
+}
+
+.text-center .display-4 {
+  margin-top: 2rem;
+  color: var(--morado-oscuro);
+}
+
+@media print {
+  .navbar, .footer, .no-imprimir {
+    display: none !important;
+  }
+
+  body {
+    background-color: #ffffff;
+    margin-bottom: 0;
+  }
+
+  .factura {
+    box-shadow: none;
+  }
+}
+
+.factura {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 800px;
+  box-shadow: 0 2px 10px rgba(75, 46, 131, 0.08);
+}

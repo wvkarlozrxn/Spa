@@ -1,0 +1,10 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido, @HttpContext.Session.GetString("Usuario")</h1>
+    <p>Rol: @HttpContext.Session.GetString("Rol")</p>
+</div>

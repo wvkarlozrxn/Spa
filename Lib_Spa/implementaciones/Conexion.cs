@@ -3,8 +3,8 @@ using Lib_spa.entidades;
 using Lib_spa.interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Lib_spa.implementaciones 
-{ 
+namespace Lib_spa.implementaciones
+{
 
     public class Conexion : DbContext, IConexion
     {
@@ -49,7 +49,46 @@ namespace Lib_spa.implementaciones
         public DbSet<Reservas>? Reservas { get; set; }
 
         public DbSet<Servicios>? Servicios { get; set; }
+        public DbSet<Auditorias>? Auditorias { get; set; }
+        public DbSet<Usuarios>? Usuarios { get; set; }
+        public DbSet<Roles>? Roles { get; set; }
+        public DbSet<Permisos>? Permisos { get; set; }
 
         public DbSet<Turnos>? Turnos { get; set; }
+
+        public string? Usuario { get; set; }
+
+        public override int SaveChanges()
+        {
+            var cambios = ChangeTracker.Entries()
+                .Where(e => e.Entity.GetType() != typeof(Auditorias) && e.State != EntityState.Unchanged)
+                .ToList();
+            var acciones = cambios.Select(e => e.State).ToList();
+
+            var resultado = base.SaveChanges();
+
+            for (var i = 0; i < cambios.Count; i++)
+            {
+                var auditoria = new Auditorias();
+                auditoria.Fecha = DateTime.Now;
+                auditoria.Usuario = Usuario ?? "";
+                auditoria.Entidad = cambios[i].Entity.GetType().Name;
+                auditoria.Id_Registro = (int)cambios[i].Properties.First().CurrentValue!;
+
+                if (acciones[i] == EntityState.Added)
+                    auditoria.Accion = "Insertar";
+                else if (acciones[i] == EntityState.Modified)
+                    auditoria.Accion = "Actualizar";
+                else
+                    auditoria.Accion = "Borrar";
+
+                Auditorias!.Add(auditoria);
+            }
+
+            if (cambios.Count > 0)
+                base.SaveChanges();
+
+            return resultado;
+        }
     }
 }

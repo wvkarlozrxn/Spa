@@ -1,0 +1,56 @@
+using Lib_spa.DTOS;
+using Lib_spa.entidades;
+using Lib_spa.interfaces;
+using Microsoft.AspNetCore.Mvc;
+
+namespace servicio_spa.Controllers
+{
+    [ApiController]
+    [Route("[controller]/[action]")]
+    public class ReservasController : ControllerBase
+    {
+        private IReservasAplicacion IReservasAplicacion;
+
+        public ReservasController(IReservasAplicacion IReservasAplicacion)
+        {
+            this.IReservasAplicacion = IReservasAplicacion;
+        }
+
+        [HttpPost]
+        public List<Reservas> Consultar()
+        {
+            return this.IReservasAplicacion.Consultar();
+        }
+
+        [HttpPost]
+        public Reservas Insertar(Reservas entidad)
+        {
+            return this.IReservasAplicacion.Insertar(entidad);
+        }
+
+        [HttpPost]
+        public Reservas Actualizar(Reservas entidad)
+        {
+            return this.IReservasAplicacion.Actualizar(entidad);
+        }
+
+        [HttpPost]
+        public Reservas? Borrar(Reservas entidad)
+        {
+            try
+            {
+                return this.IReservasAplicacion.Borrar(entidad);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+        [HttpPost]
+        public ReservaRespuesta Reservar(ReservaRequest datos)
+        {
+            return this.IReservasAplicacion.Reservar(datos);
+        }
+    }
+}

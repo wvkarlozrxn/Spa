@@ -1,0 +1,66 @@
+@page
+@model Front_spa.Pages.Auditorias.IndexModel
+@{
+    ViewData["Title"] = "Auditorías";
+}
+
+<h2 class="mb-3">Auditorías</h2>
+
+<form method="post">
+
+    @if (!string.IsNullOrEmpty(Model.Mensaje))
+    {
+        <div class="alert alert-danger">@Model.Mensaje</div>
+    }
+
+    <div class="row g-2 mb-3">
+        <div class="col-md-3">
+            <label class="form-label">Entidad</label>
+            <select asp-for="FiltroEntidad" asp-items="@(new SelectList(Model.ListaEntidades))" class="form-select">
+                <option value="">Todas</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">Acción</label>
+            <select asp-for="FiltroAccion" class="form-select">
+                <option value="">Todas</option>
+                <option value="Insertar">Insertar</option>
+                <option value="Actualizar">Actualizar</option>
+                <option value="Borrar">Borrar</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">Usuario</label>
+            <input asp-for="FiltroUsuario" class="form-control" />
+        </div>
+        <div class="col-md-3 d-flex align-items-end">
+            <input type="submit" value="Consultar" class="btn btn-secondary"
+                   asp-page-handler="BtConsultar" />
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Usuario</th>
+                <th>Entidad</th>
+                <th>Acción</th>
+                <th>N.° de registro</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var elemento in Model.Lista)
+            {
+                <tr>
+                    <td>@elemento.Fecha.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                    <td>@elemento.Usuario</td>
+                    <td>@elemento.Entidad</td>
+                    <td>@elemento.Accion</td>
+                    <td>@elemento.Id_Registro</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</form>

@@ -1,0 +1,42 @@
+using Lib_spa.entidades;
+using Lib_spa.interfaces;
+using Microsoft.AspNetCore.Mvc;
+
+namespace servicio_spa.Controllers
+{
+    [ApiController]
+    [Route("[controller]/[action]")]
+    public class Metodos_PagosController : ControllerBase
+    {
+        private IMetodos_PagosAplicacion IMetodos_PagosAplicacion;
+
+        public Metodos_PagosController(IMetodos_PagosAplicacion IMetodos_PagosAplicacion)
+        {
+            this.IMetodos_PagosAplicacion = IMetodos_PagosAplicacion;
+        }
+
+        [HttpPost]
+        public List<Metodos_Pagos> Consultar()
+        {
+            return this.IMetodos_PagosAplicacion.Consultar();
+        }
+
+        [HttpPost]
+        public Metodos_Pagos Insertar(Metodos_Pagos entidad)
+        {
+            return this.IMetodos_PagosAplicacion.Insertar(entidad);
+        }
+
+        [HttpPost]
+        public Metodos_Pagos Actualizar(Metodos_Pagos entidad)
+        {
+            return this.IMetodos_PagosAplicacion.Actualizar(entidad);
+        }
+
+        [HttpPost]
+        public Metodos_Pagos Borrar(Metodos_Pagos entidad)
+        {
+            return this.IMetodos_PagosAplicacion.Borrar(entidad);
+        }
+    }
+}

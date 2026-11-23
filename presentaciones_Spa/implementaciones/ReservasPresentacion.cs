@@ -1,0 +1,81 @@
+﻿using Lib_spa.DTOS;
+using Lib_spa.entidades;
+using presentaciones_Spa.interfaces;
+
+
+
+namespace presentaciones_Spa.implementaciones
+{
+    public class ReservasPresentacion : IReservasPresentacion
+    {
+        private IComunicaciones IComunicaciones;
+
+        public ReservasPresentacion(IComunicaciones IComunicaciones)
+        {
+            this.IComunicaciones = IComunicaciones;
+        }
+
+        public Reservas Actualizar(Reservas entidad)
+        {
+            if (entidad.Id_Reserva == 0)
+                throw new Exception("No se ha guardo");
+
+            var task = this.IComunicaciones.Ejecutar<Reservas>(
+                "Reservas/Actualizar",
+                entidad);
+            task.Wait();
+            return task.Result;
+        }
+
+        public Reservas Borrar(Reservas entidad)
+        {
+            if (entidad.Id_Reserva == 0)
+                throw new Exception("No se ha guardo");
+
+            var task = this.IComunicaciones.Ejecutar<Reservas>(
+                "Reservas/Borrar",
+                entidad);
+            task.Wait();
+            return task.Result;
+        }
+
+        public List<Reservas> Buscar(Reservas entidad)
+        {
+            var task = this.IComunicaciones.Ejecutar<List<Reservas>>(
+                "Reservas/Buscar",
+                entidad);
+            task.Wait();
+            return task.Result;
+        }
+
+        public List<Reservas> Consultar()
+        {
+            var task = this.IComunicaciones.Ejecutar<List<Reservas>>(
+                "Reservas/Consultar",
+                null);
+            task.Wait();
+            return task.Result;
+        }
+
+        public Reservas Insertar(Reservas entidad)
+        {
+            if (entidad.Id_Reserva != 0)
+                throw new Exception("Ya se guardo");
+
+            var task = this.IComunicaciones.Ejecutar<Reservas>(
+                "Reservas/Insertar",
+                entidad);
+            task.Wait();
+            return task.Result;
+        }
+
+        public ReservaRespuesta Reservar(ReservaRequest datos)
+        {
+            var task = this.IComunicaciones.Ejecutar<ReservaRespuesta>(
+                "Reservas/Reservar",
+                datos);
+            task.Wait();
+            return task.Result;
+        }
+    }
+}

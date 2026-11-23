@@ -12,6 +12,7 @@ namespace Lib_spa.entidades
         public decimal Precio_Compra { get; set; }
         public decimal Precio_Venta { get; set; }
         public int Id_Inventario { get; set; }
+        public string? Imagen { get; set; }
 
         [ForeignKey("Id_Inventario")] public Inventarios? _Inventario { get; set; }
         public List<Detalle_Compras>? Detalle_Compras { get; set; }

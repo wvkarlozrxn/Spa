@@ -1,0 +1,81 @@
+@page "{id:int}"
+@model Front_spa.Pages.Facturas.ImprimirModel
+@{
+    ViewData["Title"] = "Factura " + Model.Factura.Id_Factura;
+}
+
+<div class="no-imprimir mb-3">
+    <button type="button" class="btn btn-primary" onclick="window.print()">Imprimir</button>
+    <a asp-page="Index" class="btn btn-secondary">Volver</a>
+</div>
+
+<div class="factura">
+    <div class="d-flex justify-content-between">
+        <div>
+            <h2 class="mb-0">Spa</h2>
+            <small>Factura de servicios</small>
+        </div>
+        <div class="text-end">
+            <h4 class="mb-0">Factura N.° @Model.Factura.Id_Factura</h4>
+            <small>Fecha: @Model.Factura.Fecha.ToString("dd/MM/yyyy")</small>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row mb-3">
+        <div class="col-6">
+            <strong>Clienta</strong><br />
+            @Model.Clienta.Nombre<br />
+            Cédula: @Model.Clienta.Cedula<br />
+            Teléfono: @Model.Clienta.Telefono
+        </div>
+        <div class="col-6">
+            <strong>Atendida por</strong><br />
+            @Model.Empleado
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Servicio</th>
+                <th class="text-end">Cantidad</th>
+                <th class="text-end">Precio</th>
+                <th class="text-end">Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var linea in Model.Lineas)
+            {
+                <tr>
+                    <td>@Model.NombreServicio(linea.Id_Servicio)</td>
+                    <td class="text-end">@linea.Cantidad</td>
+                    <td class="text-end">@linea.Precio_Unidad.ToString("N0")</td>
+                    <td class="text-end">@linea.Subtotal.ToString("N0")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-end">
+        <p class="mb-1">Subtotal: @Model.Factura.Subtotal.ToString("N0")</p>
+        <p class="mb-1">Descuento: @Model.Factura.Descuento.ToString("N0")</p>
+        <p class="fs-4"><strong>Total: @Model.Factura.Total.ToString("N0")</strong></p>
+    </div>
+
+    <hr />
+
+    <p>
+        Estado:
+        @if (Model.Pagada)
+        {
+            <strong>Pagada</strong> <span>(@Model.Metodo)</span>
+        }
+        else
+        {
+            <strong>Pendiente de pago</strong>
+        }
+    </p>
+    <p class="text-center text-muted">Gracias por su visita</p>
+</div>
